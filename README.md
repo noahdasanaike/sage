@@ -11,3 +11,4 @@ Progress
 | Canada   | 1997, 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021        | Presidential, Legislative      | | ✅ |
 | Australia   |       | Legislative      | | ✅ |
 | New Zealand   |      | Legislative      | | ✅ |
+| Fiji | 2022 | Legislative | | ✅ |
