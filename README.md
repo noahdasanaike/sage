@@ -1,3 +1,6 @@
+<p align="center"><img src="https://github.com/noahdasanaike/sage/assets/23142832/7a7357f5-d14a-4808-abd8-eb3c866a5da9" width="200" height="200" /></p>
+
+
 # Small-Area Global Elections (SAGE) Database
 
 Monitoring the construction of SAGE, the small-area global elections database, providing small-area election results with polygon geometry for national elections.
