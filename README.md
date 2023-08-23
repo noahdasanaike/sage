@@ -7,7 +7,7 @@ Monitoring the construction of SAGE, the small-area global elections database, p
 
 Progress
 
-| Country      | Years |  Polygon Years | Election Types     | Unit-Year Observations (approximate average) | Progress | Source|
+| Country      | Years |  Polygon Years | Election Types     | Units per Year (approximate average) | Progress | Source|
 | :---        |    :----:   |          :---: |  :---: | :---:| :---: | ---:|
 | Australia   | 2004, 2007, 2010, 2013, 2016, 2022  | All    | Legislative      | 80,000 | ✅ | Australian Electoral Commission |
 | Canada   | 1997, 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021   | 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021 | Presidential, Legislative  |35,000| ✅ | Elections Canada |
