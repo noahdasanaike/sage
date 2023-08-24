@@ -3,7 +3,7 @@
 
 # Small-Area Global Elections (SAGE) Database
 
-Monitoring the construction of SAGE, the small-area global elections database, providing small-area election results with polygon geometry for national elections.
+Monitoring the construction of SAGE, the small-area global elections database, providing small-area (party) election results with polygon geometry for national elections.
 
 Progress
 
