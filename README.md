@@ -17,4 +17,4 @@ Progress
 | Papua New Guinea | 1987, 1992, 1997, 2002, 2007, 2012, 2017 | All | Legislative | 100 |✅ | Wood (2019), geoBoundaries |
 | Solomon Islands | 2006, 2010, 2014, 2019 |All |Legislative | 50 |✅ | Wood (2019), geoBoundaries |
 | United States of America  | 2016, 2020  | All | Presidential  | 1,600,000 | ✅ | Kenny & McCartan (2021) |
-| Vanuatu | | | Legislative | | | Vanuatu Election Commission |
+| Vanuatu | | | Legislative | | | Vanuatu Election Commission, Adam Carr |
