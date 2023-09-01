@@ -1,11 +1,12 @@
 <p align="center"><img src="https://github.com/noahdasanaike/sage/assets/23142832/7a7357f5-d14a-4808-abd8-eb3c866a5da9" width="200" height="200" /></p>
 
-
 # Small-Area Global Elections (SAGE) Database
 
 Monitoring the construction of SAGE, the small-area global elections database, providing small-area (party) election results with polygon geometry for national elections.
 
 Progress
+
+![current_coverage](https://github.com/noahdasanaike/sage/assets/23142832/cba38925-7dc1-42dc-a4f3-76396c4862c8)
 
 | Country      | Years |  Polygon Years | Election Types     | Units per Year (approximate average) | Progress | Data Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: | :---:| :---: | :---: | ---:|
