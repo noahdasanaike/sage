@@ -14,7 +14,7 @@ Progress
 | Canada   | 1997, 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021   | 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021 | Presidential, Legislative  |35,000| ✅ | Elections Canada | |
 | Denmark | 2011, 2015, 2019, 2022 | 2011, 2015, 2019, 2022  | Legislative | 1,300 |  ✅ | KMDValg | 1 |
 | Fiji | 2022 | All | Legislative | 991 | ✅ | Fijian Elections Office | 1 |
-| France | 2017, 2022 | All | Legislative, Presidential | 65,000 (>= 2017); 30,000 (< 2017) | | Ministry of the Interior | 1 |
+| France | 2017, 2022 | All | Legislative, Presidential | 70,000 (>= 2017); 30,000 (< 2017) | | Ministry of the Interior | .997 (>= 2017); 1 (< 2017) |
 | Japan | 2009, 2012, 2014, 2017, 2021 | All | Legislative | 2000 | ✅ | Ministry of Land, Infrastructure, Transport and Tourism; Ministry of Internal Affairs and Communications | 1 |
 | Mexico   | 1991, 1994, 1997, 2003, 2006, 2009, 2012, 2015, 2018, 2021 | 2000, 2006, 2012, 2018 | Presidential, Legislative | 2,000,000| ✅ | Magar (2019) | .999 |
 | New Zealand   |  1999, 2002, 2005, 2008, 2011, 2014, 2017, 2020  | 2008, 2011, 2014, 2017, 2020| Legislative | 5,000 | ✅ | Electoral Commission New Zealand | .986 |
