@@ -25,6 +25,7 @@ Progress
 | Poland | 2000, 2005, 2010, 2015, 2019, 2020 | All | Presidential, Legislative | 27,000 | ✅ | National Electoral Commission | 1 |
 | Russia | 2000, 2003, 2004, 2007, 2008, 2011, 2012, 2016, 2018 | 2008, 2011, 2012, 2016, 2018 | Legislative, Presidential | 95,000 |✅ | Central Election Commission | .608 |
 | Solomon Islands | 2006, 2010, 2014, 2019 |All |Legislative | 50 |✅ | Wood (2019) | |
+| South Korea | 2002, 2004, 2007, 2008, 2012, 2016, 2017, 2020, 2022 | >= 2007 | Legislative, Presidential | ✅ | .999 |
 | Sweden | 2006, 2010, 2014, 2018, 2022 | All | Legislative | 6,100 | ✅ | Valmyndigheten | 1 |
 | United States of America  | 2016, 2020  | All | Presidential  | 820,000 | ✅ | Kenny & McCartan (2021) | .999 |
 | Vanuatu | 2002, 2004, 2012, 2016, 2020 | All | Legislative | 17 | ✅ | Vanuatu Election Commission, Adam Carr | |
