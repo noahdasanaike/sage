@@ -14,7 +14,7 @@ Progress
 | Canada   | 1997, 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021   | 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021 | Presidential, Legislative  |35,000| ✅ | Elections Canada | |
 | Denmark | 2011, 2015, 2019, 2022 | 2011, 2015, 2019, 2022  | Legislative | 1,300 |  ✅ | KMDValg | 1 |
 | Fiji | 2022 | All | Legislative | 991 | ✅ | Fijian Elections Office | 1 |
-| Finland | 2011, 2012, 2015, 2018, 2019, 2023 | >= 2015 | Legislative | 1,900 (2019); 310 (>= 2015) | ✅ | | .996 |
+| Finland | 2011, 2012, 2015, 2018, 2019, 2023 | >= 2015 | Presidential, Legislative | 1,900 (2019); 310 (>= 2015) | ✅ | | .996 |
 | France | 2002, 2007, 2012, 2017, 2022 | All | Legislative, Presidential | 70,000 (>= 2017); 35,000 (<2017) | ✅ | Ministry of the Interior | .997 (>= 2017) |
 | Germany | 1983, 1987, 1990, 1994, 1998, 2002, 2005, 2009, 2013, 2017, 2021 | >= 1998 | Legislative | 80,000 (geocode level: 11,000) | ✅ | | |
 | Greece | 2012, 2015, 2019 | All | Legislative | 20,000 | ✅ | | .987 | 
