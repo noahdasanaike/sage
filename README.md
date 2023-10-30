@@ -20,6 +20,7 @@ Progress
 | Greece | 2012, 2015, 2019 | All | Legislative | 20,000 | ✅ | | .987 | 
 | Hungary | 2002 | All | Legislative | 7,000 | ✅ | National Election Office | 1 |
 | Japan | 2009, 2012, 2014, 2017, 2021 | All | Legislative | 2,000 | ✅ | Ministry of Land, Infrastructure, Transport and Tourism; Ministry of Internal Affairs and Communications | 1 |
+| Latvia | 2014, 2018, 2022 | All | Legislative | 2,000 | ✅ | | 1 |
 | Mexico   | 1991, 1994, 1997, 2003, 2006, 2009, 2012, 2015, 2018, 2021 | 2000, 2006, 2012, 2018 | Presidential, Legislative | 2,000,000| ✅ | Magar (2019) | .999 |
 | New Zealand   |  1999, 2002, 2005, 2008, 2011, 2014, 2017, 2020  | 2008, 2011, 2014, 2017, 2020| Legislative | 5,000 | ✅ | Electoral Commission New Zealand | .986 |
 | Papua New Guinea | 1987, 1992, 1997, 2002, 2007, 2012, 2017 | All | Legislative | 100 |✅ | Wood (2019) | 
