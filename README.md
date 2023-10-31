@@ -27,7 +27,7 @@ Progress
 | Papua New Guinea | 1987, 1992, 1997, 2002, 2007, 2012, 2017 | All | Legislative | 100 |✅ | Wood (2019) | 
 | Poland | 2000, 2005, 2010, 2015, 2019, 2020 | All | Presidential, Legislative | 27,000 | ✅ | National Electoral Commission | 1 |
 | Portugal | 1976 to 2022 | >= 2009 | Presidential, Legislative | 4,000 | ✅ | | .997 |
-| Russia | 2000, 2003, 2004, 2007, 2008, 2011, 2012, 2016, 2018 | 2008, 2011, 2012, 2016, 2018 | Legislative, Presidential | 95,000 |✅ | Central Election Commission | .608 |
+| Russia | 2000, 2003, 2004, 2007, 2008, 2011, 2012, 2016, 2018 | 2008, 2011, 2012, 2016, 2018 | Legislative, Presidential | 95,000 |✅ | Central Election Commission | |
 | Slovenia | 2022 | All | Presidential | 3,000 | ✅ | | 1 |
 | Solomon Islands | 2006, 2010, 2014, 2019 |All |Legislative | 50 |✅ | Wood (2019) | |
 | South Korea | 2002, 2004, 2007, 2008, 2012, 2016, 2017, 2020, 2022 | >= 2007 | Legislative, Presidential | ✅ | .999 |
