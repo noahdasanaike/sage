@@ -25,7 +25,8 @@ Progress
 | Latvia | 2014, 2018, 2022 | All | Legislative | 2,000 | ✅ | | 1 |
 | Mexico   | 1991, 1994, 1997, 2003, 2006, 2009, 2012, 2015, 2018, 2021 | 2000, 2006, 2012, 2018 | Presidential, Legislative | 2,000,000| ✅ | Magar (2019) | .999 |
 | Netherlands | 1918 to 2017 | All | Legislative | $$\in \\{115, 1118\\}$$ | ✅ | | .996 |
-| New Zealand   |  1999, 2002, 2005, 2008, 2011, 2014, 2017, 2020  | 2008, 2011, 2014, 2017, 2020| Legislative | 5,000 | ✅ | Electoral Commission New Zealand | .986 |
+| New Zealand   | 1999, 2002, 2005, 2008, 2011, 2014, 2017, 2020  | 2008, 2011, 2014, 2017, 2020| Legislative | 5,000 | ✅ | Electoral Commission New Zealand | .986 |
+| Norway | 2009, 2013, 2017, 2021 | 2021 | Legislative | $$\in \\{115, 1118\\}$$ | ✅ | | .986 |
 | Papua New Guinea | 1987, 1992, 1997, 2002, 2007, 2012, 2017 | All | Legislative | 100 |✅ | Wood (2019) | 
 | Poland | 2000, 2005, 2010, 2015, 2019, 2020 | All | Presidential, Legislative | 27,000 | ✅ | National Electoral Commission | 1 |
 | Portugal | 1976 to 2022 | >= 2009 | Presidential, Legislative | 4,000 | ✅ | | .997 |
