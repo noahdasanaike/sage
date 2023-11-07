@@ -11,6 +11,7 @@ Progress
 | Country      | Years |  Polygon Years | Election Types     | Units per Year (approximate average) | Progress | Data Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: | :---:| :---: | :---: | ---:|
 | Australia   | 2004, 2007, 2010, 2013, 2016, 2022  | All    | Legislative      | 80,000 | ✅ | Australian Electoral Commission | |
+| Brazil | 2014, 2018, 2022 | All | Presidential, Legislative | | ✅ | 80,000 | .989 |
 | Canada   | 1997, 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021   | 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021 | Presidential, Legislative  |35,000| ✅ | Elections Canada | |
 | Denmark | 2011, 2015, 2019, 2022 | 2011, 2015, 2019, 2022  | Legislative | 1,300 |  ✅ | KMDValg | 1 |
 | Fiji | 2022 | All | Legislative | 991 | ✅ | Fijian Elections Office | 1 |
