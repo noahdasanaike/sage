@@ -41,4 +41,5 @@ Progress
 | Sweden | 2006, 2010, 2014, 2018, 2022 | All | Legislative | 6,100 | ✅ | Valmyndigheten | 1 |
 | United Kingdom | 2005, 2010, 2015, 2017, 2019 | All | Legislative | 650 | ✅ | | 1 |
 | United States of America  | 2016, 2020  | All | Presidential  | 820,000 | ✅ | Kenny & McCartan (2021) | .999 |
+| Uruguay | 2014, 2019 | 2019 | Legislative, Presidential | 7,100 | ✅ | | .886 |
 | Vanuatu | 2002, 2004, 2012, 2016, 2020 | All | Legislative | 17 | ✅ | Vanuatu Election Commission, Adam Carr | |
