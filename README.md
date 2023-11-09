@@ -13,6 +13,7 @@ Progress
 | Australia   | 2004, 2007, 2010, 2013, 2016, 2022  | All    | Legislative      | 80,000 | ✅ | Australian Electoral Commission | |
 | Austria | 1999, 2002, 2006, 2008, 2013, 2017, 2019 | >= 2013 | Legislative | 2,000 |  ✅ | | |
 | Brazil | 2014, 2018, 2022 | All | Presidential, Legislative | 93,000 |✅ | | .989 |
+| Bolivia | 2019, 2020 | All | Presidential, Legislative | 68,000 (geocode level: 6,600) | ✅ | | 1 |
 | Canada   | 1997, 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021 |>= 2000 | Presidential, Legislative  | 70,000 | ✅ | Elections Canada | .907 |
 | Chile | 2013, 2017, 2021 | All | Legislative, Presidential | 90,000 (geocode level: 7,000) | ✅ | | 1 |
 | Czechia | 2002, 2006, 2010, 2013, 2017, 2021 | 2017, 2021 | Legislative | 14,800 | ✅ | | .989 |
