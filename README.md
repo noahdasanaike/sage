@@ -25,6 +25,7 @@ Progress
 | Greece | 2012, 2015, 2019 | All | Legislative | 20,000 | ✅ | | .987 | 
 | Hungary | 2022 | All | Legislative | 7,000 | ✅ | National Election Office | 1 |
 | Ireland | 2002, 2007, 2011, 2016, 2020| 2016, 2020 | Legislative | 40 | ✅ | | 1 |
+| Israel | 2006 to 2022 | 2020, 2021 | Legislative | 11,000 | ✅ | | 1 |
 | Italy | 1953 to 2022 | >= 2002 | Legislative | 8,000 | ✅ | | .96 |
 | Japan | 2009, 2012, 2014, 2017, 2021 | All | Legislative | 2,000 | ✅ | Ministry of Land, Infrastructure, Transport and Tourism; Ministry of Internal Affairs and Communications | 1 |
 | Latvia | 2014, 2018, 2022 | All | Legislative | 2,000 | ✅ | | 1 |
