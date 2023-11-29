@@ -43,6 +43,7 @@ Progress
 | Peru | 2006, 2011, 2016, 2021 | 2021 | Legislative, Presidential | 150,000 (<= 2016), 83,000 (2021) | ✅ | | 1 |
 | Poland | 2000, 2005, 2010, 2015, 2019, 2020 | All | Presidential, Legislative | 27,000 | ✅ | National Electoral Commission | 1 |
 | Portugal | 1976 to 2022 | >= 2009 | Presidential, Legislative | 4,000 | ✅ | | .997 |
+| Romania | 2014, 2016, 2019, 2020 | != 2016 | Presidential, Legislative | 18,500 | ✅ | | 1 |
 | Russia | 2000, 2003, 2004, 2007, 2008, 2011, 2012, 2016, 2018 | 2008, 2011, 2012, 2016, 2018 | Legislative, Presidential | 95,000 |✅ | Central Election Commission | .87 (>= 2017); .71 (>= 2008) |
 | Slovenia | 2022 | All | Presidential | 3,000 | ✅ | | 1 |
 | Solomon Islands | 2006, 2010, 2014, 2019 |All |Legislative | 50 |✅ | Wood (2019) | |
