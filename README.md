@@ -14,8 +14,9 @@ Progress
 | Argentina | 2011, 2019, 2023 | 2023 | Presidential, Legislative | 100,000 | ✅ | | .98 |
 | Australia   | 2004, 2007, 2010, 2013, 2016, 2022  | All    | Legislative      | 80,000 | ✅ | Australian Electoral Commission | |
 | Austria | 1999, 2002, 2006, 2008, 2013, 2017, 2019 | >= 2013 | Legislative | 2,000 |  ✅ | | |
-| Brazil | 2014, 2018, 2022 | All | Presidential, Legislative | 93,000 |✅ | | .989 |
 | Bolivia | 2019, 2020 | All | Presidential, Legislative | 68,000 (geocode level: 6,600) | ✅ | | 1 |
+| Brazil | 2014, 2018, 2022 | All | Presidential, Legislative | 93,000 |✅ | | .989 |
+| Bulgaria | 2013 to 2023 | 2022, 2023 | Presidential, Legislative | 12,000 | ✅ | | .999 |
 | Canada   | 1997, 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021 |>= 2000 | Presidential, Legislative  | 70,000 | ✅ | Elections Canada | .907 |
 | Colombia | 1958 to 2018 | >= 1994 | Presidential, Legislative | 1,000 | ✅ || .990 |
 | Costa Rica | 2022 | All | Legislative | 2,101 | ✅ | | 1 |
