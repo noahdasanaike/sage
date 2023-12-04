@@ -35,6 +35,7 @@ Progress
 | Italy | 1953 to 2022 | >= 2002 | Legislative | 8,000 | ✅ | | .96 |
 | Japan | 2009, 2012, 2014, 2017, 2021 | All | Legislative | 2,000 | ✅ | Ministry of Land, Infrastructure, Transport and Tourism; Ministry of Internal Affairs and Communications | 1 |
 | Latvia | 2014, 2018, 2022 | All | Legislative | 2,000 | ✅ | | 1 |
+| Lithuania | 2016, 2019, 2020 | All | Legislative, Presidential | 2,000 | ✅ | | 1 |
 | Mexico   | 1991, 1994, 1997, 2003, 2006, 2009, 2012, 2015, 2018, 2021 | 2000, 2006, 2012, 2018 | Presidential, Legislative | 2,000,000| ✅ | Magar (2019) | .999 |
 | Netherlands | 1918 to 2017 | All | Legislative | 115 to 1,120 | ✅ | | .996 |
 | New Zealand   | 1999, 2002, 2005, 2008, 2011, 2014, 2017, 2020  | 2008, 2011, 2014, 2017, 2020| Legislative | 5,000 | ✅ | Electoral Commission New Zealand | .986 |
