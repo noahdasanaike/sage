@@ -11,6 +11,7 @@ Progress
 | Country      | Years |  Polygon Years | Election Types     | Units per Year (approximate average) | Progress | Data Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: | :---:| :---: | :---: | ---:|
 | Afghanistan | 2018, 2019 | All | Legislative | ~20,000 (geocode level: 400) | ✅ | Colin Cookman | .95 |
+| Albania | 2017, 2021 | 2021 | Legislative | 5,200 |  ✅ | | 1 |
 | Argentina | 2011, 2019, 2023 | 2023 | Presidential, Legislative | 100,000 | ✅ | | .98 |
 | Armenia | 2012, 2013, 2018, 2021 | All |Presidential, Legislative | 2,000 | ✅ | | .999 |
 | Australia   | 2004, 2007, 2010, 2013, 2016, 2022  | All    | Legislative      | 80,000 | ✅ | Australian Electoral Commission | |
