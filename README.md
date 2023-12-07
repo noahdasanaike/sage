@@ -36,6 +36,7 @@ Progress
 | Israel | 2006 to 2022 | 2020, 2021 | Legislative | 11,000 | ✅ | | 1 |
 | Italy | 1953 to 2022 | >= 2002 | Legislative | 8,000 | ✅ | | .96 |
 | Japan | 2009, 2012, 2014, 2017, 2021 | All | Legislative | 2,000 | ✅ | Ministry of Land, Infrastructure, Transport and Tourism; Ministry of Internal Affairs and Communications | 1 |
+| Kosovo | 2017, 2019, 2021 | All | Legislative | ~2,500 | ✅ | | 1 |
 | Latvia | 2014, 2018, 2022 | All | Legislative | 2,000 | ✅ | | 1 |
 | Lithuania | 2016, 2019, 2020 | All | Legislative, Presidential | 2,000 | ✅ | | 1 |
 | Mexico   | 1991 to 2021 | 2000, 2006, 2012, 2018 | Presidential, Legislative | 2,000,000| ✅ | Magar (2019) | .999 |
