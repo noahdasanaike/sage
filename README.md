@@ -12,7 +12,7 @@ Progress
 | :---        |    :----:   |          :---: |  :---: | :---:| :---: | :---: | ---:|
 | Afghanistan | 2018, 2019 | All | Legislative | ~20,000 (geocode level: 400) | ✅ | Colin Cookman | .95 |
 | Argentina | 2011, 2019, 2023 | 2023 | Presidential, Legislative | 100,000 | ✅ | | .98 |
-| Armenia | 2012, 2013, 2018, 2021 | Presidential, Legislative | 2,000 | ✅ | | .999 |
+| Armenia | 2012, 2013, 2018, 2021 | All |Presidential, Legislative | 2,000 | ✅ | | .999 |
 | Australia   | 2004, 2007, 2010, 2013, 2016, 2022  | All    | Legislative      | 80,000 | ✅ | Australian Electoral Commission | |
 | Austria | 1999, 2002, 2006, 2008, 2013, 2017, 2019 | >= 2013 | Legislative | 2,000 |  ✅ | | |
 | Bolivia | 2019, 2020 | All | Presidential, Legislative | 68,000 (geocode level: 6,600) | ✅ | | 1 |
