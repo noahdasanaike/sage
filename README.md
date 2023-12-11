@@ -48,6 +48,7 @@ Progress
 | Papua New Guinea | 1987, 1992, 1997, 2002, 2007, 2012, 2017 | All | Legislative | 100 |✅ | Wood (2019) | |
 | Paraguay | 2003, 2008, 2013, 2018 | All | Presidential, Legislative | 17,000 | ✅ | | .999 |
 | Peru | 2006, 2011, 2016, 2021 | 2021 | Legislative, Presidential | 150,000 (<= 2016), 83,000 (2021) | ✅ | | 1 |
+| Philippines | 2022 | Legislative, Presidential | 104,000 (geocode level: 50,000) | ✅ | | 1 |
 | Poland | 2000, 2005, 2010, 2015, 2019, 2020 | All | Presidential, Legislative | 27,000 | ✅ | National Electoral Commission | 1 |
 | Portugal | 1976 to 2022 | >= 2009 | Presidential, Legislative | 4,000 | ✅ | | .997 |
 | Romania | 2014, 2016, 2019, 2020 | != 2016 | Presidential, Legislative | 18,500 | ✅ | | 1 |
