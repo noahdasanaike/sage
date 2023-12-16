@@ -32,6 +32,7 @@ Progress
 | Germany | 1983, 1987, 1990, 1994, 1998, 2002, 2005, 2009, 2013, 2017, 2021 | >= 1998 | Legislative | 80,000 (geocode level: 11,000) | ✅ | | |
 | Greece | 2012, 2015, 2019 | All | Legislative | 20,000 | ✅ | | .987 | 
 | Hungary | 2022 | All | Legislative | 7,000 | ✅ | National Election Office | 1 |
+| Indonesia | 2019 | All | Presidential, Legislative | ~800,000 (geocode level: 80,000) | ✅ | | .997 |  
 | Ireland | 2002, 2007, 2011, 2016, 2020| 2016, 2020 | Legislative | 40 | ✅ | | 1 |
 | Israel | 2006 to 2022 | 2020, 2021 | Legislative | 11,000 | ✅ | | 1 |
 | Italy | 1953 to 2022 | >= 2002 | Legislative | 8,000 | ✅ | | .96 |
