@@ -6,7 +6,7 @@ Monitoring the construction of SAGE, the small-area global elections database, p
 
 Progress
 
-![current_coverage](https://raw.githubusercontent.com/noahdasanaike/sage/main/current_coverage.png)
+![current_coverage](current_coverage.png)
 
 | Country      | Years |  Polygon Years | Election Types     | Units per Year (approximate average) | Progress | Data Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: | :---:| :---: | :---: | ---:|
