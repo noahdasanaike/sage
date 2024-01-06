@@ -16,6 +16,7 @@ Progress
 | Armenia | 2012, 2013, 2018, 2021 | All |Presidential, Legislative | 2,000 | ✅ | | .999 |
 | Australia   | 2004, 2007, 2010, 2013, 2016, 2022  | All    | Legislative      | 80,000 | ✅ | Australian Electoral Commission | |
 | Austria | 1999, 2002, 2006, 2008, 2013, 2017, 2019 | >= 2013 | Legislative | 2,000 |  ✅ | | |
+| Bangladesh | 2018 | All | Legislative | 40,000 | ✅ | | .991 |
 | Bolivia | 2019, 2020 | All | Presidential, Legislative | 68,000 (geocode level: 6,600) | ✅ | | 1 |
 | Brazil | 2014, 2018, 2022 | All | Presidential, Legislative | 93,000 |✅ | | .989 |
 | Bulgaria | 2013 to 2023 | 2022, 2023 | Presidential, Legislative | 12,000 | ✅ | | .999 |
