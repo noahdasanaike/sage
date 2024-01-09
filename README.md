@@ -61,7 +61,8 @@ Progress
 | Russia | 2000, 2003, 2004, 2007, 2008, 2011, 2012, 2016, 2018 | 2008, 2011, 2012, 2016, 2018 | Legislative, Presidential | 95,000 |✅ | Central Election Commission | .87 (>= 2017); .71 (>= 2008) |
 | Serbia | 2000 to 2022 | 2017 | Presidential, Legislative | ~8,000 | ✅ | | .987 |
 | Slovenia | 2022 | All | Presidential | 3,000 | ✅ | | 1 |
-| Solomon Islands | 2006, 2010, 2014, 2019 |All |Legislative | 50 |✅ | Wood (2019) | |
+| Solomon Islands | 2006, 2010, 2014, 2019 | All |Legislative | 50 |✅ | Wood (2019) | |
+| South Africa | 2004, 2009, 2014, 2019 | All | Legislative | 20,000 | ✅ | | 1 |
 | South Korea | 2002, 2004, 2007, 2008, 2012, 2016, 2017, 2020, 2022 | >= 2007 | Legislative, Presidential | 13,000 to 34,000 | ✅ | | .999 |
 | Spain | 1982 to 2019 | >= 2016 | Legislative | 36,000 | ✅ | | .998 |
 | Sweden | 2006, 2010, 2014, 2018, 2022 | All | Legislative | 6,100 | ✅ | Valmyndigheten | 1 |
