@@ -43,6 +43,7 @@ Progress
 | Latvia | 2014, 2018, 2022 | All | Legislative | 2,000 | ✅ | | 1 |
 | Lithuania | 2016, 2019, 2020 | All | Legislative, Presidential | 2,000 | ✅ | | 1 |
 | Malaysia | 2008, 2013, 2018, 2022 | All | Legislative | 222 | ✅ | | 1 |
+| Madagascar | 2018, 2023 | All | Presidential | 25,000 | ✅ | | .997 |
 | Mexico   | 1991 to 2021 | 2000, 2006, 2012, 2018 | Presidential, Legislative | 2,000,000| ✅ | Magar (2019) | .999 |
 | Moldova | 2014, 2016, 2020, 2021 | 2020, 2021 | Presidential, Legislative | 2,000 | ✅ | | 1 |
 | Mongolia | 2021 | All | Presidential | ~1,700 (geocode level: 350) | ✅ | | .956 |
