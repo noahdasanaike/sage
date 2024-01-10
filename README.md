@@ -41,6 +41,7 @@ Progress
 | Japan | 2009, 2012, 2014, 2017, 2021 | All | Legislative | 2,000 | ✅ | Ministry of Land, Infrastructure, Transport and Tourism; Ministry of Internal Affairs and Communications | 1 |
 | Kosovo | 2017, 2019, 2021 | All | Legislative | ~2,500 | ✅ | | 1 |
 | Latvia | 2014, 2018, 2022 | All | Legislative | 2,000 | ✅ | | 1 |
+| Lesotho | 2017, 2022 | All | Legislative | 80 (geocode level: 10) | ✅ | | 1 |
 | Lithuania | 2016, 2019, 2020 | All | Legislative, Presidential | 2,000 | ✅ | | 1 |
 | Malaysia | 2008, 2013, 2018, 2022 | All | Legislative | 222 | ✅ | | 1 |
 | Malawi | 2019 | All | Legislative, Presidential | 11,000 (geocode level: 5,000) | ✅ | | .997 |
