@@ -53,6 +53,7 @@ Progress
 | Mexico   | 1991 to 2021 | 2000, 2006, 2012, 2018 | Presidential, Legislative | 2,000,000| ✅ | Magar (2019) | .999 |
 | Moldova | 2014, 2016, 2020, 2021 | 2020, 2021 | Presidential, Legislative | 2,000 | ✅ | | 1 |
 | Mongolia | 2021 | All | Presidential | ~1,700 (geocode level: 350) | ✅ | | .956 |
+| Myanmar | 2010, 2015 | All | Legislative | 320 | ✅ | | .980 |
 | Netherlands | 1918 to 2017 | All | Legislative | 115 to 1,120 | ✅ | | .996 |
 | New Zealand   | 1999, 2002, 2005, 2008, 2011, 2014, 2017, 2020  | 2008, 2011, 2014, 2017, 2020| Legislative | 5,000 | ✅ | Electoral Commission New Zealand | .986 |
 | Norway | 2009, 2013, 2017, 2021 | 2021 | Legislative | 226 (<= 2013), 1,250 (>= 2017) | ✅ | | .986 |
