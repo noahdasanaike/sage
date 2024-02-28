@@ -75,6 +75,7 @@ Progress
 | Sweden | 2006, 2010, 2014, 2018, 2022 | All | Legislative | 6,100 | ✅ | Valmyndigheten | 1 |
 | Switzerland | 1971 to 2023 | >= 2011 | Legislative | ~2,400 | ✅ | | 1 |
 | Taiwan | 1996 to 2020 | 2020 | Presidential, Legislative | 15,000 | ✅ | | .993 |
+| Thailand | 2023 | All | Legislative | 400 | ✅ | | 1 |
 | Tunisia | 2014 | All | Presidential | 19,000 | ✅ | | 1 |
 | Ukraine | 2019 | All | Presidential, Legislative | 30,000 |  ✅ | | .996 |
 | United Kingdom | 2005, 2010, 2015, 2017, 2019 | All | Legislative | 650 | ✅ | | 1 |
