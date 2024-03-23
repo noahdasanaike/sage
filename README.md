@@ -17,6 +17,7 @@ Progress
 | Australia   | 2004, 2007, 2010, 2013, 2016, 2022  | All    | Legislative      | 80,000 | ✅ | Australian Electoral Commission | |
 | Austria | 1999, 2002, 2006, 2008, 2013, 2017, 2019 | >= 2013 | Legislative | 2,000 |  ✅ | | |
 | Bangladesh | 2018 | All | Legislative | 40,000 | ✅ | | .991 |
+| Belgium | 2014, 2019 | All | Legislative | 550 | ✅ | | 1 |
 | Bolivia | 2019, 2020 | All | Presidential, Legislative | 68,000 (geocode level: 6,600) | ✅ | | 1 |
 | Bosnia and Herzegovina | 2018, 2022 | All | Legislative | 3,000| ✅ | | .999 |
 | Botswana | 2014, 2019 | All | Legislative | 57 | ✅ | | 1 |
