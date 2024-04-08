@@ -38,6 +38,7 @@ Progress
 | France | 2002, 2007, 2012, 2017, 2022 | All | Legislative, Presidential | 70,000 (>= 2017); 35,000 (<2017) | ✅ | Ministry of the Interior | .997 (>= 2017) |
 | Georgia | 2012, 2016, 2020 | All | Legislative | 3,600 | ✅ | | .983 |
 | Germany | 1983, 1987, 1990, 1994, 1998, 2002, 2005, 2009, 2013, 2017, 2021 | >= 1998 | Legislative | 80,000 (geocode level: 11,000) | ✅ | | |
+| Ghana | 2012, 2016, 2020 | All | Presidential, Legislative | 275| ✅ | |1  |
 | Greece | 2012, 2015, 2019 | All | Legislative | 20,000 | ✅ | | .987 | 
 | Guatemala | 2023 | All | Legislative | 24,000 (geocode level: 3,500) |  ✅ | | .928 |
 | Guyana | 2015 | All | Legislative | 2,000 | ✅ | | | .999 |
