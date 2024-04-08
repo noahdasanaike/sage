@@ -29,7 +29,7 @@ Progress
 | Chile | 2013, 2017, 2021 | All | Legislative, Presidential | 90,000 (geocode level: 7,000) | ✅ | | 1 |
 | Croatia | 2011, 2014, 2015, 2016, 2019, 2020 | All | Legislative, Presidential | 6,100 |  ✅ | | 1 |
 | Czechia | 2002, 2006, 2010, 2013, 2017, 2021 | 2017, 2021 | Legislative | 14,800 | ✅ | | .989 |
-| Denmark | 2011, 2015, 2019, 2022 | 2011, 2015, 2019, 2022  | Legislative | 1,300 |  ✅ | KMDValg | 1 |
+| Denmark | 2011, 2015, 2019, 2022 | All  | Legislative | 1,300 |  ✅ | KMDValg | 1 |
 | Ecuador | 2017, 2021, 2023 | All | Legislative (>= 2021), Presidential | 1,220 | ✅ | | 1 |
 | El Salvador | 2014, 2018 | All | Legislative, Presidential | 1,600 | ✅ | | 1 |
 | Estonia | 2015, 2019 | 2019 | Legislative | 500 | ✅ | | 1 |
