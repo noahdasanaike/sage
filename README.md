@@ -24,7 +24,7 @@ Progress
 | Brazil | 2014, 2018, 2022 | All | Presidential, Legislative | 93,000 |✅ | | .989 |
 | Bulgaria | 2013 to 2023 | 2022, 2023 | Presidential, Legislative | 12,000 | ✅ | | .999 |
 | Canada   | 1997, 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021 |>= 2000 | Presidential, Legislative  | 70,000 | ✅ | Elections Canada | .907 |
-| Colombia | 1958 to 2018 | >= 1994 | Presidential, Legislative | 1,000 | ✅ || .990 |
+| Colombia | 2018 | All | Legislative | 102,000 (geocode level: 11,000) | ✅ || .988 |
 | Costa Rica | 2022 | All | Legislative | 2,101 | ✅ | | 1 |
 | Chile | 2013, 2017, 2021 | All | Legislative, Presidential | 90,000 (geocode level: 7,000) | ✅ | | 1 |
 | Croatia | 2011, 2014, 2015, 2016, 2019, 2020 | All | Legislative, Presidential | 6,100 |  ✅ | | 1 |
