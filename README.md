@@ -40,6 +40,7 @@ Progress
 | Germany | 1983, 1987, 1990, 1994, 1998, 2002, 2005, 2009, 2013, 2017, 2021 | >= 1998 | Legislative | 80,000 (geocode level: 11,000) | ✅ | | |
 | Ghana | 2012, 2016, 2020 | All | Presidential, Legislative | 275| ✅ | |1  |
 | Greece | 2012, 2015, 2019 | All | Legislative | 20,000 | ✅ | | .987 | 
+| Greenland | 2002 to 2022 | All | Legislative | 72 | ✅ | | 1 |
 | Guatemala | 2023 | All | Legislative | 24,000 (geocode level: 3,500) |  ✅ | | .928 |
 | Guyana | 2015 | All | Legislative | 2,000 | ✅ | | | .999 |
 | Hungary | 2022 | All | Legislative | 7,000 | ✅ | National Election Office | 1 |
