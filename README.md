@@ -83,6 +83,7 @@ Progress
 | South Africa | 2004, 2009, 2014, 2019 | All | Legislative | 20,000 | ✅ | | 1 |
 | South Korea | 2002, 2004, 2007, 2008, 2012, 2016, 2017, 2020, 2022 | >= 2007 | Legislative, Presidential | 13,000 to 34,000 | ✅ | | .999 |
 | Spain | 1982 to 2019 | >= 2016 | Legislative | 36,000 | ✅ | | .998 |
+| Sri Lanka | 2020 | All | Legislative | 150 | ✅ | | 1 |
 | Sweden | 2006, 2010, 2014, 2018, 2022 | All | Legislative | 6,100 | ✅ | Valmyndigheten | 1 |
 | Switzerland | 1971 to 2023 | >= 2011 | Legislative | ~2,400 | ✅ | | 1 |
 | Taiwan | 1996 to 2020 | 2020 | Presidential, Legislative | 15,000 | ✅ | | .993 |
