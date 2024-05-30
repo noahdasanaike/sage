@@ -96,3 +96,4 @@ Progress
 | Uruguay | 2014, 2019 | 2019 | Legislative, Presidential | 7,100 | ✅ | | .886 |
 | Vanuatu | 2002, 2004, 2012, 2016, 2020 | All | Legislative | 17 | ✅ | Vanuatu Election Commission, Adam Carr | |
 | Venezuela | 2013 | All | Presidential | 39,256 | ✅ | | .991 |
+| Zambia | 2021 | All | Presidential | 150 | ✅ | | 1 |
