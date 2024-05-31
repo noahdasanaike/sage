@@ -5,6 +5,7 @@
 Monitoring the construction of SAGE, the small-area global elections database, providing small-area (party) election results with polygon geometry for national elections.
 
 Progress
+(map is outdated)
 
 ![current_coverage](current_coverage.png)
 
