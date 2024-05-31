@@ -45,7 +45,7 @@ Progress
 | Greenland | 2002 to 2022 | All | Legislative | 72 | ✅ | | 1 |
 | Guatemala | 2023 | All | Legislative | 24,000 (geocode level: 3,500) |  ✅ | | .928 |
 | Guyana | 2015 | All | Legislative | 2,000 | ✅ | | | .999 |
-| Hungary | 2022 | All | Legislative | 7,000 | ✅ | National Election Office | 1 |
+| Hungary | 2022 | All | Legislative | 7,000 | ✅ | | 1 |
 | Indonesia | 2019 | All | Legislative, Presidential | ~800,000 (geocode level: 80,000) | ✅ | | .997 | 
 | Iran | 2017 | All | Presidential | 380 | ✅ | | 1 |
 | Ireland | 2002, 2007, 2011, 2016, 2020| 2016, 2020 | Legislative | 40 | ✅ | | 1 |
