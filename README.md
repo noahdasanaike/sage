@@ -91,7 +91,7 @@ Progress
 | Taiwan | 1996 to 2020 | 2020 | Legislative, Presidential | 15,000 | ✅ | | .993 |
 | Thailand | 2023 | All | Legislative | 400 | ✅ | | 1 |
 | Tunisia | 2014 | All | Presidential | 19,000 | ✅ | | 1 |
-| Turkey | | All | Legislative, Presidential | 190,000 (geocode level: 50,000) | ✅ | | 1 |
+| Turkey | 2011, 2014, 2015, 2018, 2023 | All | Legislative, Presidential | 190,000 (geocode level: 50,000) | ✅ | | 1 |
 | Ukraine | 2019 | All | Legislative, Presidential | 30,000 |  ✅ | | .996 |
 | United Kingdom | 2005, 2010, 2015, 2017, 2019 | All | Legislative | 650 | ✅ | | 1 |
 | United States of America  | 2016, 2020  | All | Presidential  | 820,000 | ✅ | VEST | .999 |
