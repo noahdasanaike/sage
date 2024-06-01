@@ -65,6 +65,7 @@ Progress
 | Mongolia | 2021 | All | Presidential | ~1,700 (geocode level: 350) | ✅ | | .956 |
 | Myanmar | 2010, 2015 | All | Legislative | 320 | ✅ | | .980 |
 | Namibia | 2014, 2019 | All | Legislative, Presidential | 120| ✅ | | 1 |
+| Nepal | 2017, 2021 | All | Legislative | 165| ✅ | | 1 |
 | Netherlands | 2010, 2012, 2017, 2021| All | Legislative | 400 (2017), 10,000 (others) | ✅ | | .999 |
 | New Zealand   | 1999, 2002, 2005, 2008, 2011, 2014, 2017, 2020  | 2008, 2011, 2014, 2017, 2020| Legislative | 5,000 | ✅ | | .986 |
 | Norway | 2009, 2013, 2017, 2021 | 2021 | Legislative | 226 (<= 2013), 1,250 (>= 2017) | ✅ | | .986 |
