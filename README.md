@@ -47,6 +47,7 @@ Progress
 | Guyana | 2015 | All | Legislative | 2,000 | ✅ | | | .999 |
 | Hong Kong | 2016, 2021 | All | Legislative | (2021: 650, 2016: 100) | ✅ | | 1 |
 | Hungary | 2022 | All | Legislative | 7,000 | ✅ | | 1 |
+| Iceland | 1959 to 2021 | Legislative | (8 < 2003, 6  >) | ✅ | | 1 |
 | Indonesia | 2019 | All | Legislative, Presidential | ~800,000 (geocode level: 80,000) | ✅ | | .997 | 
 | Iran | 2017 | All | Presidential | 380 | ✅ | | 1 |
 | Ireland | 2002, 2007, 2011, 2016, 2020| 2016, 2020 | Legislative | 40 | ✅ | | 1 |
