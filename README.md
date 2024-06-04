@@ -69,7 +69,7 @@ Progress
 | Nepal | 2017, 2021 | All | Legislative | 165| ✅ | | 1 |
 | Netherlands | 2010, 2012, 2017, 2021| All | Legislative | 400 (2017), 10,000 (others) | ✅ | | .999 |
 | New Zealand   | 1999, 2002, 2005, 2008, 2011, 2014, 2017, 2020  | 2008, 2011, 2014, 2017, 2020| Legislative | 5,000 | ✅ | | .986 |
-| Nigeria | 2019 | All | Legislative | 340 | ✅ | | .994 |
+| Nigeria | 2019 | All | Legislative | 350 | ✅ | | 1 |
 | Norway | 2009, 2013, 2017, 2021 | 2021 | Legislative | 226 (<= 2013), 1,250 (>= 2017) | ✅ | | .986 |
 | Pakistan | 2018 | All | Legislative | 72,000 (geocode level: 250) | ✅ | Colin Cookman | 1 |
 | Panama | 2004, 2009 | All | Legislative | 620 | ✅ | | .950 |
