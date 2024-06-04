@@ -31,6 +31,7 @@ Progress
 | Croatia | 2011, 2014, 2015, 2016, 2019, 2020 | All | Legislative, Presidential | 6,100 |  ✅ | | 1 |
 | Czechia | 2002, 2006, 2010, 2013, 2017, 2021 | 2017, 2021 | Legislative | 14,800 | ✅ | | .989 |
 | Denmark | 2011, 2015, 2019, 2022 | All  | Legislative | 1,300 |  ✅ || 1 |
+| Dominica | 2019, 2022 | All | Legislative | 230 |  ✅ || .986 |
 | Dominican Republic | 2000 to 2024 | 2002, 2004, 2006, 2008, 2012, 2023 | Legislative, Presidential | 12,000 | ✅ | | .995 
 | Ecuador | 2017, 2021, 2023 | All | Legislative (>= 2021), Presidential | 1,220 | ✅ | | 1 |
 | El Salvador | 2014, 2018 | All | Legislative, Presidential | 1,600 | ✅ | | 1 |
