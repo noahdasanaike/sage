@@ -46,6 +46,7 @@ Progress
 | Greenland | 2002 to 2022 | All | Legislative | 72 | ✅ | | 1 |
 | Guatemala | 2023 | All | Legislative | 24,000 (geocode level: 3,500) |  ✅ | | .928 |
 | Guyana | 2015 | All | Legislative | 2,000 | ✅ | | | .999 |
+| Honduras | 2021 | All | Legislative, Presidential | 18,300 (geocode level: 5,700 )| ✅ | | | .999 |
 | Hong Kong | 2016, 2021 | All | Legislative | (2021: 650, 2016: 100) | ✅ | | 1 |
 | Hungary | 2022 | All | Legislative | 7,000 | ✅ | | 1 |
 | Iceland | 1959 to 2021 | All | Legislative | (8 < 2003, 6  >) | ✅ | | 1 |
