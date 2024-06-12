@@ -25,6 +25,7 @@ Progress
 | Botswana | 2014, 2019 | All | Legislative | 57 | ✅ | | 1 |
 | Brazil | 2014, 2018, 2022 | All | Legislative, Presidential | 93,000 |✅ | | .989 |
 | Bulgaria | 2013 to 2023 | 2022, 2023 | Legislative, Presidential | 12,000 | ✅ | | .999 |
+| Cabo Verde | 2021 | All | Presidential | 1,000| ✅ | | .966 |
 | Canada   | 1997, 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021 |>= 2000 | Legislative, Presidential  | 70,000 | ✅ | | .907 |
 | Colombia | 2018 | All | Legislative | 102,000 (geocode level: 11,000) | ✅ || .988 |
 | Costa Rica | 2022 | All | Legislative | 2,101 | ✅ | | 1 |
