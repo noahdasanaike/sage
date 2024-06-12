@@ -90,6 +90,7 @@ Progress
 | Romania | 2014, 2016, 2019, 2020 | != 2016 | Legislative, Presidential | 18,500 | ✅ | | 1 |
 | Russia | 2000, 2003, 2004, 2007, 2008, 2011, 2012, 2016, 2018 | >= 2012 | Legislative, Presidential | 95,000 |✅ |  | 1 (2012), .970 (2016, 2018) |
 | Serbia | 2000 to 2022 | 2017 | Legislative, Presidential | ~8,000 | ✅ | | .987 |
+| Singapore | 2020 | All | Legislative | 31 | ✅ | | 1 |
 | Slovakia | 2016, 2019, 2020, 2023 | All | Legislative, Presidential | 6,000 (geocode level: 1,500) | ✅ | | 1 |
 | Slovenia | 2022 | All | Presidential | 3,000 | ✅ | | 1 |
 | Solomon Islands | 2006, 2010, 2014, 2019 | All |Legislative | 50 |✅ | Wood (2019) | |
