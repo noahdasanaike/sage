@@ -62,6 +62,7 @@ Progress
 | Latvia | 2014, 2018, 2022 | All | Legislative | 2,000 | ✅ | | 1 |
 | Lesotho | 2017, 2022 | All | Legislative | 80 (geocode level: 10) | ✅ | | 1 |
 | Lithuania | 2016, 2019, 2020 | All | Legislative, Presidential | 2,000 | ✅ | | 1 |
+| Luxembourg | 2023 | All | Legislative | 100| ✅ | | 1 |
 | Malaysia | 2008, 2013, 2018, 2022 | All | Legislative | 222 | ✅ | | 1 |
 | Malawi | 2019 | All | Legislative, Presidential | 11,000 (geocode level: 5,000) | ✅ | | .997 |
 | Madagascar | 2018, 2023 | All | Presidential | 25,000 | ✅ | | .997 |
