@@ -62,6 +62,7 @@ Progress
 | Japan | 2009, 2012, 2014, 2017, 2021 | All | Legislative | 2,000 | ✅ | | 1 |
 | Kosovo | 2017, 2019, 2021 | All | Legislative | ~2,500 | ✅ | | 1 |
 | Latvia | 2014, 2018, 2022 | All | Legislative | 2,000 | ✅ | | 1 |
+| Lebanon | 2018, 2022 | All | Legislative | 6,800| ✅ | | .998|
 | Lesotho | 2017, 2022 | All | Legislative | 80 (geocode level: 10) | ✅ | | 1 |
 | Lithuania | 2016, 2019, 2020 | All | Legislative, Presidential | 2,000 | ✅ | | 1 |
 | Luxembourg | 2023 | All | Legislative | 100| ✅ | | 1 |
