@@ -15,8 +15,8 @@ Progress
 | Albania | 2017, 2021 | 2021 | Legislative | 5,200 |  ✅ | | 1 |
 | Argentina | 2011, 2019, 2023 | 2023 | Legislative, Presidential | 100,000 | ✅ | | .98 |
 | Armenia | 2012, 2013, 2018, 2021 | All |Legislative, Presidential | 2,000 | ✅ | | .999 |
-| Australia   | 2004, 2007, 2010, 2013, 2016, 2022  | All    | Legislative      | 80,000 | ✅ | | |
-| Austria | 1999, 2002, 2006, 2008, 2013, 2017, 2019 | >= 2013 | Legislative | 2,000 |  ✅ | | |
+| Australia   | 2004, 2007, 2010, 2013, 2016, 2022  | All    | Legislative      | 8,000 | ✅ | | 1 |
+| Austria | 1999, 2002, 2006, 2008, 2013, 2017, 2019 | >= 2013 | Legislative | 2,000 |  ✅ | | 1 |
 | Bangladesh | 2018 | All | Legislative | 40,000 | ✅ | | .991 |
 | Belgium | 2014, 2019 | All | Legislative | 590 | ✅ | | 1 |
 | Bhutan | 2018 | All | Legislative | 865| ✅ | | .999 |
