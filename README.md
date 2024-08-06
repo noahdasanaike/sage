@@ -54,6 +54,7 @@ Progress
 | Hungary | 2022 | All | Legislative | 7,000 | ✅ | | 1 |
 | Iceland | 1959 to 2021 | All | Legislative | (8 < 2003, 6  >) | ✅ | | 1 |
 | Indonesia | 2019 | All | Legislative, Presidential | ~800,000 (geocode level: 80,000) | ✅ | | .997 | 
+| India | 2019 | All | Legislative | 867,000 | ✅ | | .944 | 
 | Iran | 2017 | All | Presidential | 380 | ✅ | | 1 |
 | Ireland | 2002, 2007, 2011, 2016, 2020| 2016, 2020 | Legislative | 40 | ✅ | | 1 |
 | Israel | 2006 to 2022 | 2020, 2021 | Legislative | 11,000 | ✅ | | 1 |
