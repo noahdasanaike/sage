@@ -5,9 +5,10 @@
 Monitoring the construction of SAGE, the small-area global elections database, providing small-area (party) election results with polygon geometry for national elections.
 
 Progress
-(map is outdated)
 
 ![current_coverage](current_coverage.png)
+
+In addition to each of the sources listed, I thank Brian Engelsma for his African parliamentary constituency shapefiles.
 
 | Country      | Years |  Polygon Years | Election Types     | Units per Year (approximate average) | Progress | Non-Official Data Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: | :---:| :---: | :---: | ---:|
