@@ -36,7 +36,7 @@ In addition to each of the sources listed, I thank Brian Engelsma for his Africa
 | Czechia | 2002, 2006, 2010, 2013, 2017, 2021 | 2017, 2021 | Legislative | 14,800 | ✅ | | .989 |
 | Denmark | 2011, 2015, 2019, 2022 | All  | Legislative | 1,300 |  ✅ || 1 |
 | Dominica | 2019, 2022 | All | Legislative | 230 |  ✅ || .986 |
-| Dominican Republic | 2000 to 2024 | 2002, 2004, 2006, 2008, 2012, 2023 | Legislative, Presidential | 12,000 | ✅ | | .995 
+| Dominican Republic | 2000 to 2024 | 2002, 2004, 2006, 2008, 2012, 2023 | Legislative, Presidential | 12,000 | ✅ | | .995 |
 | Ecuador | 2017, 2021, 2023 | All | Legislative (>= 2021), Presidential | 1,220 | ✅ | | 1 |
 | El Salvador | 2014, 2018 | All | Legislative, Presidential | 1,600 | ✅ | | 1 |
 | Estonia | 2015, 2019 | 2019 | Legislative | 500 | ✅ | | 1 |
@@ -44,7 +44,7 @@ In addition to each of the sources listed, I thank Brian Engelsma for his Africa
 | Finland | 2011, 2012, 2015, 2018, 2019, 2023 | >= 2015 | Legislative, Presidential | 1,900 (2019); 310 (>= 2015) | ✅ | | .996 |
 | France | 2002, 2007, 2012, 2017, 2022 | All | Legislative, Presidential | 70,000 (>= 2017); 35,000 (<2017) | ✅ | | .997 (>= 2017) |
 | Georgia | 2012, 2016, 2020 | All | Legislative | 3,600 | ✅ | | .983 |
-| Germany | 1983, 1987, 1990, 1994, 1998, 2002, 2005, 2009, 2013, 2017, 2021 | >= 1998 | Legislative | 80,000 (geocode level: 11,000) | ✅ | | |
+| Germany | 1983, 1987, 1990, 1994, 1998, 2002, 2005, 2009, 2013, 2017, 2021 | >= 1998 | Legislative | 80,000 (geocode level: 11,000) | ✅ | | .989 |
 | Ghana | 2012, 2016, 2020 | All | Legislative, Presidential | 275| ✅ | |1  |
 | Greece | 2012, 2015, 2019 | All | Legislative | 20,000 | ✅ | | .987 | 
 | Greenland | 2002 to 2022 | All | Legislative | 72 | ✅ | | 1 |
@@ -84,7 +84,7 @@ In addition to each of the sources listed, I thank Brian Engelsma for his Africa
 | Norway | 2009, 2013, 2017, 2021 | 2021 | Legislative | 226 (<= 2013), 1,250 (>= 2017) | ✅ | | .986 |
 | Pakistan | 2018 | All | Legislative | 72,000 (geocode level: 250) | ✅ | Colin Cookman | 1 |
 | Panama | 2004, 2009 | All | Legislative | 620 | ✅ | | .950 |
-| Papua New Guinea | 1987, 1992, 1997, 2002, 2007, 2012, 2017 | All | Legislative | 100 |✅ | Wood (2019) | |
+| Papua New Guinea | 1987, 1992, 1997, 2002, 2007, 2012, 2017 | All | Legislative | 100 |✅ | Wood (2019) | 1 |
 | Paraguay | 2003, 2008, 2013, 2018 | All | Legislative, Presidential | 17,000 | ✅ | | .999 |
 | Peru | 2006, 2011, 2016, 2021 | 2021 | Legislative, Presidential | 150,000 (<= 2016), 83,000 (2021) | ✅ | | 1 |
 | Philippines | 2022 | All | Legislative, Presidential | 104,000 (geocode level: 50,000) | ✅ | | 1 |
@@ -96,7 +96,7 @@ In addition to each of the sources listed, I thank Brian Engelsma for his Africa
 | Singapore | 2020 | All | Legislative | 31 | ✅ | | 1 |
 | Slovakia | 2016, 2019, 2020, 2023 | All | Legislative, Presidential | 6,000 (geocode level: 1,500) | ✅ | | 1 |
 | Slovenia | 2022 | All | Presidential | 3,000 | ✅ | | 1 |
-| Solomon Islands | 2006, 2010, 2014, 2019 | All |Legislative | 50 |✅ | Wood (2019) | |
+| Solomon Islands | 2006, 2010, 2014, 2019 | All |Legislative | 50 |✅ | Wood (2019) | 1 |
 | South Africa | 2004, 2009, 2014, 2019 | All | Legislative | 20,000 | ✅ | | 1 |
 | South Korea | 2002, 2004, 2007, 2008, 2012, 2016, 2017, 2020, 2022 | >= 2007 | Legislative, Presidential | 13,000 to 34,000 | ✅ | | .999 |
 | Spain | 1982 to 2019 | >= 2016 | Legislative | 36,000 | ✅ | | .998 |
@@ -112,6 +112,6 @@ In addition to each of the sources listed, I thank Brian Engelsma for his Africa
 | United Kingdom | 2005, 2010, 2015, 2017, 2019 | All | Legislative | 650 | ✅ | | 1 |
 | United States of America  | 2016, 2020  | All | Presidential  | 820,000 | ✅ | VEST | .999 |
 | Uruguay | 2014, 2019 | 2019 | Legislative, Presidential | 7,100 | ✅ | | .886 |
-| Vanuatu | 2002, 2004, 2012, 2016, 2020 | All | Legislative | 17 | ✅ |  | |
+| Vanuatu | 2002, 2004, 2012, 2016, 2020 | All | Legislative | 17 | ✅ |  | 1 |
 | Venezuela | 2013 | All | Presidential | 39,256 | ✅ | | .991 |
 | Zambia | 2021 | All | Presidential | 150 | ✅ | | 1 |
