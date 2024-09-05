@@ -87,7 +87,7 @@ In addition to each of the sources listed, I thank Brian Engelsma for his Africa
 | Namibia | 2014, 2019 | All | Legislative, Presidential | 120| ✅ | | 1 |
 | Nepal | 2017, 2021 | All | Legislative | 165| ✅ | | 1 |
 | Netherlands | 2010, 2012, 2017, 2021| All | Legislative | 400 (2017), 10,000 (others) | ✅ | | .999 |
-| New Zealand   | 1999, 2002, 2005, 2008, 2011, 2014, 2017, 2020  | All | Legislative | 5,000 | ✅ | | .999 |
+| New Zealand   | 1999 to 2023  | All | Legislative | 5,000 | ✅ | | .999 |
 | Nigeria | 2019 | All | Legislative | 350 | ✅ | | 1 |
 | North Macedonia | 2016, 2024 | All | Legislative, Presidential | 3,500 | ✅ | | .999 |
 | Norway | 2009, 2013, 2017, 2021 | 2021 | Legislative | 226 (<= 2013), 1,250 (>= 2017) | ✅ | | .986 |
