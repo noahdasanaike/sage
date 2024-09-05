@@ -4,6 +4,15 @@
 
 Monitoring the construction of SAGE, the small-area global elections database, providing small-area (party) election results with polygon geometry for national elections.
 
+Change Log
+
+v1.1: September 5th, 2024
+- fixed vote count totals for Uruguay and the Solomon Islands
+- added 2023 general elections for New Zealand
+
+v1.0: August 6th, 2024
+- initial completion of the data
+
 Progress
 
 ![current_coverage](current_coverage.png)
