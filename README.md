@@ -83,6 +83,7 @@ In addition to each of the sources listed, I thank Brian Engelsma for his Africa
 | Mexico   | 1991 to 2021 | 2000, 2006, 2012, 2018 | Legislative, Presidential | 2,000,000| ✅ | Magar (2019) | .999 |
 | Moldova | 2014, 2016, 2020, 2021 | 2020, 2021 | Legislative, Presidential | 2,000 | ✅ | | 1 |
 | Mongolia | 2021 | All | Presidential | ~1,700 (geocode level: 350) | ✅ | | .956 |
+| Montenegro | 2023 | All | Legislative | ~1,000 | ✅ | | 1 |
 | Myanmar | 2010, 2015 | All | Legislative | 320 | ✅ | | .980 |
 | Namibia | 2014, 2019 | All | Legislative, Presidential | 120| ✅ | | 1 |
 | Nepal | 2017, 2021 | All | Legislative | 165| ✅ | | 1 |
