@@ -2,26 +2,45 @@
 
 # Small-Area Global Elections (SAGE) Archive
 
-Monitoring the construction of SAGE, the small-area global elections database, providing small-area election results with polygon geometry for national elections
+[![Version](https://img.shields.io/badge/version-1.1-blue.svg)](https://github.com/yourusername/sage)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-Change Log
+Monitoring the construction of SAGE, the small-area global elections database, providing small-area election results with polygon geometry for national elections.
 
-announcement: November 15th, 2024
-- began data collection for LSAGE: local-level election (mayor, municipal council, etc.) returns
-- so far, finished with United Kingdom, France, and Sweden
+## Table of Contents
+- [Introduction](#introduction)
+- [Change Log](#change-log)
+- [Usage](#usage)
+- [Progress](#progress)
+- [Country Coverage](#country-coverage)
+- [Acknowledgements](#acknowledgements)
 
-v1.1: September 5th, 2024
-- fixed vote count totals for Uruguay and the Solomon Islands
-- added 2023 general elections for New Zealand
+## Introduction
 
-v1.0: August 6th, 2024
-- initial completion of the data
+SAGE is a comprehensive database of small-area election results for national elections worldwide. It includes polygon geometry data to facilitate spatial analysis of electoral outcomes.
 
-Progress
+## Change Log
+
+### LSAGE Announcement (November 15th, 2024)
+- Began data collection for LSAGE: local-level election (mayor, municipal council, etc.) returns
+- Completed data for United Kingdom, France, and Sweden
+
+### v1.1 (September 5th, 2024)
+- Fixed vote count totals for Uruguay and the Solomon Islands
+- Added 2023 general elections for New Zealand
+
+### v1.0 (August 6th, 2024)
+- Initial completion of the data
+
+## Usage
+
+Stay tuned for further information about the release of SAGE
+
+## Progress
 
 ![current_coverage](current_coverage.png)
 
-In addition to each of the sources listed, I thank Brian Engelsma for his African parliamentary constituency shapefiles.
+## Country Coverage
 
 | Country      | Years |  Polygon Years | Election Types     | Units per Year (approximate average) | Progress | Non-Official Data Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: | :---:| :---: | :---: | ---:|
@@ -129,3 +148,8 @@ In addition to each of the sources listed, I thank Brian Engelsma for his Africa
 | Vanuatu | 2002, 2004, 2012, 2016, 2020 | All | Legislative | 17 | ✅ |  | 1 |
 | Venezuela | 2013 | All | Presidential | 39,256 | ✅ | | .991 |
 | Zambia | 2021 | All | Presidential | 150 | ✅ | | 1 |
+
+
+## Acknowledgements
+
+In addition to each of the sources listed, I thank Brian Engelsma for his African parliamentary constituency shapefiles
