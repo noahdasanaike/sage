@@ -17,7 +17,7 @@ Monitoring the construction of SAGE, the small-area global elections database, p
 
 ## Introduction
 
-SAGE is a comprehensive database of small-area election results for national elections worldwide. It includes polygon geometry data to facilitate spatial analysis of electoral outcomes.
+SAGE is a comprehensive database of geocoded, small-area (polling station, municipality, or equivalent) election results for national elections worldwide
 
 ## Change Log
 
