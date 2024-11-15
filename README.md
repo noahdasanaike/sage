@@ -6,6 +6,10 @@ Monitoring the construction of SAGE, the small-area global elections database, p
 
 Change Log
 
+announcement: November 15th, 2024
+- began data collection for LSAGE: local-level election (mayor, municipal council, etc.) returns
+- so far, finished with United Kingdom, France, and Sweden
+
 v1.1: September 5th, 2024
 - fixed vote count totals for Uruguay and the Solomon Islands
 - added 2023 general elections for New Zealand
