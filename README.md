@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/noahdasanaike/sage/refs/heads/main/fig1_alt.jpg?token=GHSAT0AAAAAAB7OPBQZXAW6NPEDEGODPS5UZZ6DZ6A" width="200" height="200" /></p>
+<p align="center"><img src="https://github.com/noahdasanaike/sage/assets/23142832/7a7357f5-d14a-4808-abd8-eb3c866a5da9" width="200" height="200" /></p>
 
 # Small-Area Global Elections (SAGE) Archive
 
@@ -38,7 +38,7 @@ Stay tuned for further information about the release of SAGE
 
 ## Progress
 
-![current_coverage](current_coverage.png)
+![current_coverage](fig1_alt.jpg)
 
 ## Country Coverage
 
