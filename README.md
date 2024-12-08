@@ -21,15 +21,18 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
+### v0.2 (December 8th, 2024)
+- Fixed overseas France geometry (meridian Thiessen issues)
+
 ### LSAGE Announcement (November 15th, 2024)
 - Began data collection for LSAGE: local-level election (mayor, municipal council, etc.) returns
 - Completed data for United Kingdom, France, and Sweden
 
-### v1.1 (September 5th, 2024)
+### v0.1 (September 5th, 2024)
 - Fixed vote count totals for Uruguay and the Solomon Islands
 - Added 2023 general elections for New Zealand
 
-### v1.0 (August 6th, 2024)
+### v0.0 (August 6th, 2024)
 - Initial completion of the data
 
 ## Usage
