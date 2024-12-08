@@ -2,7 +2,7 @@
 
 # Small-Area Global Elections (SAGE) Archive
 
-[![Version](https://img.shields.io/badge/version-1.1-blue.svg)](https://github.com/noahdasanaike/sage)
+[![Version](https://img.shields.io/badge/version-0.2-blue.svg)](https://github.com/noahdasanaike/sage)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 Monitoring the construction of SAGE, the small-area global elections database, providing small-area election results with polygon geometry for national elections.
