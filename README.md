@@ -145,7 +145,7 @@ Stay tuned for further information about the release of SAGE
 | Tunisia | 2014 | All | Presidential | 19,000 | ✅ | | 1 |
 | Turkey | 2011, 2014, 2015, 2018, 2023 | All | Legislative, Presidential | 190,000 (geocode level: 50,000) | ✅ | | 1 |
 | Ukraine | 2019 | All | Legislative, Presidential | 30,000 |  ✅ | | .996 |
-| United Kingdom | 2005, 2010, 2015, 2017, 2019 | All | Legislative | 650 | ✅ | | 1 |
+| United Kingdom | 2005, 2010, 2015, 2017, 2019, 2024 | All | Legislative | ~650 | ✅ | | 1 |
 | United States of America  | 2016, 2020  | All | Presidential  | 820,000 | ✅ | VEST | .999 |
 | Uruguay | 2014, 2019 | 2019 | Legislative, Presidential | 7,100 | ✅ | | .886 |
 | Vanuatu | 2002, 2004, 2012, 2016, 2020 | All | Legislative | 17 | ✅ |  | 1 |
