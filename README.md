@@ -96,7 +96,7 @@ Stay tuned for further information about the release of SAGE
 | Israel | 2006 to 2022 | 2020, 2021 | Legislative | 11,000 | ✅ | | 1 |
 | Italy | 1953 to 2022 | >= 2002 | Legislative | 8,000 | ✅ | | .96 |
 | Jamaica | 2007, 2011, 2016, 2020 | All | Legislative | 6,500 (geocode level: 2,500)| ✅ | | .965 |
-| Japan | 2009, 2012, 2014, 2017, 2021 | All | Legislative | 2,000 | ✅ | | 1 |
+| Japan | 2009, 2012, 2014, 2017, 2021, 2024 | All | Legislative | 2,000 | ✅ | | 1 |
 | Kosovo | 2017, 2019, 2021 | All | Legislative | ~2,500 | ✅ | | 1 |
 | Latvia | 2014, 2018, 2022 | All | Legislative | 2,000 | ✅ | | 1 |
 | Lebanon | 2018, 2022 | All | Legislative | 6,800| ✅ | | .998|
