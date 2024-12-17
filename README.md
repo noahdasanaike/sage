@@ -139,7 +139,7 @@ Stay tuned for further information about the release of SAGE
 | Sri Lanka | 2020 | All | Legislative | 150 | ✅ | | 1 |
 | Sweden | 2006, 2010, 2014, 2018, 2022 | All | Legislative | 6,100 | ✅ |  | 1 |
 | Switzerland | 1971 to 2023 | >= 2011 | Legislative | ~2,400 | ✅ | | 1 |
-| Taiwan | 1996 to 2020 | 2020 | Legislative, Presidential | 15,000 | ✅ | | .993 |
+| Taiwan | 1996 to 2024 | >= 2020 | Legislative, Presidential | 15,000 | ✅ | | .993 |
 | Thailand | 2023 | All | Legislative | 400 | ✅ | | 1 |
 | Trinidad and Tobago | 2015, 2020 | All | Legislative | 40 | ✅ | | 1 |
 | Tunisia | 2014 | All | Presidential | 19,000 | ✅ | | 1 |
