@@ -125,7 +125,7 @@ Stay tuned for further information about the release of SAGE
 | Peru | 2006, 2011, 2016, 2021 | 2021 | Legislative, Presidential | 150,000 (<= 2016), 83,000 (2021) | ✅ | | 1 |
 | Philippines | 2022 | All | Legislative, Presidential | 104,000 (geocode level: 50,000) | ✅ | | 1 |
 | Poland | 2000, 2005, 2010, 2015, 2019, 2020 | All | Legislative, Presidential | 27,000 | ✅ | | 1 |
-| Portugal | 1976 to 2022 | >= 2009 | Legislative, Presidential | 4,000 | ✅ | | .997 |
+| Portugal | 1976 to 2024 | >= 2009 | Legislative, Presidential | 4,000 | ✅ | | .997 |
 | Romania | 2014, 2016, 2019, 2020 | != 2016 | Legislative, Presidential | 18,500 | ✅ | | 1 |
 | Russia | 2000, 2003, 2004, 2007, 2008, 2011, 2012, 2016, 2018 | >= 2012 | Legislative, Presidential | 95,000 |✅ |  | 1 (2012), .970 (2016, 2018) |
 | Serbia | 2000 to 2022 | 2017 | Legislative, Presidential | ~8,000 | ✅ | | .987 |
