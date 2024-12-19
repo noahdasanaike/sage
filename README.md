@@ -134,7 +134,7 @@ Stay tuned for further information about the release of SAGE
 | Slovenia | 2022 | All | Presidential | 3,000 | ✅ | | 1 |
 | Solomon Islands | 2006, 2010, 2014, 2019 | All |Legislative | 50 |✅ | Wood (2019) | 1 |
 | South Africa | 2004, 2009, 2014, 2019 | All | Legislative | 20,000 | ✅ | | 1 |
-| South Korea | 2002, 2004, 2007, 2008, 2012, 2016, 2017, 2020, 2022 | >= 2007 | Legislative, Presidential | 13,000 to 34,000 | ✅ | | .999 |
+| South Korea | 2002 to 2024 | >= 2007 | Legislative, Presidential | 13,000 to 34,000 | ✅ | | .99 |
 | Spain | 1982 to 2019 | >= 2016 | Legislative | 36,000 | ✅ | | .998 |
 | Sri Lanka | 2020 | All | Legislative | 150 | ✅ | | 1 |
 | Sweden | 2006, 2010, 2014, 2018, 2022 | All | Legislative | 6,100 | ✅ |  | 1 |
