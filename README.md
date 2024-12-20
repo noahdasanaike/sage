@@ -21,6 +21,10 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
+
+### v0.3 (December 20th, 2024)
+- Added Icelandic presidential elections
+
 ### v0.2 (December 8th, 2024)
 - Fixed overseas France geometry (meridian Thiessen issues)
 
