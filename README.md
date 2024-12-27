@@ -82,7 +82,7 @@ Stay tuned for further information about the release of SAGE
 | Fiji | 2022 | All | Legislative | 991 | ✅ | | 1 |
 | Finland | 2011, 2012, 2015, 2018, 2019, 2023 | >= 2015 | Legislative, Presidential | 1,900 (2019); 310 (>= 2015) | ✅ | | .996 |
 | France | 2002, 2007, 2012, 2017, 2022 | All | Legislative, Presidential | 70,000 (>= 2017); 35,000 (<2017) | ✅ | | .997 (>= 2017) |
-| Georgia | 2012, 2016, 2020 | All | Legislative | 3,600 | ✅ | | .983 |
+| Georgia | 2012 to 2024 | All | Legislative | 2,000 | ✅ | | .985 |
 | Germany | 1983, 1987, 1990, 1994, 1998, 2002, 2005, 2009, 2013, 2017, 2021 | >= 1998 | Legislative | 80,000 (geocode level: 11,000) | ✅ | | .989 |
 | Ghana | 2012, 2016, 2020 | All | Legislative, Presidential | 275| ✅ | |1  |
 | Greece | 2012, 2015, 2019 | All | Legislative | 20,000 | ✅ | | .987 | 
