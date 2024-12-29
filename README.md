@@ -105,7 +105,7 @@ Stay tuned for further information about the release of SAGE
 | Latvia | 2014, 2018, 2022 | All | Legislative | 2,000 | ✅ | | 1 |
 | Lebanon | 2018, 2022 | All | Legislative | 6,800| ✅ | | .998|
 | Lesotho | 2017, 2022 | All | Legislative | 80 (geocode level: 10) | ✅ | | 1 |
-| Lithuania | 2016, 2019, 2020 | All | Legislative, Presidential | 2,000 | ✅ | | 1 |
+| Lithuania | 2016, 2019, 2020, 2024 | All | Legislative, Presidential | 2,000 | ✅ | | 1 |
 | Luxembourg | 2023 | All | Legislative | 100| ✅ | | 1 |
 | Madagascar | 2018, 2023 | All | Presidential | 25,000 | ✅ | | .997 |
 | Malaysia | 2008, 2013, 2018, 2022 | All | Legislative | 222 | ✅ | | 1 |
