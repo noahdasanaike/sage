@@ -70,7 +70,7 @@ Stay tuned for further information about the release of SAGE
 | Colombia | 2018 | All | Legislative | 102,000 (geocode level: 11,000) | ✅ || .988 |
 | Costa Rica | 2022 | All | Legislative | 2,101 | ✅ | | 1 |
 | Chile | 2013, 2017, 2021 | All | Legislative, Presidential | 90,000 (geocode level: 7,000) | ✅ | | 1 |
-| Croatia | 2011, 2014, 2015, 2016, 2019, 2020 | All | Legislative, Presidential | 6,100 |  ✅ | | 1 |
+| Croatia | 2011 to 2024 | All | Legislative, Presidential | 6,100 |  ✅ | | 1 |
 | Cyprus | 2001 to 2023 | All | Legislative, Presidential | 1,000 (geocode leve: 400) | ✅ | | 1 |
 | Czechia | 2002, 2006, 2010, 2013, 2017, 2021 | 2017, 2021 | Legislative | 14,800 | ✅ | | .989 |
 | Denmark | 2011, 2015, 2019, 2022 | All  | Legislative | 1,300 |  ✅ || 1 |
