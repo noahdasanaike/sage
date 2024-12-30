@@ -91,7 +91,7 @@ Stay tuned for further information about the release of SAGE
 | Guyana | 2015 | All | Legislative | 2,000 | ✅ | | | .999 |
 | Honduras | 2021 | All | Legislative, Presidential | 18,300 (geocode level: 5,700)| ✅ | | 1 |
 | Hong Kong | 2016, 2021 | All | Legislative | (2021: 650, 2016: 100) | ✅ | | 1 |
-| Hungary | 2022 | All | Legislative | 7,000 | ✅ | | 1 |
+| Hungary | 2014, 2018, 2022 | All | Legislative | 10,000 | ✅ | | .999 |
 | Iceland | 1959 to 2021 | All | Legislative, Presidential | (8 < 2003, 6  >= 2003) | ✅ | | 1 |
 | Indonesia | 2019 | All | Legislative, Presidential | ~800,000 (geocode level: 80,000) | ✅ | | .997 | 
 | India | 2019 | All | Legislative | 867,000 | ✅ | | .944 | 
