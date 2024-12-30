@@ -110,7 +110,7 @@ Stay tuned for further information about the release of SAGE
 | Madagascar | 2018, 2023 | All | Presidential | 25,000 | ✅ | | .997 |
 | Malaysia | 2008, 2013, 2018, 2022 | All | Legislative | 222 | ✅ | | 1 |
 | Malawi | 2019 | All | Legislative, Presidential | 11,000 (geocode level: 5,000) | ✅ | | .997 |
-| Mexico   | 1991 to 2024 | 2006, 2009, 2015, 2018, 2024 | Legislative, Presidential | 2,000,000| ✅ | Magar (2019) | .999 |
+| Mexico   | 1991 to 2024 | 2006, 2009, 2015, 2018, 2024 | Legislative, Presidential | 2,000,000| ✅ | Magar, 2019 (<= 2018) | .999 |
 | Moldova | 2014, 2016, 2020, 2021 | 2020, 2021 | Legislative, Presidential | 2,000 | ✅ | | 1 |
 | Mongolia | 2021 | All | Presidential | ~1,700 (geocode level: 350) | ✅ | | .956 |
 | Montenegro | 2023 | All | Legislative | ~1,000 | ✅ | | 1 |
