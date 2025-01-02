@@ -51,7 +51,7 @@ Stay tuned for further information about the release of SAGE
 
 | Country      | Years |  Polygon Years | Election Types     | Units per Year (approximate average) | Progress | Additional Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: | :---:| :---: | :---: | ---:|
-| Afghanistan | 2018, 2019 | All | Legislative | ~20,000 (geocode level: 6,000) | ✅ | Colin Cookman | .999 |
+| Afghanistan | 2018, 2019 | All | Legislative | ~20,000 | ✅ | Colin Cookman | .999 |
 | Albania | 2017, 2021 | 2021 | Legislative | 5,200 |  ✅ | | 1 |
 | Argentina | 2011, 2019, 2023 | 2023 | Legislative, Presidential | 100,000 | ✅ | | .98 |
 | Armenia | 2012, 2013, 2018, 2021 | All |Legislative, Presidential | 2,000 | ✅ | | .999 |
