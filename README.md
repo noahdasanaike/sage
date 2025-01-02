@@ -53,7 +53,7 @@ Stay tuned for further information about the release of SAGE
 | :---        |    :----:   |          :---: |  :---: | :---:| :---: | :---: | ---:|
 | Afghanistan | 2018, 2019 | All | Legislative | ~20,000 | ✅ | Colin Cookman | .999 |
 | Albania | 2017, 2021 | 2021 | Legislative | 5,200 |  ✅ | | 1 |
-| Argentina | 2011, 2019, 2023 | 2023 | Legislative, Presidential | 100,000 | ✅ | | .98 |
+| Argentina | 2011 to 2023 | 2023 | Legislative, Presidential | 100,000 | ✅ | | .98 |
 | Armenia | 2012, 2013, 2018, 2021 | All |Legislative, Presidential | 2,000 | ✅ | | .999 |
 | Australia   | 2004, 2007, 2010, 2013, 2016, 2022  | All    | Legislative      | 8,000 | ✅ | | 1 |
 | Austria | 1999 to 2024 | >= 2013 | Legislative | 2,000 |  ✅ | | 1 |
