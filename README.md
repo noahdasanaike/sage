@@ -67,7 +67,7 @@ Stay tuned for further information about the release of SAGE
 | Bulgaria | 2013 to 2023 | 2022, 2023 | Legislative, Presidential | 12,000 | ✅ | | .999 |
 | Cabo Verde | 2021 | All | Presidential | 1,000| ✅ | | .966 |
 | Canada   | 1997, 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021 |>= 2000 | Legislative, Presidential  | 70,000 | ✅ | | .990 |
-| Colombia | 2018 | All | Legislative | 102,000 (geocode level: 11,000) | ✅ || .988 |
+| Colombia | 2018 | All | Legislative | 102,000 (ballot boxes; 11,000 unique places) | ✅ || .993 |
 | Costa Rica | 2022 | All | Legislative | 2,101 | ✅ | | 1 |
 | Chile | 2013, 2017, 2021 | All | Legislative, Presidential | 90,000 (geocode level: 7,000) | ✅ | | 1 |
 | Croatia | 2011 to 2024 | All | Legislative, Presidential | 6,100 |  ✅ | | 1 |
