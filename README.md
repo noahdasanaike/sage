@@ -49,29 +49,29 @@ Stay tuned for further information about the release of SAGE
 
 ## Country Coverage
 
-| Country      | Years |  Polygon Years | Election Types     | Units per Year (approximate average) | Progress | Additional Source | Geographic Coverage (non-missing years) |
+| Country      | Years |  Polygon Years | Election Types | Smallest Physical Unit | Units per Year (approximate average) | Progress | Additional Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: | :---:| :---: | :---: | ---:|
-| Afghanistan | 2018, 2019 | All | Legislative | ~20,000 | ✅ | Colin Cookman | .999 |
-| Albania | 2017, 2021 | 2021 | Legislative | 5,200 |  ✅ | | 1 |
-| Argentina | 2011 to 2023 | 2023 | Legislative, Presidential | 100,000 | ✅ | | .98 |
-| Armenia | 2012, 2013, 2018, 2021 | All |Legislative, Presidential | 2,000 | ✅ | | .999 |
-| Australia   | 2004, 2007, 2010, 2013, 2016, 2022  | All    | Legislative      | 8,000 | ✅ | | 1 |
-| Austria | 1999 to 2024 | >= 2013 | Legislative | 2,000 |  ✅ | | 1 |
-| Bangladesh | 2018 | All | Legislative | 40,000 | ✅ | | .991 |
-| Belgium | 2014, 2019 | All | Legislative | 590 | ✅ | | 1 |
-| Bhutan | 2018 | All | Legislative | 865| ✅ | | .999 |
-| Bolivia | 2019, 2020 | All | Legislative, Presidential | 68,000 (geocode level: 6,600) | ✅ | | 1 |
-| Bosnia and Herzegovina | 2018, 2022 | All | Legislative | 3,000| ✅ | | .999 |
-| Botswana | 2014, 2019 | All | Legislative | 57 | ✅ | | 1 |
-| Brazil | 2014, 2018, 2022 | All | Legislative, Presidential | 93,000 |✅ | | .989 |
-| Bulgaria | 2013 to 2023 | 2022, 2023 | Legislative, Presidential | 12,000 | ✅ | | .999 |
-| Cabo Verde | 2021 | All | Presidential | 1,000| ✅ | | .966 |
-| Canada   | 1997, 2000, 2004, 2006, 2008, 2011, 2015, 2019, 2021 |>= 2000 | Legislative, Presidential  | 70,000 | ✅ | | .990 |
-| Colombia | 2018 | All | Legislative | 102,000 (ballot boxes; 11,000 unique places) | ✅ || .993 |
-| Costa Rica | 2022 | All | Legislative | 2,101 | ✅ | | 1 |
-| Chile | 2013, 2017, 2021 | All | Legislative, Presidential | 90,000 (geocode level: 7,000) | ✅ | | 1 |
-| Croatia | 2011 to 2024 | All | Legislative, Presidential | 6,100 |  ✅ | | 1 |
-| Cyprus | 2001 to 2023 | All | Legislative, Presidential | 1,000 (geocode leve: 400) | ✅ | | 1 |
+| Afghanistan | 2018, 2019 | All | Legislative | ~20,000 | Polling Station |  ✅ | Colin Cookman | .999 |
+| Albania | 2017, 2021 | 2021 | Legislative | Polling Station | 5,200 |  ✅ | | 1 |
+| Argentina | 2011 to 2023 | 2023 | Legislative, Presidential | Polling Station | 100,000 | ✅ | | .98 |
+| Armenia | 2012, 2013, 2018, 2021 | All |Legislative, Presidential | Polling Station | 2,000 | ✅ | | .999 |
+| Australia   | 2004 to 2022  | All | Legislative | Polling Station | 8,000 | ✅ | | 1 |
+| Austria | 1999 to 2024 | >= 2013 | Legislative | Municipality (gemeinde) |2,000 |  ✅ | | 1 |
+| Bangladesh | 2018 | All | Legislative | Polling Station | 40,000 | ✅ | | .991 |
+| Belgium | 2014, 2019 | All | Legislative | Municipality (commune) | 590 | ✅ | | 1 |
+| Bhutan | 2018 | All | Legislative | Polling Station | 865| ✅ | | .999 |
+| Bolivia | 2019, 2020 | All | Legislative, Presidential | Polling Station | 68,000 (geocode level: 6,600) | ✅ | | 1 |
+| Bosnia and Herzegovina | 2018, 2022 | All | Legislative | Polling Station | 3,000| ✅ | | .999 |
+| Botswana | 2014, 2019 | All | Legislative | Parliamentary Constituency | 57 | ✅ | | 1 |
+| Brazil | 2014, 2018, 2022 | All | Legislative, Presidential | Polling Station | 93,000 |✅ | | .989 |
+| Bulgaria | 2013 to 2023 | 2022, 2023 | Legislative, Presidential | Polling Station | 12,000 | ✅ | | .999 |
+| Cabo Verde | 2021 | All | Presidential | Polling Station | 1,000| ✅ | | .966 |
+| Canada   | 1997 to 2021 |>= 2000 | Legislative, Presidential | Polling Station | 70,000 | ✅ | | .990 |
+| Colombia | 2018 | All | Legislative | Polling Station | 102,000 (ballot boxes; 11,000 unique places) | ✅ || .993 |
+| Costa Rica | 2022 | All | Legislative | Polling Station | 2,101 | ✅ | | 1 |
+| Chile | 2013, 2017, 2021 | All | Legislative, Presidential | Polling Station | 90,000 (geocode level: 7,000) | ✅ | | 1 |
+| Croatia | 2011 to 2024 | All | Legislative, Presidential | Polling Station | 6,100 |  ✅ | | 1 |
+| Cyprus | 2001 to 2023 | All | Legislative, Presidential | Polling Station | 1,000 (geocode leve: 400) | ✅ | | 1 |
 | Czechia | 2002, 2006, 2010, 2013, 2017, 2021 | 2017, 2021 | Legislative | 14,800 | ✅ | | .989 |
 | Denmark | 2011, 2015, 2019, 2022 | All  | Legislative | 1,300 |  ✅ || 1 |
 | Dominica | 2019, 2022 | All | Legislative | 230 |  ✅ || .986 |
