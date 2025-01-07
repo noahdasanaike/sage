@@ -74,7 +74,7 @@ Stay tuned for further information about the release of SAGE
 | Cyprus | 2001 to 2023 | All | Legislative, Presidential | Polling Station | 1,000 (geocode leve: 400) | ✅ | | 1 |
 | Czechia | 2002, 2006, 2010, 2013, 2017, 2021 | 2017, 2021 | Legislative | Election Precinct (okrsek) | 14,800 | ✅ | | .989 |
 | Denmark | 2011, 2015, 2019, 2022 | All  | Legislative | Polling Station | 1,300 |  ✅ || 1 |
-| Dominica | 2019, 2022 | All | Legislative | |230 |  ✅ || .986 |
+| Dominica | 2019, 2022 | All | Legislative | |230 |  ✅ | Polling Station | .986 |
 | Dominican Republic | 2000 to 2024 | !(2000, 2010, 2016) | Legislative, Presidential | |12,000 | ✅ | | .995 |
 | Ecuador | 2017, 2021, 2023 | All | Legislative (>= 2021), Presidential | |1,220 | ✅ | | 1 |
 | El Salvador | 2014, 2018 | All | Legislative, Presidential | |1,600 | ✅ | | 1 |
