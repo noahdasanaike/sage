@@ -21,6 +21,14 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
+### v0.4 (January 7th, 2025)
+- Added 2014 and 2018 Hungarian elections
+- Fixed Croatian party coalition names
+- Added polling station locations to 2020 Dominican Republic election, and 2016 election without known coordinates/polling “recinto”
+- Corrected polling station boundaries for France in 2022, which were then used for the 2024 election; downgraded 2017 election to municipal boundaries only
+- Added all Argentine elections between 2011 and 2023
+- Corrected place names for Bangladesh
+- Added geocoded Ecuadorian elections back to 2002, fixed NAME2 being set to NAME3
 
 ### v0.3 (December 20th, 2024)
 - Added Icelandic presidential elections
@@ -89,7 +97,7 @@ Stay tuned for further information about the release of SAGE
 | Greenland | 2002 to 2022 | All | Legislative | Settlements | 72 | ✅ | | 1 |
 | Guatemala | 2023 | All | Legislative | Polling Station | 24,000 (geocode level: 3,500) |  ✅ | | .928 |
 | Guyana | 2015 | All | Legislative | Polling Station | 2,000 |  ✅ | | .999 |
-| Honduras | 2021 | All | Legislative, Presidential | | 18,300 (geocode level: 5,700)| ✅ | | 1 |
+| Honduras | 2021 | All | Legislative, Presidential | Polling Station | 18,300 (geocode level: 5,700)| ✅ | | 1 |
 | Hong Kong | 2016, 2021 | All | Legislative | Polling Station | (2021: 650, 2016: 100) | ✅ | | 1 |
 | Hungary | 2014, 2018, 2022 | All | Legislative | Polling Station | 10,000 | ✅ | | .999 |
 | Iceland | 1959 to 2021 | All | Legislative, Presidential | Parliamentary Constituency | (8 < 2003, 6  >= 2003) | ✅ | | 1 |
