@@ -49,7 +49,7 @@ Stay tuned for further information about the release of SAGE
 
 ## Country Coverage
 
-| Country      | Years |  Polygon Years | Election Types | Smallest Physical Unit | Units per Year (approximate average) | Progress | Additional Source | Geographic Coverage (non-missing years) |
+| Country      | Years |  Polygon Years | Election Types | Smallest Physical Unit (Data) | Units per Year (approximate average) | Progress | Additional Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: |:---: | :---:| :---: | :---: | ---:|
 | Afghanistan | 2018, 2019 | All | Legislative | ~20,000 | Polling Station |  ✅ | Colin Cookman | .999 |
 | Albania | 2017, 2021 | 2021 | Legislative | Polling Station | 5,200 |  ✅ | | 1 |
@@ -74,7 +74,7 @@ Stay tuned for further information about the release of SAGE
 | Cyprus | 2001 to 2023 | All | Legislative, Presidential | Polling Station | 1,000 (geocode leve: 400) | ✅ | | 1 |
 | Czechia | 2002 to 2021 | 2017, 2021 | Legislative | Election Precinct (okrsek) | 14,800 | ✅ | | .989 |
 | Denmark | 2011, 2015, 2019, 2022 | All  | Legislative | Polling Station | 1,300 |  ✅ || 1 |
-| Dominica | 2019, 2022 | All | Legislative | |230 |  ✅ | Polling Station | .986 |
+| Dominica | 2019, 2022 | All | Legislative | Polling Station  |230 |  ✅ | | .986 |
 | Dominican Republic | 2000 to 2024 | !(2000, 2010, 2016) | Legislative, Presidential | Polling Station |12,000 | ✅ | | .995 |
 | Ecuador | 2002 to 2023 | All | Legislative, Presidential | Parish |1,220 | ✅ | | 1 |
 | El Salvador | 2014, 2018 | All | Legislative, Presidential | Polling Station |1,600 | ✅ | | 1 |
@@ -83,22 +83,22 @@ Stay tuned for further information about the release of SAGE
 | Finland | 2011 to 2024 | >= 2015 | Legislative, Presidential | Voting Districts (2019), Municipality | 1,900 (2019); 310 (>= 2015) | ✅ | | .996 |
 | France | 2002 to 2024 | All | Legislative, Presidential | Polling Station | 70,000 (>= 2017); 35,000 (<2017) | ✅ | | .95 (>= 2022); 1 (<= 2017) |
 | Georgia | 2012 to 2024 | All | Legislative | Polling Station | 2,000 | ✅ | | .985 |
-| Germany | 1983 to 2021 | >= 1998 | Legislative | Municipality (gemeinde; geocoded), Polling Station/Ballot Box (data) | 80,000 (geocode level: 11,000) | ✅ | | .989 |
-| Ghana | 2012, 2016, 2020 | All | Legislative, Presidential | | 275| ✅ | |1  |
-| Greece | 2012, 2015, 2019 | All | Legislative | | 20,000 | ✅ | | .987 | 
-| Greenland | 2002 to 2022 | All | Legislative | | 72 | ✅ | | 1 |
-| Guatemala | 2023 | All | Legislative | | 24,000 (geocode level: 3,500) |  ✅ | | .928 |
-| Guyana | 2015 | All | Legislative | | 2,000 | ✅ | | | .999 |
+| Germany | 1983 to 2021 | >= 1998 | Legislative | Polling Station | 80,000 (geocode level: 11,000) | ✅ | | .989 |
+| Ghana | 2012, 2016, 2020 | All | Legislative, Presidential | Parliamentary Constituency | 275| ✅ | |1  |
+| Greece | 2012, 2015, 2019 | All | Legislative | Polling Station | 20,000 | ✅ | | .987 | 
+| Greenland | 2002 to 2022 | All | Legislative | Settlements | 72 | ✅ | | 1 |
+| Guatemala | 2023 | All | Legislative | Polling Station | 24,000 (geocode level: 3,500) |  ✅ | | .928 |
+| Guyana | 2015 | All | Legislative | Polling Station | 2,000 |  ✅ | | .999 |
 | Honduras | 2021 | All | Legislative, Presidential | | 18,300 (geocode level: 5,700)| ✅ | | 1 |
-| Hong Kong | 2016, 2021 | All | Legislative | | (2021: 650, 2016: 100) | ✅ | | 1 |
-| Hungary | 2014, 2018, 2022 | All | Legislative | | 10,000 | ✅ | | .999 |
-| Iceland | 1959 to 2021 | All | Legislative, Presidential | | (8 < 2003, 6  >= 2003) | ✅ | | 1 |
-| Indonesia | 2019 | All | Legislative, Presidential | | ~800,000 (geocode level: 80,000) | ✅ | | .997 | 
-| India | 2019 | All | Legislative | | 867,000 | ✅ | | .944 | 
-| Iran | 2017 | All | Presidential | | 380 | ✅ | | 1 |
-| Ireland | 2002, 2007, 2011, 2016, 2020| 2016, 2020 | Legislative | | 40 | ✅ | | 1 |
-| Israel | 2006 to 2022 | 2020, 2021 | Legislative | | 11,000 | ✅ | | 1 |
-| Italy | 1953 to 2022 | >= 2002 | Legislative | | 8,000 | ✅ | | .96 |
+| Hong Kong | 2016, 2021 | All | Legislative | Polling Station | (2021: 650, 2016: 100) | ✅ | | 1 |
+| Hungary | 2014, 2018, 2022 | All | Legislative | Polling Station | 10,000 | ✅ | | .999 |
+| Iceland | 1959 to 2021 | All | Legislative, Presidential | Parliamentary Constituency | (8 < 2003, 6  >= 2003) | ✅ | | 1 |
+| Indonesia | 2019 | All | Legislative, Presidential | Polling Station | ~800,000 (geocode level: 80,000) | ✅ | | .997 | 
+| India | 2019 | All | Legislative | Polling Station  | 867,000 | ✅ | | .944 | 
+| Iran | 2017 | All | Presidential | City | 380 | ✅ | | 1 |
+| Ireland | 2002 to 2020| 2016, 2020 | Legislative | Parliamentary Constituency | 40 | ✅ | | 1 |
+| Israel | 2006 to 2022 | 2020, 2021 | Legislative | Polling Station | 11,000 | ✅ | | 1 |
+| Italy | 1953 to 2022 | >= 2002 | Legislative | Municipality (commune) | 8,000 | ✅ | | .96 |
 | Jamaica | 2007, 2011, 2016, 2020 | All | Legislative | | 6,500 (geocode level: 2,500)| ✅ | | .965 |
 | Japan | 2009, 2012, 2014, 2017, 2021, 2024 | All | Legislative | | 2,000 | ✅ | | 1 |
 | Kosovo | 2017, 2019, 2021 | All | Legislative | | ~2,500 | ✅ | | 1 |
