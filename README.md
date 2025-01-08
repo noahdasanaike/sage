@@ -150,14 +150,14 @@ Stay tuned for further information about the release of SAGE
 | Spain | 1982 to 2019 | >= 2016 | Legislative | | 36,000 | ✅ | | .998 |
 | Sri Lanka | 2020 | All | Legislative | Polling Division | 150 | ✅ | | 1 |
 | Sweden | 2006, 2010, 2014, 2018, 2022 | All | Legislative | Electoral District | 6,100 | ✅ |  | 1 |
-| Switzerland | 1971 to 2023 | >= 2011 | Legislative | Municiaplity | ~2,400 | ✅ | | 1 |
+| Switzerland | 1971 to 2023 | >= 2011 | Legislative | Municipality | ~2,400 | ✅ | | 1 |
 | Taiwan | 1996 to 2024 | >= 2020 | Legislative, Presidential | Polling Station | 15,000 | ✅ | | .989 |
-| Thailand | 2023 | All | Legislative | | 400 | ✅ | | 1 |
-| Trinidad and Tobago | 2015, 2020 | All | Legislative | | 40 | ✅ | | 1 |
-| Tunisia | 2014 | All | Presidential | | 19,000 | ✅ | | 1 |
+| Thailand | 2023 | All | Legislative | Parliamentary Constituency | 400 | ✅ | | 1 |
+| Trinidad and Tobago | 2015, 2020 | All | Legislative | Parliamentary Constituency | 40 | ✅ | | 1 |
+| Tunisia | 2014 | All | Presidential | Polling Station | 19,000 | ✅ | | .999 |
 | Turkey | 2011, 2014, 2015, 2018, 2023 | All | Legislative, Presidential | | 190,000 (geocode level: 50,000) | ✅ | | 1 |
 | Ukraine | 2019 | All | Legislative, Presidential | | 30,000 |  ✅ | | .996 |
-| United Kingdom | 2005, 2010, 2015, 2017, 2019, 2024 | All | Legislative | | ~650 | ✅ | | 1 |
+| United Kingdom | 2005, 2010, 2015, 2017, 2019, 2024 | All | Legislative | Parliamentary Constituency | ~650 | ✅ | | 1 |
 | United States of America  | 2016, 2020  | All | Presidential  | | 820,000 | ✅ | VEST | .999 |
 | Uruguay | 2014, 2019 | 2019 | Legislative, Presidential | | 7,100 | ✅ | | .886 |
 | Vanuatu | 2002, 2004, 2012, 2016, 2020 | All | Legislative | | 17 | ✅ |  | 1 |
