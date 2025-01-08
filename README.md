@@ -159,7 +159,7 @@ Stay tuned for further information about the release of SAGE
 | Ukraine | 2019 | All | Legislative, Presidential | | 30,000 |  ✅ | | .996 |
 | United Kingdom | 2005, 2010, 2015, 2017, 2019, 2024 | All | Legislative | Parliamentary Constituency | ~650 | ✅ | | 1 |
 | United States of America  | 2016, 2020  | All | Presidential  | | 820,000 | ✅ | VEST | .999 |
-| Uruguay | 2014, 2019, 2024 | All | Legislative | | 7,200 | ✅ | | .991 |
+| Uruguay | 2014, 2019, 2024 | All | Legislative | Polling Station | 7,200 | ✅ | | .991 |
 | Vanuatu | 2002, 2004, 2012, 2016, 2020 | All | Legislative | | 17 | ✅ |  | 1 |
 | Venezuela | 2013 | All | Presidential | | 39,256 | ✅ | | .991 |
 | Zambia | 2021 | All | Presidential | | 150 | ✅ | | 1 |
