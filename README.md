@@ -130,14 +130,14 @@ Stay tuned for further information about the release of SAGE
 | Nigeria | 2019 | All | Legislative | Parliamentary Constituency | 350 | ✅ | | 1 |
 | North Macedonia | 2016, 2024 | All | Legislative, Presidential | Polling Station | 3,500 | ✅ | | .999 |
 | Norway | 2009, 2013, 2017, 2021 | 2021 | Legislative | | 226 (<= 2013), 1,250 (>= 2017) | ✅ | | .986 |
-| Pakistan | 2018 | All | Legislative | | 72,000 (geocode level: 250) | ✅ | Colin Cookman | 1 |
-| Panama | 2004, 2009 | All | Legislative | | 620 | ✅ | | .950 |
-| Papua New Guinea | 1987, 1992, 1997, 2002, 2007, 2012, 2017 | All | Legislative | | 100 |✅ | Wood (2019) | 1 |
-| Paraguay | 2003, 2008, 2013, 2018 | All | Legislative, Presidential | | 17,000 | ✅ | | .999 |
-| Peru | 2006, 2011, 2016, 2021 | 2021 | Legislative, Presidential | | 150,000 (<= 2016), 83,000 (2021) | ✅ | | 1 |
+| Pakistan | 2018 | All | Legislative | Polling Station | 72,000 (geocode level: 250) | ✅ | Colin Cookman | 1 |
+| Panama | 2004, 2009 | All | Legislative | District (corregimiento) | 620 | ✅ | | .950 |
+| Papua New Guinea | 1987 to 2017 | All | Legislative | Electorate | 100 |✅ | Wood (2019) | 1 |
+| Paraguay | 2003, 2008, 2013, 2018 | All | Legislative, Presidential | Polling Station | 17,000 | ✅ | | .999 |
+| Peru | 2006, 2011, 2016, 2021 | 2021 | Legislative, Presidential | Polling Station | 150,000 (<= 2016), 83,000 (2021) | ✅ | | 1 |
 | Philippines | 2022 | All | Legislative, Presidential | | 104,000 (geocode level: 50,000) | ✅ | | 1 |
-| Poland | 2000, 2005, 2010, 2015, 2019, 2020 | All | Legislative, Presidential | | 27,000 | ✅ | | 1 |
-| Portugal | 1976 to 2024 | >= 2009 | Legislative, Presidential | | 4,000 | ✅ | | .997 |
+| Poland | 2000 to 2020 | All | Legislative, Presidential | Polling Station | 27,000 | ✅ | | 1 |
+| Portugal | 1976 to 2024 | >= 2009 | Legislative, Presidential | Parish | 4,000 | ✅ | | .997 |
 | Romania | 2014, 2016, 2019, 2020 | != 2016 | Legislative, Presidential | | 18,500 | ✅ | | 1 |
 | Russia | 2000, 2003, 2004, 2007, 2008, 2011, 2012, 2016, 2018 | >= 2012 | Legislative, Presidential | | 95,000 |✅ |  | 1 (2012), .970 (2016, 2018) |
 | Serbia | 2000 to 2022 | 2017 | Legislative, Presidential | | ~8,000 | ✅ | | .987 |
