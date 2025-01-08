@@ -148,10 +148,10 @@ Stay tuned for further information about the release of SAGE
 | South Africa | 2004 to 2024 | All | Legislative | Voting Districts | 20,000 | ✅ | | 1 |
 | South Korea | 2002 to 2024 | >= 2007 | Legislative, Presidential | Polling Station | 13,000 to 34,000 | ✅ | | .99 |
 | Spain | 1982 to 2019 | >= 2016 | Legislative | | 36,000 | ✅ | | .998 |
-| Sri Lanka | 2020 | All | Legislative | | 150 | ✅ | | 1 |
-| Sweden | 2006, 2010, 2014, 2018, 2022 | All | Legislative | | 6,100 | ✅ |  | 1 |
-| Switzerland | 1971 to 2023 | >= 2011 | Legislative | | ~2,400 | ✅ | | 1 |
-| Taiwan | 1996 to 2024 | >= 2020 | Legislative, Presidential | | 15,000 | ✅ | | .993 |
+| Sri Lanka | 2020 | All | Legislative | Polling Division | 150 | ✅ | | 1 |
+| Sweden | 2006, 2010, 2014, 2018, 2022 | All | Legislative | Electoral District | 6,100 | ✅ |  | 1 |
+| Switzerland | 1971 to 2023 | >= 2011 | Legislative | Municiaplity | ~2,400 | ✅ | | 1 |
+| Taiwan | 1996 to 2024 | >= 2020 | Legislative, Presidential | Polling Station | 15,000 | ✅ | | .989 |
 | Thailand | 2023 | All | Legislative | | 400 | ✅ | | 1 |
 | Trinidad and Tobago | 2015, 2020 | All | Legislative | | 40 | ✅ | | 1 |
 | Tunisia | 2014 | All | Presidential | | 19,000 | ✅ | | 1 |
