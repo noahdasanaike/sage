@@ -126,7 +126,7 @@ Stay tuned for further information about the release of SAGE
 | Namibia | 2014, 2019 | All | Legislative, Presidential | Parliamentary Constituency | 120| ✅ | | 1 |
 | Nepal | 2017, 2021 | All | Legislative | Parliamentary Constituency | 165| ✅ | | 1 |
 | Netherlands | 2010, 2012, 2017, 2021| All | Legislative | Polling Station | 400 (2017), 10,000 (others) | ✅ | | .999 |
-| New Zealand   | 1999 to 2023  | All | Legislative | | 5,000 | ✅ | | .999 |
+| New Zealand   | 1999 to 2023  | All | Legislative | Polling Station | 5,000 | ✅ | | .999 |
 | Nigeria | 2019 | All | Legislative | Parliamentary Constituency | 350 | ✅ | | 1 |
 | North Macedonia | 2016, 2024 | All | Legislative, Presidential | Polling Station | 3,500 | ✅ | | .999 |
 | Norway | 2009, 2013, 2017, 2021 | 2021 | Legislative | | 226 (<= 2013), 1,250 (>= 2017) | ✅ | | .986 |
@@ -138,15 +138,15 @@ Stay tuned for further information about the release of SAGE
 | Philippines | 2022 | All | Legislative, Presidential | | 104,000 (geocode level: 50,000) | ✅ | | 1 |
 | Poland | 2000 to 2020 | All | Legislative, Presidential | Polling Station | 27,000 | ✅ | | 1 |
 | Portugal | 1976 to 2024 | >= 2009 | Legislative, Presidential | Parish | 4,000 | ✅ | | .997 |
-| Romania | 2014, 2016, 2019, 2020 | != 2016 | Legislative, Presidential | | 18,500 | ✅ | | 1 |
+| Romania | 2014 to 2024 | != 2016 | Legislative, Presidential | Polling Station | 18,500 | ✅ | | 1 |
 | Russia | 2000, 2003, 2004, 2007, 2008, 2011, 2012, 2016, 2018 | >= 2012 | Legislative, Presidential | | 95,000 |✅ |  | 1 (2012), .970 (2016, 2018) |
-| Serbia | 2000 to 2022 | 2017 | Legislative, Presidential | | ~8,000 | ✅ | | .987 |
-| Singapore | 2020 | All | Legislative | | 31 | ✅ | | 1 |
-| Slovakia | 2016, 2019, 2020, 2023 | All | Legislative, Presidential | | 6,000 (geocode level: 1,500) | ✅ | | 1 |
-| Slovenia | 2022 | All | Presidential | | 3,000 | ✅ | | 1 |
-| Solomon Islands | 2006, 2010, 2014, 2019 | All |Legislative | | 50 |✅ | Wood (2019) | 1 |
+| Serbia | 2000 to 2022 | 2017 | Legislative, Presidential | Polling Station | ~8,000 | ✅ | | .987 |
+| Singapore | 2020 | All | Legislative | Constituency | 31 | ✅ | | 1 |
+| Slovakia | 2016, 2019, 2020, 2023 | All | Legislative, Presidential | Polling Station | 6,000 (geocode level: 1,500) | ✅ | | 1 |
+| Slovenia | 2022 | All | Presidential | Polling Station | 3,000 | ✅ | | 1 |
+| Solomon Islands | 2006, 2010, 2014, 2019 | All |Legislative | Parliamentary Constituency | 50 |✅ | Wood (2019) | 1 |
 | South Africa | 2004, 2009, 2014, 2019 | All | Legislative | | 20,000 | ✅ | | 1 |
-| South Korea | 2002 to 2024 | >= 2007 | Legislative, Presidential | | 13,000 to 34,000 | ✅ | | .99 |
+| South Korea | 2002 to 2024 | >= 2007 | Legislative, Presidential | Voting Districts | 13,000 to 34,000 | ✅ | | .99 |
 | Spain | 1982 to 2019 | >= 2016 | Legislative | | 36,000 | ✅ | | .998 |
 | Sri Lanka | 2020 | All | Legislative | | 150 | ✅ | | 1 |
 | Sweden | 2006, 2010, 2014, 2018, 2022 | All | Legislative | | 6,100 | ✅ |  | 1 |
