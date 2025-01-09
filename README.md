@@ -21,6 +21,14 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
+### v0.5 (January 9th, 2025)
+- Added 2024 election results for United Kingdom, Taiwan, Japan, South Korea, Portugal, Austria, Iceland, Georgia, Finland, Lithuania, Croatia, Bulgaria, Mexico, Dominican Republic, Romania, North Macedonia, France, South Africa, and Moldova
+- Added 2023 Spanish general election results
+- Added Polish parliamentary elections back to 1991, and presidential elections to 1990
+- Added second rounds and polling station addresses/coordinates for both of the 2014, 2019 elections in Uruguay
+- Re-generated Thiessen polygons for Taiwan using year-dated updated boundaries
+- Corrected Ukrainian Thiessen polygons with 2019-dated country boundary
+
 ### v0.4 (January 7th, 2025)
 - Added 2014 and 2018 Hungarian elections
 - Fixed Croatian party coalition names
