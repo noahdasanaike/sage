@@ -150,7 +150,7 @@ Stay tuned for further information about the release of SAGE
 | Russia | 2000 to 2018 | >= 2012 | Legislative, Presidential | Polling Station | 95,000 |✅ |  | 1 (2012), .970 (2016, 2018) |
 | Serbia | 2000 to 2022 | 2017 | Legislative, Presidential | Polling Station | ~8,000 | ✅ | | .987 |
 | Singapore | 2020 | All | Legislative | Constituency | 31 | ✅ | | 1 |
-| Slovakia | 2016, 2019, 2020, 2023 | All | Legislative, Presidential | Polling Station | 6,000 (geocode level: 1,500) | ✅ | | 1 |
+| Slovakia | 2016 to 2024 | All | Legislative, Presidential | Polling Station | 6,000 (geocode level: 1,500) | ✅ | | 1 |
 | Slovenia | 2022 | All | Presidential | Polling Station | 3,000 | ✅ | | 1 |
 | Solomon Islands | 2006, 2010, 2014, 2019 | All |Legislative | Parliamentary Constituency | 50 |✅ | Wood (2019) | 1 |
 | South Africa | 2004 to 2024 | All | Legislative | Voting Districts | 20,000 | ✅ | | 1 |
