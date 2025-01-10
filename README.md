@@ -74,7 +74,7 @@ Stay tuned for further information about the release of SAGE
 | Australia   | 2004 to 2022  | All | Legislative | Polling Station | 8,000 | ✅ | | 1 |
 | Austria | 1999 to 2024 | >= 2013 | Legislative | Municipality (gemeinde) |2,000 |  ✅ | | 1 |
 | Bangladesh | 2018 | All | Legislative | Polling Station | 40,000 | ✅ | | .991 |
-| Belgium | 2014, 2019 | All | Legislative | Municipality (gemeente) | 590 | ✅ | | 1 |
+| Belgium | 2014, 2019, 2024 | All | Legislative | Municipality (gemeente) | 590 | ✅ | | 1 |
 | Bhutan | 2018 | All | Legislative | Polling Station | 865| ✅ | | .999 |
 | Bolivia | 2019, 2020 | All | Legislative, Presidential | Polling Station | 68,000 (geocode level: 6,600) | ✅ | | 1 |
 | Bosnia and Herzegovina | 2018, 2022 | All | Legislative | Polling Station | 3,000| ✅ | | .999 |
