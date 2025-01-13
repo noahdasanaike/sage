@@ -176,4 +176,4 @@ Stay tuned for further information about the release of SAGE
 
 ## Acknowledgements
 
-In addition to each of the sources listed, I thank Brian Engelsma for his African parliamentary constituency shapefiles and Adrian Frith for South African voting district shapefiles.
+In addition to each of the sources listed, I thank Brian Engelsma for his African parliamentary constituency shapefiles, Adrian Frith for South African voting district shapefiles, and Walter Mebane and Rod Alence for 2022 Kenyan presidential election results.
