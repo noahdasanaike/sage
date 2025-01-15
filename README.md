@@ -21,6 +21,12 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
+### v0.6 (January 15th, 2025)
+- Fixed bug in Thiessen generation code affecting polygon edges and applied fix to all 67 affected countries 
+- Added 2023 general election results for Spain
+- Added Kenya (2022 presidential elections)
+- Reduced floating point precision of Indian polling station coordinates to 1e-6, fixing errors in Thiessen polygon generation with deldir claiming non-unique points
+
 ### v0.5 (January 9th, 2025)
 - Added 2024 election results for United Kingdom, Taiwan, Japan, South Korea, Portugal, Austria, Iceland, Georgia, Finland, Lithuania, Croatia, Bulgaria, Mexico, Dominican Republic, Romania, North Macedonia, France, South Africa, and Moldova
 - Added 2023 Spanish general election results
