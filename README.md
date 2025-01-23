@@ -21,6 +21,16 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
+### v0.7 (January 23rd, 2025)
+- Fixed Bosnia and Herzegovina Thiessen polygons to use only Republika Srpska or Federation of Bosnia and Herzegovina boundaries, rather than generation across the country at-large
+- Added (incomplete) 2024 Senegalese legislative election results
+- Added polling station addresses as NAME columns to Brazil and Argentina
+- Changed party columns corresponding to candidates in Afghanistan, Botswana, Italy, Lesotho, and Thailand to candidate columns
+- Corrected Afghan, Croatian, and Italian party names
+- Added geometry to 2021 and 2024 Russian elections
+- Fixed strange nested list state of Argentine geometry column
+- Added actual section ("polling station" equivalent) boundaries to all Spanish elections from 2004 onwards
+
 ### v0.6 (January 15th, 2025)
 - Fixed bug in Thiessen generation code affecting polygon edges and applied fix to all 67 affected countries 
 - Added 2023 general election results for Spain
