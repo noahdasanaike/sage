@@ -32,7 +32,7 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 - Fixed strange nested list state of Argentine geometry column
 - Added actual section ("polling station" equivalent) boundaries to all Spanish elections from 2004 onwards
 - Added 2014 to 2022 parliamentary and presidential elections in Slovenia
-- 
+  
 ### v0.6 (January 15th, 2025)
 - Fixed bug in Thiessen generation code affecting polygon edges and applied fix to all 67 affected countries 
 - Added 2023 general election results for Spain
