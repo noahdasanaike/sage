@@ -84,7 +84,7 @@ Stay tuned for further information about the release of SAGE
 
 | Country      | Years |  Polygon Years | Election Types | Smallest Physical Unit (Data) | Units per Year (approximate average) | Progress | Additional Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: |:---: | :---:| :---: | :---: | ---:|
-| Afghanistan | 2018, 2019 | All | Legislative | Polling Station | ~20,000 |  ✅ | Colin Cookman | .999 |
+| Afghanistan | 2018, 2019 | All | Legislative | Polling Station | 20,000 |  ✅ | Colin Cookman | .999 |
 | Albania | 2017, 2021 | 2021 | Legislative | Polling Station | 5,200 |  ✅ | | 1 |
 | Argentina | 2011 to 2023 | 2023 | Legislative, Presidential | Polling Station | 100,000 | ✅ | | .98 |
 | Armenia | 2012, 2013, 2018, 2021 | All |Legislative, Presidential | Polling Station | 2,000 | ✅ | | .999 |
@@ -126,7 +126,7 @@ Stay tuned for further information about the release of SAGE
 | Hong Kong | 2016, 2021 | All | Legislative | Polling Station | (2021: 650, 2016: 100) | ✅ | | 1 |
 | Hungary | 2014, 2018, 2022 | All | Legislative | Polling Station | 10,000 | ✅ | | .999 |
 | Iceland | 1959 to 2021 | All | Legislative, Presidential | Parliamentary Constituency | (8 < 2003, 6  >= 2003) | ✅ | | 1 |
-| Indonesia | 2019 | All | Legislative, Presidential | Polling Station | ~800,000 (geocode level: 80,000) | ✅ | | .997 | 
+| Indonesia | 2019 | All | Legislative, Presidential | Polling Station | 800,000 (geocode level: 80,000) | ✅ | | .997 | 
 | India | 2019 | All | Legislative | Polling Station  | 867,000 | ✅ | | .944 | 
 | Iran | 2017 | All | Presidential | City | 380 | ✅ | | 1 |
 | Ireland | 2002 to 2020| 2016, 2020 | Legislative | Parliamentary Constituency | 40 | ✅ | | 1 |
@@ -135,7 +135,7 @@ Stay tuned for further information about the release of SAGE
 | Jamaica | 2007, 2011, 2016, 2020 | All | Legislative | Polling Station | 6,500| ✅ | | .965 |
 | Japan | 2009, 2012, 2014, 2017, 2021, 2024 | All | Legislative | Municipality (市区町村) | 2,000 | ✅ | | 1 |
 | Kenya | 2022 | All | Presidential | Polling Station | 46,000 |✅ | | .996 |
-| Kosovo | 2017, 2019, 2021 | All | Legislative | Polling Station | ~2,500 | ✅ | | 1 |
+| Kosovo | 2017, 2019, 2021 | All | Legislative | Polling Station | 2,500 | ✅ | | 1 |
 | Latvia | 2014, 2018, 2022 | All | Legislative | Polling Station | 2,000 | ✅ | | 1 |
 | Lebanon | 2018, 2022 | All | Legislative | Polling Station | 6,800| ✅ | | .998|
 | Lesotho | 2017, 2022 | All | Legislative | Parliamentary Constituency | 80 (geocode level: 10) | ✅ | | 1 |
@@ -146,8 +146,8 @@ Stay tuned for further information about the release of SAGE
 | Malawi | 2019 | All | Legislative, Presidential | Polling Station | 11,000 | ✅ | | .997 |
 | Mexico   | 1991 to 2024 | 2006, 2009, 2015, 2018, 2024 | Legislative, Presidential | Polling Station | 150,000| ✅ | Magar, 2019 (<= 2018) | .999 |
 | Moldova | 2014 to 2024 | 2020, 2021, 2024 | Legislative, Presidential | Polling Station | 2,000 | ✅ | | .999 |
-| Mongolia | 2021 | All | Presidential | Polling Station | ~1,700 (geocode level: 350) | ✅ | | .956 |
-| Montenegro | 2023 | All | Legislative | Polling Station | ~1,000 | ✅ | | 1 |
+| Mongolia | 2021 | All | Presidential | Polling Station | 1,700 (geocode level: 350) | ✅ | | .956 |
+| Montenegro | 2023 | All | Legislative | Polling Station | 1,000 | ✅ | | 1 |
 | Myanmar | 2010, 2015 | All | Legislative | Parliamentary Constituency | 320 | ✅ | | .980 |
 | Namibia | 2014, 2019 | All | Legislative, Presidential | Parliamentary Constituency | 120| ✅ | | 1 |
 | Nepal | 2017, 2021 | All | Legislative | Parliamentary Constituency | 165| ✅ | | 1 |
@@ -167,7 +167,7 @@ Stay tuned for further information about the release of SAGE
 | Romania | 2014 to 2024 | != 2016 | Legislative, Presidential | Polling Station | 18,500 | ✅ | | 1 |
 | Russia | 2000 to 2024 | 2012, 2016, 2018 | Legislative, Presidential | Polling Station | 95,000 |✅ |  | 1 (2012), .893 (2016, 2018) |
 | Senegal | 2024 | All | Legislative | Polling Station | 10,000 (incomplete data) | ✅ |  | .996 |
-| Serbia | 2000 to 2022 | 2017 | Legislative, Presidential | Polling Station | ~8,000 | ✅ | | .987 |
+| Serbia | 2000 to 2022 | 2017 | Legislative, Presidential | Polling Station | 8,000 | ✅ | | .987 |
 | Singapore | 2020 | All | Legislative | Constituency | 31 | ✅ | | 1 |
 | Slovakia | 2016 to 2024 | All | Legislative, Presidential | Polling Station | 6,000 (geocode level: 1,500) | ✅ | | 1 |
 | Slovenia | 2022 | All | Presidential | Polling Station | 3,000 | ✅ | | 1 |
@@ -177,18 +177,18 @@ Stay tuned for further information about the release of SAGE
 | Spain | 1982 to 2019 | >= 2004 | Legislative | Polling Station | 36,000 | ✅ | | .998 |
 | Sri Lanka | 2020 | All | Legislative | Polling Division | 150 | ✅ | | 1 |
 | Sweden | 2006, 2010, 2014, 2018, 2022 | All | Legislative | Electoral District | 6,100 | ✅ |  | 1 |
-| Switzerland | 1971 to 2023 | >= 2011 | Legislative | Municipality | ~2,400 | ✅ | | 1 |
+| Switzerland | 1971 to 2023 | >= 2011 | Legislative | Municipality | 2,400 | ✅ | | 1 |
 | Taiwan | 1996 to 2024 | >= 2020 | Legislative, Presidential | Polling Station | 15,000 | ✅ | | .989 |
 | Thailand | 2023 | All | Legislative | Parliamentary Constituency | 400 | ✅ | | 1 |
 | Trinidad and Tobago | 2015, 2020 | All | Legislative | Parliamentary Constituency | 40 | ✅ | | 1 |
 | Tunisia | 2014 | All | Presidential | Polling Station | 19,000 | ✅ | | .999 |
 | Turkey | 2011, 2014, 2015, 2018, 2023 | All | Legislative, Presidential | Polling Station | 190,000 (geocode level: 50,000) | ✅ | | 1 |
 | Ukraine | 2019 | All | Legislative, Presidential | Polling Station | 30,000 |  ✅ | | .996 |
-| United Kingdom | 2005, 2010, 2015, 2017, 2019, 2024 | All | Legislative | Parliamentary Constituency | ~650 | ✅ | | 1 |
+| United Kingdom | 2005, 2010, 2015, 2017, 2019, 2024 | All | Legislative | Parliamentary Constituency | 650 | ✅ | | 1 |
 | United States of America  | 2016, 2020  | All | Presidential  | Precinct | 200,000 | ✅ | VEST | .999 |
 | Uruguay | 2014, 2019, 2024 | All | Legislative | Polling Station | 7,200 | ✅ | | .991 |
 | Vanuatu | 2002, 2004, 2012, 2016, 2020 | All | Legislative | Parliamentary Constituency | 17 | ✅ |  | 1 |
-| Venezuela | 2013 | All | Presidential | Polling Station | 39,256 | ✅ | | .991 |
+| Venezuela | 2013 | All | Presidential | Polling Station | 40,000 | ✅ | | .991 |
 | Zambia | 2021 | All | Presidential | Parliamentary Constituency | 150 | ✅ | | 1 |
 
 
