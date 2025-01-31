@@ -166,7 +166,7 @@ Stay tuned for further information about the release of SAGE
 | Poland | 1990 to 2023 | All | Legislative, Presidential | Polling Station | 27,000 | ✅ | | .999 |
 | Portugal | 1976 to 2024 | >= 2009 | Legislative, Presidential | Parish | 4,000 | ✅ | | .997 |
 | Romania | 2014 to 2024 | != 2016 | Legislative, Presidential | Polling Station | 18,500 | ✅ | | 1 |
-| Russia | 2000 to 2024 | 2012, 2016, 2018 | Legislative, Presidential | Polling Station | 95,000 |✅ |  | 1 (2012), .893 (2016, 2018) |
+| Russia | 2000 to 2024 | >= 2012 | Legislative, Presidential | Polling Station | 95,000 |✅ |  | 1 (2012), .893 (2016, 2018) |
 | Senegal | 2024 | All | Legislative | Polling Station | 10,000 (incomplete data) | ✅ |  | .996 |
 | Serbia | 2000 to 2022 | 2017 | Legislative, Presidential | Polling Station | 8,000 | ✅ | | .987 |
 | Singapore | 2020 | All | Legislative | Constituency | 31 | ✅ | | 1 |
