@@ -21,6 +21,9 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
+### v0.75 (February 4th, 2025)
+- Added turnout for most Russian elections
+
 ### v0.7 (January 24th, 2025)
 - Fixed Bosnia and Herzegovina Thiessen polygons to use only Republika Srpska or Federation of Bosnia and Herzegovina boundaries, rather than generation across the country at-large
 - Added (incomplete) 2024 Senegalese legislative election results
