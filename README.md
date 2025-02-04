@@ -110,7 +110,7 @@ Stay tuned for further information about the release of SAGE
 | Croatia | 2011 to 2024 | All | Legislative, Presidential | Polling Station | 6,100 |  ✅ | | 1 |
 | Cyprus | 2001 to 2023 | All | Legislative, Presidential | Polling Station | 1,000 (geocode leve: 400) | ✅ | | 1 |
 | Czechia | 2002 to 2021 | 2017, 2021 | Legislative | Election Precinct (okrsek) | 14,800 | ✅ | | .989 |
-| Denmark | 2011, 2015, 2019, 2022 | All  | Legislative | Polling Station | 1,300 |  ✅ || 1 |
+| Denmark | 2011 to 2022 | All  | Legislative | Polling Station | 1,300 |  ✅ || 1 |
 | Dominica | 2019, 2022 | All | Legislative | Polling Station  |230 |  ✅ | | .986 |
 | Dominican Republic | 2000 to 2024 | !(2000, 2010, 2016) | Legislative, Presidential | Polling Station |12,000 | ✅ | | .995 |
 | Ecuador | 2002 to 2023 | All | Legislative, Presidential | Parish |1,220 | ✅ | | 1 |
@@ -143,7 +143,7 @@ Stay tuned for further information about the release of SAGE
 | Latvia | 2014, 2018, 2022 | All | Legislative | Polling Station | 2,000 | ✅ | | 1 |
 | Lebanon | 2018, 2022 | All | Legislative | Polling Station | 6,800| ✅ | | .998|
 | Lesotho | 2017, 2022 | All | Legislative | Parliamentary Constituency | 80 (geocode level: 10) | ✅ | | 1 |
-| Lithuania | 2016, 2019, 2020, 2024 | All | Legislative, Presidential | Precinct (apylinkės) | 2,000 | ✅ | | 1 |
+| Lithuania | 2016 to 2024 | All | Legislative, Presidential | Precinct (apylinkės) | 2,000 | ✅ | | 1 |
 | Luxembourg | 2023 | All | Legislative | Municipality (commune) | 100| ✅ | | 1 |
 | Madagascar | 2018, 2023 | All | Presidential | Polling Station | 25,000 | ✅ | | .997 |
 | Malaysia | 2008, 2013, 2018, 2022 | All | Legislative | Parliamentary Constituency | 222 | ✅ | | 1 |
@@ -155,7 +155,7 @@ Stay tuned for further information about the release of SAGE
 | Myanmar | 2010, 2015 | All | Legislative | Parliamentary Constituency | 320 | ✅ | | .980 |
 | Namibia | 2014, 2019 | All | Legislative, Presidential | Parliamentary Constituency | 120| ✅ | | 1 |
 | Nepal | 2017, 2021 | All | Legislative | Parliamentary Constituency | 165| ✅ | | 1 |
-| Netherlands | 2010, 2012, 2017, 2021| All | Legislative | Polling Station | 400 (2017), 10,000 (others) | ✅ | | .999 |
+| Netherlands | 2010 to 2021| All | Legislative | Polling Station | 400 (2017), 10,000 (others) | ✅ | | .999 |
 | New Zealand   | 1999 to 2023  | All | Legislative | Polling Station | 5,000 | ✅ | | .999 |
 | Nigeria | 2019 | All | Legislative | Parliamentary Constituency | 350 | ✅ | | 1 |
 | North Macedonia | 2016, 2024 | All | Legislative, Presidential | Polling Station | 3,500 | ✅ | | .999 |
@@ -180,7 +180,7 @@ Stay tuned for further information about the release of SAGE
 | South Korea | 2002 to 2024 | >= 2007 | Legislative, Presidential | Polling Station | 13,000 to 34,000 | ✅ | | .99 |
 | Spain | 1982 to 2023 | >= 2004 | Legislative | Polling Station | 36,000 | ✅ | | .998 |
 | Sri Lanka | 2020 | All | Legislative | Polling Division | 150 | ✅ | | 1 |
-| Sweden | 2006, 2010, 2014, 2018, 2022 | All | Legislative | Electoral District | 6,100 | ✅ |  | 1 |
+| Sweden | 2006 to 2022 | All | Legislative | Electoral District | 6,100 | ✅ |  | 1 |
 | Switzerland | 1971 to 2023 | >= 2011 | Legislative | Municipality | 2,400 | ✅ | | 1 |
 | Taiwan | 1996 to 2024 | >= 2020 | Legislative, Presidential | Polling Station | 15,000 | ✅ | | .989 |
 | Thailand | 2023 | All | Legislative | Parliamentary Constituency | 400 | ✅ | | 1 |
@@ -191,7 +191,7 @@ Stay tuned for further information about the release of SAGE
 | United Kingdom | 2005, 2010, 2015, 2017, 2019, 2024 | All | Legislative | Parliamentary Constituency | 650 | ✅ | | 1 |
 | United States of America  | 2016, 2020  | All | Presidential  | Precinct | 200,000 | ✅ | VEST | .999 |
 | Uruguay | 2014, 2019, 2024 | All | Legislative | Polling Station | 7,200 | ✅ | | .991 |
-| Vanuatu | 2002, 2004, 2012, 2016, 2020 | All | Legislative | Parliamentary Constituency | 17 | ✅ |  | 1 |
+| Vanuatu | 2002 to 2020 | All | Legislative | Parliamentary Constituency | 17 | ✅ |  | 1 |
 | Venezuela | 2013 | All | Presidential | Polling Station | 40,000 | ✅ | | .991 |
 | Zambia | 2021 | All | Presidential | Parliamentary Constituency | 150 | ✅ | | 1 |
 
