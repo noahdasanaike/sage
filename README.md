@@ -118,7 +118,7 @@ Stay tuned for further information about the release of SAGE
 | Estonia | 2015, 2019 | 2019 | Legislative | Polling Station | 500 | ✅ | | 1 |
 | Fiji | 2022 | All | Legislative | Polling Station | 991 | ✅ | | 1 |
 | Finland | 2011 to 2024 | >= 2015 | Legislative, Presidential | Voting Districts (2019), Municipality | 1,900 (2019); 310 (>= 2015) | ✅ | | .996 |
-| France | 2002 to 2024 | All | Legislative, Presidential | Polling Station | 70,000 (>= 2017); 35,000 (<2017) | ✅ | | .95 (>= 2022); .988 (<= 2017) |
+| France | 2002 to 2024 | All | Legislative, Presidential | Polling Station | 70,000 (> 2017); 35,000 (<=2017) | ✅ | | .95 (>= 2022); .988 (<= 2017) |
 | Georgia | 2012 to 2024 | All | Legislative | Polling Station | 2,000 | ✅ | | .985 |
 | Germany | 1983 to 2021 | >= 1998 | Legislative | Polling Station | 80,000 (geocode level: 11,000) | ✅ | | .989 |
 | Ghana | 2012, 2016, 2020 | All | Legislative, Presidential | Parliamentary Constituency | 275| ✅ | |1  |
