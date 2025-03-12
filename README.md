@@ -189,7 +189,7 @@ Stay tuned for further information about the release of SAGE
 | Turkey | 2011, 2014, 2015, 2018, 2023 | All | Legislative, Presidential | Polling Station | 190,000 (geocode level: 50,000) | ✅ | | 1 |
 | Ukraine | 2019 | All | Legislative, Presidential | Polling Station | 30,000 |  ✅ | | .996 |
 | United Kingdom | 2005 to 2024 | All | Legislative | Parliamentary Constituency | 650 | ✅ | | 1 |
-| United States of America  | 2016, 2020  | All | Presidential  | Precinct | 200,000 | ✅ | VEST | .999 |
+| United States of America  | 2000 to 2020  | >= 2016 | Presidential  | Precinct | 200,000 | ✅ | VEST | .999 |
 | Uruguay | 2014, 2019, 2024 | All | Legislative | Polling Station | 7,200 | ✅ | | .991 |
 | Vanuatu | 2002 to 2020 | All | Legislative | Parliamentary Constituency | 17 | ✅ |  | 1 |
 | Venezuela | 2013 | All | Presidential | Polling Station | 40,000 | ✅ | | .991 |
