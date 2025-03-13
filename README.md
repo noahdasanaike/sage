@@ -166,7 +166,7 @@ Stay tuned for further information about the release of SAGE
 | New Zealand   | 1999 to 2023  | All | Legislative | Polling Station | 5,000 | ✅ | | .999 |
 | Nigeria | 2019 | All | Legislative | Parliamentary Constituency | 350 | ✅ | | 1 |
 | North Macedonia | 2016, 2024 | All | Legislative, Presidential | Polling Station | 3,500 | ✅ | | .999 |
-| Norway | 2009, 2013, 2017, 2021 | All | Legislative | Municipality (<= 2013), Electoral District (>= 2017) | 226 (<= 2013), 1,250 (>= 2017) | ✅ | | .993 |
+| Norway | 2009, 2013, 2017, 2021 | All | Legislative | Municipality (<= 2013), Electoral District (>= 2017) | 650 (<= 2013), 1,250 (>= 2017) | ✅ | | .993 |
 | Pakistan | 2018 | All | Legislative | Polling Station | 72,000 (geocode level: 250) | ✅ | Colin Cookman | 1 |
 | Panama | 2004, 2009 | All | Legislative | District (corregimiento) | 620 | ✅ | | .950 |
 | Papua New Guinea | 1987 to 2017 | All | Legislative | Electorate | 100 |✅ | Wood (2019) | 1 |
