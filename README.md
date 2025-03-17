@@ -21,6 +21,14 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
+#### v0.80 (March 17th, 2025)
+- Added registered/eligible voter counts to elections in: Canada, Denmark, Finland, Hungary
+- Corrected issues with Norwegian vote count numeric conversion 
+- Re-geocoded 2021 Albanian legislative elections with Google instead of ESRI
+- Manually corrected coordinates of several Argentine polling stations
+- Corrected source for French municipal boundaries <= 2017
+- LSAGE: added local election results for Spain and Norway
+
 ### v0.78 (March 12th, 2025)
 - Changed party columns corresponding to candidates in Myanmar to candidate columns
 - Various party and NAME fixes in Madagascar, Uruguay, Honduras
@@ -74,7 +82,7 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ### LSAGE Announcement (November 15th, 2024)
 - Began data collection for LSAGE: local-level election (mayor, municipal council, etc.) returns
-- Completed data for United Kingdom, France, and Sweden
+- Completed LSAGE data for United Kingdom, France, and Sweden
 
 ### v0.1 (September 5th, 2024)
 - Fixed vote count totals for Uruguay and the Solomon Islands
