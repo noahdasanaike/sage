@@ -21,6 +21,9 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
+#### v0.81 (March 24th, 2025)
+- Redid all of Greece from scratch, and added 2023 elections
+
 #### v0.80 (March 17th, 2025)
 - Added registered/eligible voter counts to elections in: Canada, Denmark, Finland, Hungary
 - Corrected issues with Norwegian vote count numeric conversion 
@@ -137,7 +140,7 @@ Stay tuned for further information about the release of SAGE
 | Georgia | 2012 to 2024 | All | Legislative | Polling Station | 2,000 | ✅ | | .985 |
 | Germany | 1983 to 2021 | >= 1998 | Legislative | Polling Station | 80,000 (geocode level: 11,000) | ✅ | | .989 |
 | Ghana | 2012, 2016, 2020 | All | Legislative, Presidential | Parliamentary Constituency | 275| ✅ | |1  |
-| Greece | 2012, 2015, 2019 | All | Legislative | Polling Station | 20,000 | ✅ | | .987 | 
+| Greece | 2012 to 2023 | All | Legislative | Polling Station | 20,000 | ✅ | | .973 | 
 | Greenland | 2002 to 2022 | All | Legislative | Settlements | 72 | ✅ | | 1 |
 | Guatemala | 2023 | All | Legislative | Polling Station | 24,000 (geocode level: 3,500) |  ✅ | | .928 |
 | Guyana | 2015 | All | Legislative | Polling Station | 2,000 |  ✅ | | .999 |
