@@ -23,6 +23,7 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 #### v0.81 (March 24th, 2025)
 - Redid all of Greece from scratch, and added 2023 elections
+- LSAGE: added local election results for Poland
 
 #### v0.80 (March 17th, 2025)
 - Added registered/eligible voter counts to elections in: Canada, Denmark, Finland, Hungary
