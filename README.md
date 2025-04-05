@@ -21,6 +21,10 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
+
+#### v0.85 (April 5th, 2025)
+- Redid all of the United States; presidential results only from 2008 to 2024 (last year missing several states)
+
 #### v0.81 (March 24th, 2025)
 - Redid all of Greece from scratch, and added 2023 elections
 - LSAGE: added local election results for Poland
