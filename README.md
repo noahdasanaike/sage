@@ -21,7 +21,9 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
-
+#### v0.86 (May 6th, 2025)
+- Added registered voter turnout in the United States for 2012 to 2020
+  
 #### v0.85 (April 5th, 2025)
 - Redid all of the United States; presidential results only from 2008 to 2024 (last year missing several states)
 
