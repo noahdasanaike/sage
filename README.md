@@ -22,7 +22,7 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 ## Change Log
 
 #### v0.87 (May 13th, 2025)
-- Added Ugandan elections
+- Added elections for Uganda and Liechtenstein, making 108 total countries
 - Added 2024-2025 Croatian Presidential election results
 
 #### v0.86 (May 6th, 2025)
@@ -172,6 +172,7 @@ Stay tuned for further information about the release of SAGE
 | Latvia | 2014, 2018, 2022 | All | Legislative | Polling Station | 2,000 | ✅ | | 1 |
 | Lebanon | 2018, 2022 | All | Legislative | Polling Station | 6,800| ✅ | | .998|
 | Lesotho | 2017, 2022 | All | Legislative | Parliamentary Constituency | 80 (geocode level: 10) | ✅ | | 1 |
+| Liechtenstein | 2001 to 2025 | All | Legislative | Municipality | 11 | ✅ | | 1 |
 | Lithuania | 2016 to 2024 | All | Legislative, Presidential | Precinct (apylinkės) | 2,000 | ✅ | | 1 |
 | Luxembourg | 2023 | All | Legislative | Municipality (commune) | 100| ✅ | | 1 |
 | Madagascar | 2018, 2023 | All | Presidential | Polling Station | 25,000 | ✅ | | .997 |
