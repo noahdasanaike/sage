@@ -21,6 +21,9 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
+#### v0.87 (May 13th, 2025)
+- Added Ugandan elections
+
 #### v0.86 (May 6th, 2025)
 - Added registered voter turnout in the United States for 2012 to 2020
   
@@ -212,6 +215,7 @@ Stay tuned for further information about the release of SAGE
 | Trinidad and Tobago | 2015, 2020 | All | Legislative | Parliamentary Constituency | 40 | ✅ | | 1 |
 | Tunisia | 2014 | All | Presidential | Polling Station | 19,000 | ✅ | | .999 |
 | Turkey | 2011, 2014, 2015, 2018, 2023 | All | Legislative, Presidential | Polling Station | 190,000 (geocode level: 50,000) | ✅ | | 1 |
+| Uganda | 2006 to 2021 | All | Presidential | Polling Station | 28,000 (geocode level: 7,200)  | ✅ | Uganda Elections Data Portal | 1 |
 | Ukraine | 2019 | All | Legislative, Presidential | Polling Station | 30,000 |  ✅ | | .996 |
 | United Kingdom | 2005 to 2024 | All | Legislative | Parliamentary Constituency | 650 | ✅ | | 1 |
 | United States of America  | 2008 to 2024  | >= 2008 | Presidential  | Precinct | 170,000 | ✅ | VEST, Joshua Metcalf, Jonathan Rodden | .999 |
