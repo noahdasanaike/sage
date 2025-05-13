@@ -23,6 +23,7 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 #### v0.87 (May 13th, 2025)
 - Added Ugandan elections
+- Added 2024-2025 Croatian Presidential election results
 
 #### v0.86 (May 6th, 2025)
 - Added registered voter turnout in the United States for 2012 to 2020
@@ -135,7 +136,7 @@ Stay tuned for further information about the release of SAGE
 | Colombia | 2018 | All | Legislative | Polling Station | 102,000 (ballot boxes; 11,000 unique places) | ✅ || .993 |
 | Costa Rica | 2018, 2022 | All | Legislative, Presidential | Polling Station | 2,101 | ✅ | | .999 |
 | Chile | 2013, 2017, 2021 | All | Legislative, Presidential | Polling Station | 90,000 (geocode level: 7,000) | ✅ | | 1 |
-| Croatia | 2011 to 2024 | All | Legislative, Presidential | Polling Station | 6,100 |  ✅ | | 1 |
+| Croatia | 2011 to 2025 | All | Legislative, Presidential | Polling Station | 6,100 |  ✅ | | 1 |
 | Cyprus | 2001 to 2023 | All | Legislative, Presidential | Polling Station | 1,000 (geocode leve: 400) | ✅ | | 1 |
 | Czechia | 2002 to 2021 | 2017, 2021 | Legislative | Election Precinct (okrsek) | 14,800 | ✅ | | .989 |
 | Denmark | 2011 to 2022 | All  | Legislative | Polling Station | 1,300 |  ✅ || 1 |
