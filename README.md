@@ -23,7 +23,7 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 #### v0.87 (May 13th, 2025)
 - Added elections for Uganda and Liechtenstein, making 108 total countries
-- Added 2024-2025 Croatian Presidential election results
+- Added 2024-2025 Croatian presidential election results, 2025 Romanian presidential election results (first round)
 
 #### v0.86 (May 6th, 2025)
 - Added registered voter turnout in the United States for 2012 to 2020
@@ -198,7 +198,7 @@ Stay tuned for further information about the release of SAGE
 | Philippines | 2022 | All | Legislative, Presidential | Polling Station | 104,000 (geocode level: 50,000) | ✅ | | 1 |
 | Poland | 1990 to 2023 | All | Legislative, Presidential | Polling Station | 27,000 | ✅ | | .999 |
 | Portugal | 1976 to 2024 | >= 2009 | Legislative, Presidential | Parish | 4,000 | ✅ | | .997 |
-| Romania | 2014 to 2024 | != 2016 | Legislative, Presidential | Polling Station | 18,500 | ✅ | | 1 |
+| Romania | 2014 to 2025 | != 2016 | Legislative, Presidential | Polling Station | 18,500 | ✅ | | 1 |
 | Russia | 2000 to 2024 | >= 2012 | Legislative, Presidential | Polling Station | 95,000 |✅ |  | 1 (2012), .893 (2016, 2018) |
 | Senegal | 2024 | All | Legislative | Polling Station | 10,000 (incomplete data) | ✅ |  | .996 |
 | Serbia | 2000 to 2022 | 2017 | Legislative, Presidential | Polling Station | 8,000 | ✅ | | .987 |
