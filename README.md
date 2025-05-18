@@ -21,9 +21,9 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
-#### v0.87 (May 13th, 2025)
+#### v0.87 (May 18th, 2025)
 - Added elections for Uganda and Liechtenstein, making 108 total countries
-- Added 2024-2025 Croatian presidential election results, 2025 Romanian presidential election results (first round)
+- Added 2024-2025 Croatian presidential election, 2025 Romanian presidential election (first round), 2021 Chilean presidential election
 
 #### v0.86 (May 6th, 2025)
 - Added registered voter turnout in the United States for 2012 to 2020
