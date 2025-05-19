@@ -21,8 +21,8 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
-#### v0.87 (May 18th, 2025)
-- Added elections for Uganda and Liechtenstein, making 108 total countries
+#### v0.87 (May 19th, 2025)
+- Added elections for Liechtenstein, Mauritania, Uganda, making 109 total countries
 - Added 2024-2025 Croatian presidential election, 2025 Romanian presidential election (first round), 2021 Chilean presidential election
 
 #### v0.86 (May 6th, 2025)
@@ -178,6 +178,7 @@ Stay tuned for further information about the release of SAGE
 | Madagascar | 2018, 2023 | All | Presidential | Polling Station | 25,000 | ✅ | | .997 |
 | Malaysia | 2008, 2013, 2018, 2022 | All | Legislative | Parliamentary Constituency | 222 | ✅ | | 1 |
 | Malawi | 2019 | All | Legislative, Presidential | Polling Station | 11,000 | ✅ | | .997 |
+| Mauritania | 2024 | All | Presidential | Polling Station | 4,500 (geocode level: 250) | ✅ | | 1 |
 | Mexico   | 1991 to 2024 | 2006, 2009, 2015, 2018, 2024 | Legislative, Presidential | Polling Station | 150,000| ✅ | Magar, 2019 (<= 2018) | .999 |
 | Moldova | 2014 to 2024 | 2020, 2021, 2024 | Legislative, Presidential | Polling Station | 2,000 | ✅ | | .999 |
 | Mongolia | 2021 | All | Presidential | Polling Station | 1,700 (geocode level: 350) | ✅ | | .956 |
