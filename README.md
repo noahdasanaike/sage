@@ -21,8 +21,8 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
-#### v0.87 (May 22nd, 2025)
-- Added elections for Liechtenstein, Mauritania, Uganda, making 109 total countries
+#### v0.87 (May 23rd, 2025)
+- Added elections for the Kyrgyz Republic, Liechtenstein, Mauritania, Uganda, making 110 total countries
 - Added 2024-2025 Croatian presidential election, 2025 Romanian presidential election (first round), 2021 Chilean presidential election
 - Fixed Canadian polling station matching to shapefiles 
 
@@ -170,6 +170,7 @@ Stay tuned for further information about the release of SAGE
 | Japan | 2009, 2012, 2014, 2017, 2021, 2024 | All | Legislative | Municipality (市区町村) | 2,000 | ✅ | | 1 |
 | Kenya | 2022 | All | Presidential | Polling Station | 46,000 |✅ | | .996 |
 | Kosovo | 2017, 2019, 2021 | All | Legislative | Polling Station | 2,500 | ✅ | | 1 |
+| Kyrgyz Republic | 2015 to 2021 | >= 2017 | Legislative, Presidential | Polling Station | 2,500 |✅ | | .975 |
 | Latvia | 2014, 2018, 2022 | All | Legislative | Polling Station | 2,000 | ✅ | | 1 |
 | Lebanon | 2018, 2022 | All | Legislative | Polling Station | 6,800| ✅ | | .998|
 | Lesotho | 2017, 2022 | All | Legislative | Parliamentary Constituency | 80 (geocode level: 10) | ✅ | | 1 |
