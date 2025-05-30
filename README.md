@@ -24,7 +24,8 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 #### v0.87 (May 30th, 2025)
 - Added elections for the Kyrgyz Republic, Liechtenstein, Mauritania, Uganda, making 110 total countries
 - Added 2024-2025 Croatian presidential election, 2025 Romanian presidential election (first round), 2021 Peruvian presidential election
-- Fixed Canadian polling station matching to shapefiles 
+- Fixed Canadian polling station matching to shapefiles
+- Added election (spatial) level indicator to LSAGE elections in the United Kingdom and Sweden
 
 #### v0.86 (May 6th, 2025)
 - Added registered voter turnout in the United States for 2012 to 2020
