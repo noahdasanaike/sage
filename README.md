@@ -115,7 +115,7 @@ Stay tuned for further information about the release of SAGE
 
 ![current_coverage](fig1_alt.jpg)
 
-## Country Coverage
+## SAGE Country Coverage
 
 | Country      | Years |  Polygon Years | Election Types | Smallest Physical Unit (Data) | Units per Year (approximate average) | Progress | Additional Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: |:---: | :---:| :---: | :---: | ---:|
@@ -229,6 +229,12 @@ Stay tuned for further information about the release of SAGE
 | Vanuatu | 2002 to 2020 | All | Legislative | Parliamentary Constituency | 17 | ✅ |  | 1 |
 | Venezuela | 2013 | All | Presidential | Polling Station | 40,000 | ✅ | | .991 |
 | Zambia | 2021 | All | Presidential | Parliamentary Constituency | 150 | ✅ | | 1 |
+
+## LSAGE Country Coverage
+
+| Country      | Years |  Polygon Years | Election Types | Smallest Physical Unit (Data) | Units per Year (approximate average) | Projected to Formal Boundary | Progress | Additional Source | Geographic Coverage (non-missing years) |
+| :---        |    :----:   |          :---: |  :---: |:---: | :---:| :---: | :---: | :---: | ---:|
+| United Kingdom | 2006 to 2021 (!2020) | 2011, >= 2015 | Local (general) | Ward | 4,000 |  ✅ |  ✅ | | .995 (!2017), .829 (2017) |
 
 
 ## Acknowledgements
