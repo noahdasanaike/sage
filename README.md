@@ -234,7 +234,8 @@ Stay tuned for further information about the release of SAGE
 
 | Country      | Years |  Polygon Years | Election Types | Smallest Physical Unit (Data) | Units per Year (approximate average) | Projected to Formal Boundary | Progress | Additional Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: |:---: | :---:| :---: | :---: | :---: | ---:|
-| Norway | 2011 to 2023 | 2019, 2023 | Local (municipal councils) | Electoral District | [4, 1550] | ✅ |  ✅ | | 1.0 |
+| Norway | 2011 to 2023 | 2019, 2023 | Local (municipal councils) | Electoral District | [4, 1550] | ✅ |  ✅ | | .999 |
+| Poland | 2014 to 2024 | All | Local (mayoral, municipal councils) | Village | [15,000, 30,000]| ✅ |  ✅ | | .999 |
 | United Kingdom | 2006 to 2021 (!2020) | 2011, >= 2015 | Local (general) | Ward | 4,000 |  ✅ |  ✅ | | .995 (!2017), .829 (2017) |
 
 
