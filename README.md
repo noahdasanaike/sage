@@ -234,6 +234,7 @@ Stay tuned for further information about the release of SAGE
 
 | Country      | Years |  Polygon Years | Election Types | Smallest Physical Unit (Data) | Units per Year (approximate average) | Projected to Formal Boundary | Progress | Additional Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: |:---: | :---:| :---: | :---: | :---: | ---:|
+| France | 2014, 2020 | All | Local (municipal councils) | Polling Station | 70,000| ✅ |  ✅ | | .965 | 
 | Norway | 2011 to 2023 | 2019, 2023 | Local (municipal councils) | Electoral District | [4, 1550] | ✅ |  ✅ | | .999 |
 | Poland | 2014 to 2024 | All | Local (mayoral, municipal councils) | Village | [15,000, 30,000]| ✅ |  ✅ | | .999 |
 | Portugal | 2009 to 2021 | All | Local (parish council) | Parish | 3,000| ✅ |  ✅ | | 1 |
