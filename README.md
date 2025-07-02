@@ -21,6 +21,11 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
+
+
+#### v0.88 (July 2nd, 2025)
+- Added 2025 South Korean presidential election
+
 #### v0.87 (May 30th, 2025)
 - Added elections for the Kyrgyz Republic, Liechtenstein, Mauritania, Uganda, making 110 total countries
 - Added 2024-2025 Croatian presidential election, 2025 Romanian presidential election (first round), 2021 Peruvian presidential election
@@ -211,7 +216,7 @@ Stay tuned for further information about the release of SAGE
 | Slovenia | 2012 to 2022 | All | Legislative, Presidential | Polling Station | 3,700 | ✅ | | .995 |
 | Solomon Islands | 2006, 2010, 2014, 2019 | All |Legislative | Parliamentary Constituency | 50 |✅ | Wood (2019) | 1 |
 | South Africa | 2004 to 2024 | All | Legislative | Voting Districts | 20,000 | ✅ | | 1 |
-| South Korea | 2002 to 2024 | >= 2007 | Legislative, Presidential | Polling Station | 13,000 to 34,000 | ✅ | | .99 |
+| South Korea | 2002 to 2025 | >= 2007 | Legislative, Presidential | Polling Station | 13,000 to 34,000 | ✅ | | .99 |
 | Spain | 1982 to 2023 | >= 2004 | Legislative | Polling Station | 36,000 | ✅ | | .998 |
 | Sri Lanka | 2020 | All | Legislative | Polling Division | 150 | ✅ | | 1 |
 | Sweden | 2006 to 2022 | All | Legislative | Electoral District | 6,100 | ✅ |  | 1 |
