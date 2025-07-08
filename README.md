@@ -23,8 +23,9 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 
 
-#### v0.88 (July 2nd, 2025)
+#### v0.88 (July 7th, 2025)
 - Added 2025 South Korean presidential election
+- Added Portugal parish boundaries back to 1976
 
 #### v0.87 (May 30th, 2025)
 - Added elections for the Kyrgyz Republic, Liechtenstein, Mauritania, Uganda, making 110 total countries
@@ -206,7 +207,7 @@ Stay tuned for further information about the release of SAGE
 | Peru | 2006, 2011, 2016, 2021 | 2021 | Legislative, Presidential | Polling Station | 150,000 (<= 2016), 83,000 (2021) | ✅ | | 1 |
 | Philippines | 2022 | All | Legislative, Presidential | Polling Station | 104,000 (geocode level: 50,000) | ✅ | | 1 |
 | Poland | 1990 to 2023 | All | Legislative, Presidential | Polling Station | 27,000 | ✅ | | .999 |
-| Portugal | 1976 to 2024 | >= 2009 | Legislative, Presidential | Parish | 4,000 | ✅ | | .997 |
+| Portugal | 1976 to 2024 | All | Legislative, Presidential | Parish | 4,000 | ✅ | | .997 (>= 2009), .950 (< 2009) |
 | Romania | 2014 to 2025 | != 2016 | Legislative, Presidential | Polling Station | 18,500 | ✅ | | 1 |
 | Russia | 2000 to 2024 | >= 2012 | Legislative, Presidential | Polling Station | 95,000 |✅ |  | 1 (2012), .893 (2016, 2018) |
 | Senegal | 2024 | All | Legislative | Polling Station | 10,000 (incomplete data) | ✅ |  | .996 |
