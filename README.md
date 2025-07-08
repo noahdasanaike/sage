@@ -25,7 +25,7 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 #### v0.88 (July 7th, 2025)
 - Added 2025 South Korean presidential election
-- Added Portugal parish boundaries back to 1976
+- Added Portugal parish boundaries back to 1976, fixed independent candidate reference
 
 #### v0.87 (May 30th, 2025)
 - Added elections for the Kyrgyz Republic, Liechtenstein, Mauritania, Uganda, making 110 total countries
