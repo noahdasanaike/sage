@@ -25,6 +25,7 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 #### v0.88 (July 7th, 2025)
 - Added 2025 South Korean presidential election
+- LSAGE: added local election results for South Korea
 - Added Portugal parish boundaries back to 1976, fixed independent candidate reference
 
 #### v0.87 (May 30th, 2025)
@@ -244,6 +245,7 @@ Stay tuned for further information about the release of SAGE
 | Norway | 2011 to 2023 | 2019, 2023 | Local (municipal councils) | Electoral District | [4, 1550] | ✅ |  ✅ | | .999 |
 | Poland | 2014 to 2024 | All | Local (mayoral, municipal councils) | Village | [15,000, 30,000]| ✅ |  ✅ | | .999 |
 | Portugal | 2009 to 2021 | All | Local (parish council) | Parish | 3,000| ✅ |  ✅ | | 1 |
+| South Korea | 2018, 2022 | All | Local (mayoral, municipal councils) | Neighborhood (dong) | 3,300 | ✅ |  ✅ | | .997 |
 | Spain | 2003 to 2023 | All | Local (municipal council) | Polling Station | 56,000| ✅ |  ✅ | | .988  |
 | Sweden | 2010 to 2022 | All | Local (municipal council) | Electoral District | 5,900| ✅ |  ✅ | | .998  |
 | United Kingdom | 2006 to 2021 (!2020) | 2011, >= 2015 | Local (general) | Ward | 4,000 |  ✅ |  ✅ | | .995 (!2017), .829 (2017) |
