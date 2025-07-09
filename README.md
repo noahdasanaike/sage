@@ -241,11 +241,12 @@ Stay tuned for further information about the release of SAGE
 
 | Country      | Years |  Polygon Years | Election Types | Smallest Physical Unit (Data) | Units per Year (approximate average) | Projected to Formal Boundary | Progress | Additional Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: |:---: | :---:| :---: | :---: | :---: | ---:|
-| France | 2014, 2020 | All | Local (municipal councils) | Polling Station | 70,000| ✅ |  ✅ | | .965 | 
-| Norway | 2011 to 2023 | 2019, 2023 | Local (municipal councils) | Electoral District | [4, 1550] | ✅ |  ✅ | | .999 |
-| Poland | 2014 to 2024 | All | Local (mayoral, municipal councils) | Village | [15,000, 30,000]| ✅ |  ✅ | | .999 |
+| France | 2014, 2020 | All | Local (municipal council) | Polling Station | 70,000| ✅ |  ✅ | | .965 | 
+| Norway | 2011 to 2023 | 2019, 2023 | Local (municipal council) | Electoral District | [4, 1550] | ✅ |  ✅ | | .999 |
+| Poland | 2014 to 2024 | All | Local (mayoral, municipal council) | Village | [15,000, 30,000]| ✅ |  ✅ | | .999 |
 | Portugal | 2009 to 2021 | All | Local (parish council) | Parish | 3,000| ✅ |  ✅ | | 1 |
-| South Korea | 2018, 2022 | All | Local (mayoral, municipal councils) | Neighborhood (dong) | 3,300 | ✅ |  ✅ | | .997 |
+| South Korea | 2018, 2022 | All | Local (mayoral, municipal council) | Neighborhood (dong) | 3,300 | ✅ |  ✅ | | .997 |
+| Taiwan | 2022 | All | Local (mayoral, municipal council, village head) | Polling Station| [1200, 18000] | ✅ |  ✅ | | .994 |
 | Spain | 2003 to 2023 | All | Local (municipal council) | Polling Station | 56,000| ✅ |  ✅ | | .988  |
 | Sweden | 2010 to 2022 | All | Local (municipal council) | Electoral District | 5,900| ✅ |  ✅ | | .998  |
 | United Kingdom | 2006 to 2021 (!2020) | 2011, >= 2015 | Local (general) | Ward | 4,000 |  ✅ |  ✅ | | .995 (!2017), .829 (2017) |
