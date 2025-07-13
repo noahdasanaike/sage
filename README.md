@@ -24,7 +24,7 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 #### v0.88 (July 13th, 2025)
 - Added 2025 South Korean presidential election
-- LSAGE: added local election results for Croatia, South Korea, and Taiwan
+- LSAGE: added local election results for Chile, Croatia, South Korea, and Taiwan
 
 #### v0.875 (July 9th, 2025)
 - Added Portugal parish boundaries back to 1976, fixed independent candidate reference
@@ -212,7 +212,7 @@ Stay tuned for further information about the release of SAGE
 | Portugal | 1976 to 2024 | All | Legislative, Presidential | Parish | 4,000 | ✅ | | .997 (>= 2009), .950 (< 2009) |
 | Romania | 2014 to 2025 | != 2016 | Legislative, Presidential | Polling Station | 18,500 | ✅ | | 1 |
 | Russia | 2000 to 2024 | >= 2012 | Legislative, Presidential | Polling Station | 95,000 |✅ |  | 1 (2012), .893 (2016, 2018) |
-| Senegal | 2024 | All | Legislative | Polling Station | 10,000 (incomplete data) | ✅ |  | .996 |
+| Senegal | 2024 | All | Legislative | Polling Station | 10,000 (incomplete data) | ⚠️ |  | .996 |
 | Serbia | 2000 to 2022 | 2017 | Legislative, Presidential | Polling Station | 8,000 | ✅ | | .987 |
 | Singapore | 2020 | All | Legislative | Constituency | 31 | ✅ | | 1 |
 | Slovakia | 2016 to 2024 | All | Legislative, Presidential | Polling Station | 6,000 (geocode level: 1,500) | ✅ | | 1 |
@@ -242,6 +242,7 @@ Stay tuned for further information about the release of SAGE
 
 | Country      | Years |  Polygon Years | Election Types | Smallest Physical Unit (Data) | Units per Year (approximate average) | Projected to Formal Boundary | Progress | Additional Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: |:---: | :---:| :---: | :---: | :---: | ---:|
+| Chile |
 | Croatia | 2013 to 2021 | All | Local (mayoral, municipal council, county and city council | Polling Station | 28,000| ✅ |  ✅ | | .999 | 
 | France | 2014, 2020 | All | Local (municipal council) | Polling Station | 70,000| ✅ |  ✅ | | .965 | 
 | Norway | 2011 to 2023 | 2019, 2023 | Local (municipal council) | Electoral District | [4, 1,550] | ✅ |  ✅ | | .999 |
