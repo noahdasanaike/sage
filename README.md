@@ -22,9 +22,10 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 ## Change Log
 
 
-#### v0.88 (July 13th, 2025)
+#### v0.88 (July 14th, 2025)
 - Added 2025 South Korean presidential election
-- LSAGE: added local election results for Chile, Croatia, South Korea, and Taiwan
+- Fixed Danish eligible voter and turnout calculation
+- LSAGE: added local election results for Chile, Croatia, Denmark, South Korea, and Taiwan
 
 #### v0.875 (July 9th, 2025)
 - Added Portugal parish boundaries back to 1976, fixed independent candidate reference
