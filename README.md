@@ -244,6 +244,7 @@ Stay tuned for further information about the release of SAGE
 | :---        |    :----:   |          :---: |  :---: |:---: | :---:| :---: | :---: | :---: | ---:|
 | Chile | 2012 to 2024 | All | Local (mayoral, municipal council) | Polling Station | 42,600| ✅ |  ✅ | | .988 | 
 | Croatia | 2013 to 2021 | All | Local (mayoral, municipal council, county and city council | Polling Station | 28,000| ✅ |  ✅ | | .999 | 
+| Denmark | 2009 to 2021 | All | Local (municipal council) | Polling Station | 17,150| ✅ |  ✅ | | .987 | 
 | France | 2014, 2020 | All | Local (municipal council) | Polling Station | 70,000| ✅ |  ✅ | | .965 | 
 | Norway | 2011 to 2023 | 2019, 2023 | Local (municipal council) | Electoral District | [4, 1,550] | ✅ |  ✅ | | .999 |
 | Poland | 2014 to 2024 | All | Local (mayoral, municipal council) | Village | [15,000, 30,000]| ✅ |  ✅ | | .999 |
