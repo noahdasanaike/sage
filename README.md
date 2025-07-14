@@ -177,7 +177,7 @@ Stay tuned for further information about the release of SAGE
 | Israel | 2006 to 2022 | 2020, 2021 | Legislative | Polling Station | 11,000 | ✅ | | 1 |
 | Italy | 1953 to 2022 | >= 2002 | Legislative | Municipality (commune) | 8,000 | ✅ | | .96 |
 | Jamaica | 2007, 2011, 2016, 2020 | All | Legislative | Polling Station | 6,500| ✅ | | .965 |
-| Japan | 2009, 2012, 2014, 2017, 2021, 2024 | All | Legislative | Municipality (市区町村) | 2,000 | ✅ | | 1 |
+| Japan | 2009 to 2024 | All | Legislative | Municipality (市区町村) | 2,000 | ✅ | | 1 |
 | Kenya | 2022 | All | Presidential | Polling Station | 46,000 |✅ | | .996 |
 | Kosovo | 2017, 2019, 2021 | All | Legislative | Polling Station | 2,500 | ✅ | | 1 |
 | Kyrgyz Republic | 2015 to 2021 | >= 2017 | Legislative, Presidential | Polling Station | 2,500 |✅ | | .975 |
