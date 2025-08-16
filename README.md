@@ -21,6 +21,8 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 
 ## Change Log
 
+#### v0.89 (August 15th, 2025)
+- Fixed party names in Chile and Slovakia; minor party name adjustments elsewhere
 
 #### v0.88 (July 14th, 2025)
 - Added 2025 South Korean presidential election
