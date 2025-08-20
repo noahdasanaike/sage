@@ -2,7 +2,7 @@
 
 # Small-Area Global Elections (SAGE) Archive
 
-[![Version](https://img.shields.io/badge/version-0.75-blue.svg)](https://github.com/noahdasanaike/sage)
+[![Version](https://img.shields.io/badge/version-0.89-blue.svg)](https://github.com/noahdasanaike/sage)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 Monitoring the construction of SAGE, the small-area global elections database, providing small-area election results with polygon geometry for national elections. The data are produced for the working paper ``Why Urban-Rural Political Cleavages Do Not Generalize", which can be found <a href="https://www.dropbox.com/scl/fi/f5ol59b0n9exxebt3un5v/Dasanaike_Urban_Rural_2025.pdf?rlkey=m1xcfrvl7ey82k7d5kaakkci3&st=mjmzzuki&dl=0">here</a>.
