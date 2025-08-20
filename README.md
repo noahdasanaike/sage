@@ -5,19 +5,18 @@
 [![Version](https://img.shields.io/badge/version-0.75-blue.svg)](https://github.com/noahdasanaike/sage)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-Monitoring the construction of SAGE, the small-area global elections database, providing small-area election results with polygon geometry for national elections.
+Monitoring the construction of SAGE, the small-area global elections database, providing small-area election results with polygon geometry for national elections. The data are produced for the working paper ``Why Urban-Rural Political Cleavages Do Not Generalize", which can be found <a href="https://www.dropbox.com/scl/fi/f5ol59b0n9exxebt3un5v/Dasanaike_Urban_Rural_2025.pdf?rlkey=m1xcfrvl7ey82k7d5kaakkci3&st=mjmzzuki&dl=0">here</a>.
+
+#### Usage
+
+Stay tuned for further information about the release of SAGE. Sign up to receive notification of when the data are released <a href="https://docs.google.com/forms/d/e/1FAIpQLSdI-6RFTr5pq1o8HCEysohnG-58RbaP2jGUkmBFONZ-8zlkYg/viewform">here</a>.
 
 ## Table of Contents
 - [Introduction](#introduction)
 - [Change Log](#change-log)
-- [Usage](#usage)
 - [Progress](#progress)
 - [Country Coverage](#country-coverage)
 - [Acknowledgements](#acknowledgements)
-
-## Introduction
-
-SAGE is a comprehensive database of geocoded, small-area (polling station, municipality, or equivalent) election results for national elections worldwide
 
 ## Change Log
 
@@ -57,17 +56,17 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 - Corrected source for French municipal boundaries <= 2017
 - LSAGE: added local election results for Spain and Norway
 
-### v0.78 (March 12th, 2025)
+#### v0.78 (March 12th, 2025)
 - Changed party columns corresponding to candidates in Myanmar to candidate columns
 - Various party and NAME fixes in Madagascar, Uruguay, Honduras
 - Corrected duplicate party tallies in Belgium
 - Added month information to Greek snap elections 
 - Added geometry to all election years in Norway
 
-### v0.75 (February 4th, 2025)
+#### v0.75 (February 4th, 2025)
 - Added turnout for most Russian elections
 
-### v0.7 (January 24th, 2025)
+#### v0.7 (January 24th, 2025)
 - Fixed Bosnia and Herzegovina Thiessen polygons to use only Republika Srpska or Federation of Bosnia and Herzegovina boundaries, rather than generation across the country at-large
 - Added (incomplete) 2024 Senegalese legislative election results
 - Added 2018 results for Costa Rica
@@ -79,13 +78,13 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 - Added actual section ("polling station" equivalent) boundaries to all Spanish elections from 2004 onwards
 - Added 2014 to 2022 parliamentary and presidential elections in Slovenia
   
-### v0.6 (January 15th, 2025)
+#### v0.6 (January 15th, 2025)
 - Fixed bug in Thiessen generation code affecting polygon edges and applied fix to all 67 affected countries 
 - Added 2023 general election results for Spain
 - Added Kenya (2022 presidential elections)
 - Reduced floating point precision of Indian polling station coordinates to 1e-6, fixing errors in Thiessen polygon generation with deldir claiming non-unique points
 
-### v0.5 (January 9th, 2025)
+#### v0.5 (January 9th, 2025)
 - Added 2024 election results for United Kingdom, Taiwan, Japan, South Korea, Portugal, Austria, Iceland, Georgia, Finland, Lithuania, Croatia, Bulgaria, Mexico, Dominican Republic, Romania, North Macedonia, France, South Africa, and Moldova
 - Added 2023 Spanish general election results
 - Added Polish parliamentary elections back to 1991, and presidential elections to 1990
@@ -93,7 +92,7 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 - Re-generated Thiessen polygons for Taiwan using year-dated updated boundaries
 - Corrected Ukrainian Thiessen polygons with 2019-dated country boundary
 
-### v0.4 (January 7th, 2025)
+#### v0.4 (January 7th, 2025)
 - Added 2014 and 2018 Hungarian elections
 - Fixed Croatian party coalition names
 - Added polling station locations to 2020 Dominican Republic election, and 2016 election without known coordinates/polling “recinto”
@@ -102,26 +101,22 @@ SAGE is a comprehensive database of geocoded, small-area (polling station, munic
 - Corrected place names for Bangladesh
 - Added geocoded Ecuadorian elections back to 2002, fixed NAME2 being set to NAME3
 
-### v0.3 (December 20th, 2024)
+#### v0.3 (December 20th, 2024)
 - Added Icelandic presidential elections
 
-### v0.2 (December 8th, 2024)
+#### v0.2 (December 8th, 2024)
 - Fixed overseas France geometry (meridian Thiessen issues)
 
-### LSAGE Announcement (November 15th, 2024)
+#### LSAGE Announcement (November 15th, 2024)
 - Began data collection for LSAGE: local-level election (mayor, municipal council, etc.) returns
 - Completed LSAGE data for United Kingdom, France, and Sweden
 
-### v0.1 (September 5th, 2024)
+#### v0.1 (September 5th, 2024)
 - Fixed vote count totals for Uruguay and the Solomon Islands
 - Added 2023 general elections for New Zealand
 
-### v0.0 (August 6th, 2024)
+#### v0.0 (August 6th, 2024)
 - Initial completion of the data
-
-## Usage
-
-Stay tuned for further information about the release of SAGE
 
 ## Progress
 
