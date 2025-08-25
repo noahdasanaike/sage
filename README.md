@@ -20,9 +20,10 @@ Stay tuned for further information about the release of SAGE. Sign up to receive
 
 ## Change Log
 
-#### v0.89 (August 19th, 2025)
+#### v0.89 (August 25th, 2025)
 - Fixed party names in Chile and Slovakia; minor party name adjustments elsewhere
 - Fixed issue where South Korean Voronoi polygons were not merging in correctly
+- LSAGE: added 2014 and 2018 local elections to Taiwan
 
 #### v0.88 (July 14th, 2025)
 - Added 2025 South Korean presidential election
@@ -249,7 +250,7 @@ Stay tuned for further information about the release of SAGE. Sign up to receive
 | Poland | 2014 to 2024 | All | Local (mayoral, municipal council) | Village | [15,000, 30,000]| ✅ |  ✅ | | .999 |
 | Portugal | 2009 to 2021 | All | Local (parish council) | Parish | 3,000| ✅ |  ✅ | | 1 |
 | South Korea | 2018, 2022 | All | Local (mayoral, municipal council) | Neighborhood (dong) | 3,300 | ✅ |  ✅ | | .997 |
-| Taiwan | 2022 | All | Local (mayoral, municipal council, village head) | Polling Station| [1,200, 18,000] | ✅ |  ✅ | | .994 |
+| Taiwan | 2014 to 2022 | All | Local (mayoral, municipal council, village head) | Polling Station| [1,200, 18,000] | ✅ |  ✅ | | .994 |
 | Spain | 2003 to 2023 | All | Local (municipal council) | Polling Station | 56,000| ✅ |  ✅ | | .988  |
 | Sweden | 2010 to 2022 | All | Local (municipal council) | Electoral District | 5,900| ✅ |  ✅ | | .998  |
 | United Kingdom | 2006 to 2021 (!2020) | 2011, >= 2015 | Local (general) | Ward | 4,000 |  ✅ |  ✅ | | .995 (!2017), .829 (2017) |
