@@ -23,7 +23,7 @@ Stay tuned for further information about the release of SAGE. Sign up to receive
 #### v0.89 (August 25th, 2025)
 - Fixed party names in Chile and Slovakia; minor party name adjustments elsewhere
 - Fixed issue where South Korean Voronoi polygons were not merging in correctly
-- LSAGE: added 2014 and 2018 local elections to Taiwan, added 2022 local elections to the United Kingdom
+- LSAGE: added 2014 and 2018 local elections to Taiwan, added 2022 local elections to the United Kingdom, added local election results for Canada (Quebec)
 
 #### v0.88 (July 14th, 2025)
 - Added 2025 South Korean presidential election
