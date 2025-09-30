@@ -22,7 +22,7 @@ Stay tuned for further information about the release of SAGE. Sign up to receive
 
 #### v0.895 (September 30th, 2025)
 - Fixed Croatian vote-share aggregation
-- 
+
 #### v0.89 (August 25th, 2025)
 - Fixed party names in Chile and Slovakia; minor party name adjustments elsewhere
 - Fixed issue where South Korean Voronoi polygons were not merging in correctly
