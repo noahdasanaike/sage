@@ -20,6 +20,9 @@ Stay tuned for further information about the release of SAGE. Sign up to receive
 
 ## Change Log
 
+#### v0.900 (November 14th, 2025)
+- The table-level election results compiled for Spain and published in Pérez et a. (2021) are very incorrect for 2011, and possibly for other years as well. All data using these sources has been removed and Spain has been re-constructed from scratch.
+  
 #### v0.895 (September 30th, 2025)
 - Fixed Croatian vote-share aggregation
 
