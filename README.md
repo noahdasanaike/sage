@@ -5,7 +5,7 @@
 [![Version](https://img.shields.io/badge/version-0.900-blue.svg)](https://github.com/noahdasanaike/sage)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-Granular, geocoded, and standardized electoral returns for **110 countries**, covering more than 580 country-elections from 1948 onwards. Each row is a (country, electoral unit, year, election type, party-or-candidate) tuple. The data are produced for the working paper *"Why Urban-Rural Political Cleavages Do Not Generalize"*; see the [paper PDF](https://www.dropbox.com/scl/fi/f5ol59b0n9exxebt3un5v/Dasanaike_Urban_Rural_2025.pdf?rlkey=m1xcfrvl7ey82k7d5kaakkci3&st=mjmzzuki&dl=0).
+Granular, geocoded, and standardized electoral returns for **110 countries**, covering more than 580 country-elections from 1948 onwards. Each row is a (country, electoral unit, year, election type, party-or-candidate) tuple.
 
 The full archive is publicly hosted at <https://storage.googleapis.com/sage-archive/> with anonymous read access. Two thin retrieval packages — one for R, one for Python — let you pull (country, years, columns) slices with a one-liner.
 
@@ -123,6 +123,10 @@ Sign up for release notifications [here](https://docs.google.com/forms/d/e/1FAIp
 ---
 
 ## Change Log
+
+#### v0.99 (April 29th, 2026)
+- Paper revise and resubmit at Nature Scientific Data
+- Built out full R and Python packages for querying data
 
 #### v0.900 (November 14th, 2025)
 - The table-level election results compiled for Spain and published in Pérez et a. (2021) are very incorrect for 2011, and possibly for other years as well. All data using these sources has been removed and Spain has been re-constructed from scratch
