@@ -2,28 +2,132 @@
 
 # Small-Area Global Elections (SAGE) Archive
 
-[![Version](https://img.shields.io/badge/version-0.895-blue.svg)](https://github.com/noahdasanaike/sage)
+[![Version](https://img.shields.io/badge/version-0.900-blue.svg)](https://github.com/noahdasanaike/sage)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-Monitoring the construction of SAGE, the small-area global elections database, providing small-area election results with polygon geometry for national elections. The data are produced for the working paper ``Why Urban-Rural Political Cleavages Do Not Generalize", which can be found <a href="https://www.dropbox.com/scl/fi/f5ol59b0n9exxebt3un5v/Dasanaike_Urban_Rural_2025.pdf?rlkey=m1xcfrvl7ey82k7d5kaakkci3&st=mjmzzuki&dl=0">here</a>.
+Granular, geocoded, and standardized electoral returns for **110 countries**, covering more than 580 country-elections from 1948 onwards. Each row is a (country, electoral unit, year, election type, party-or-candidate) tuple. The data are produced for the working paper *"Why Urban-Rural Political Cleavages Do Not Generalize"*; see the [paper PDF](https://www.dropbox.com/scl/fi/f5ol59b0n9exxebt3un5v/Dasanaike_Urban_Rural_2025.pdf?rlkey=m1xcfrvl7ey82k7d5kaakkci3&st=mjmzzuki&dl=0).
 
-#### Usage
+The full archive is publicly hosted at <https://storage.googleapis.com/sage-archive/> with anonymous read access. Two thin retrieval packages — one for R, one for Python — let you pull (country, years, columns) slices with a one-liner.
 
-Stay tuned for further information about the release of SAGE. Sign up to receive notification of when the data are released <a href="https://docs.google.com/forms/d/e/1FAIpQLSdI-6RFTr5pq1o8HCEysohnG-58RbaP2jGUkmBFONZ-8zlkYg/viewform">here</a>.
+---
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Change Log](#change-log)
-- [Progress](#progress)
-- [Country Coverage](#country-coverage)
-- [Acknowledgements](#acknowledgements)
+## Install
+
+### R
+
+```r
+# install.packages("remotes")
+remotes::install_github("noahdasanaike/sage", subdir = "sage_R")
+```
+
+The R package depends on `arrow`, `dplyr`, `tibble`, `rlang`, and (for `sage_polygons()`) `sf` + `sfarrow`.
+
+### Python
+
+```bash
+pip install git+https://github.com/noahdasanaike/sage.git#subdirectory=sage_python
+# or, when published to PyPI:
+# pip install sage-elections
+```
+
+The Python package depends on `pyarrow`, `duckdb`, and `pandas`. Install the `[geo]` extra (`geopandas`, `shapely`) if you need `sage_polygons()`.
+
+---
+
+## Usage
+
+```r
+library(sage)
+
+# What's available?
+sage_countries()                     # 110 country names
+sage_years("Germany")                # c(1998, 2002, 2005, 2009, 2013, 2017, 2021)
+sage_columns()                       # the schema
+
+# Pull a vote-row slice (no polygons; partition-pruned, returns in seconds)
+de_2021 <- sage_load("Germany", years = 2021,
+                     columns = c("party", "votes", "NAME3"))
+
+# Filter on Party Facts match confidence
+spain_high <- sage_load("Spain",
+                        min_match_confidence = "high",
+                        columns = c("party", "partyfacts_id", "votes"))
+
+# Polygons (only when you need boundaries; one geoparquet per country)
+g <- sage_polygons("Germany")
+g_2020 <- sage_polygons("United States of America", years = 2020)
+```
+
+```python
+import sage
+
+sage.sage_countries()
+sage.sage_years("Germany")
+de_2021 = sage.sage_load("Germany", years=[2021],
+                          columns=["party", "votes", "NAME3"])
+
+# Polygons (requires geopandas)
+g = sage.sage_polygons("Germany")
+us_2020 = sage.sage_polygons("United States of America", years=[2020])
+```
+
+For SQL users, the parquet release can be queried directly via DuckDB without installing this package:
+
+```python
+import duckdb
+con = duckdb.connect()
+con.sql("INSTALL httpfs; LOAD httpfs;")
+con.sql("""
+  SELECT party, sum(votes) AS total
+  FROM read_parquet(
+    'https://storage.googleapis.com/sage-archive/parquet/country=Germany/**/*.parquet',
+    hive_partitioning = TRUE)
+  WHERE year = 2021
+  GROUP BY party
+  ORDER BY total DESC
+""").df()
+```
+
+---
+
+## What's in the archive
+
+The release lives at `gs://sage-archive/` (anonymous-read GCS bucket; same paths reachable as `https://storage.googleapis.com/sage-archive/...`):
+
+| Subtree | Contents | Size | Use |
+|---|---|---:|---|
+| `parquet/` | hive-partitioned by `country` × `year`, with `_index.csv` | 1.2 GiB | most users; the R/Python `sage_load()` default |
+| `polygons/` | one geoparquet per country (Japan + USA year-sharded due to Arrow's 2 GB single-array limit) | 15 GiB | choropleth users; the R/Python `sage_polygons()` default |
+| `rds/` | full Output_c with inline `sf` polygon geometry | 64 GiB | R users who want native sf objects |
+
+Each row carries: `country`, `iso3`, hierarchical admin names (`NAME1` … `NAME$k$`), `year`, `election_type`, `special_type` / `special_type_b`, `party`, `party_b`, `party_c`/`party_d`/`candidate` where applicable, `votes`, `total_votes`, `reg`/`turnout_reg`, `evp`/`turnout_evp`, `latitude`/`longitude`, `geometry_type`/`geometry_type_b`/`geometry_level`, and the cross-source identifiers `partyfacts_id` / `partyfacts_name` / `match_confidence` (Party Facts hub) plus `geocode_duplicates` (a per-row count of distinct geometry-level units sharing this row's coordinate; 1 = clean, > 1 = collapsed centroid).
+
+See the codebook at `gs://sage-archive/codebook.pdf` for the full per-column definitions and per-country notes.
+
+---
+
+## Citation
+
+If you use SAGE, please cite the working paper:
+
+> Dasanaike, Noah. *Why Urban-Rural Political Cleavages Do Not Generalize* (working paper, 2025).
+
+A *Scientific Data* paper documenting the archive is currently under review.
+
+---
+
+## Stay in the loop
+
+Sign up for release notifications [here](https://docs.google.com/forms/d/e/1FAIpQLSdI-6RFTr5pq1o8HCEysohnG-58RbaP2jGUkmBFONZ-8zlkYg/viewform).
+
+---
 
 ## Change Log
 
 #### v0.900 (November 14th, 2025)
 - The table-level election results compiled for Spain and published in Pérez et a. (2021) are very incorrect for 2011, and possibly for other years as well. All data using these sources has been removed and Spain has been re-constructed from scratch
 - Added 2025 Canadian legislative election results
-  
+
 #### v0.895 (September 30th, 2025)
 - Fixed Croatian vote-share aggregation
 
@@ -48,7 +152,7 @@ Stay tuned for further information about the release of SAGE. Sign up to receive
 
 #### v0.86 (May 6th, 2025)
 - Added registered voter turnout in the United States for 2012 to 2020
-  
+
 #### v0.85 (April 5th, 2025)
 - Redid all of the United States; presidential results only from 2008 to 2024 (last year missing several states)
 
@@ -58,7 +162,7 @@ Stay tuned for further information about the release of SAGE. Sign up to receive
 
 #### v0.80 (March 17th, 2025)
 - Added registered/eligible voter counts to elections in: Canada, Denmark, Finland, Hungary
-- Corrected issues with Norwegian vote count numeric conversion 
+- Corrected issues with Norwegian vote count numeric conversion
 - Re-geocoded 2021 Albanian legislative elections with Google instead of ESRI
 - Manually corrected coordinates of several Argentine polling stations
 - Corrected source for French municipal boundaries <= 2017
@@ -68,7 +172,7 @@ Stay tuned for further information about the release of SAGE. Sign up to receive
 - Changed party columns corresponding to candidates in Myanmar to candidate columns
 - Various party and NAME fixes in Madagascar, Uruguay, Honduras
 - Corrected duplicate party tallies in Belgium
-- Added month information to Greek snap elections 
+- Added month information to Greek snap elections
 - Added geometry to all election years in Norway
 
 #### v0.75 (February 4th, 2025)
@@ -85,9 +189,9 @@ Stay tuned for further information about the release of SAGE. Sign up to receive
 - Fixed strange nested list state of Argentine geometry column
 - Added actual section ("polling station" equivalent) boundaries to all Spanish elections from 2004 onwards
 - Added 2014 to 2022 parliamentary and presidential elections in Slovenia
-  
+
 #### v0.6 (January 15th, 2025)
-- Fixed bug in Thiessen generation code affecting polygon edges and applied fix to all 67 affected countries 
+- Fixed bug in Thiessen generation code affecting polygon edges and applied fix to all 67 affected countries
 - Added 2023 general election results for Spain
 - Added Kenya (2022 presidential elections)
 - Reduced floating point precision of Indian polling station coordinates to 1e-6, fixing errors in Thiessen polygon generation with deldir claiming non-unique points
@@ -103,7 +207,7 @@ Stay tuned for further information about the release of SAGE. Sign up to receive
 #### v0.4 (January 7th, 2025)
 - Added 2014 and 2018 Hungarian elections
 - Fixed Croatian party coalition names
-- Added polling station locations to 2020 Dominican Republic election, and 2016 election without known coordinates/polling “recinto”
+- Added polling station locations to 2020 Dominican Republic election, and 2016 election without known coordinates/polling "recinto"
 - Corrected polling station boundaries for France in 2022, which were then used for the 2024 election; downgraded 2017 election to municipal boundaries only
 - Added all Argentine elections between 2011 and 2023
 - Corrected place names for Bangladesh
@@ -126,7 +230,7 @@ Stay tuned for further information about the release of SAGE. Sign up to receive
 #### v0.0 (August 6th, 2024)
 - Initial completion of the data
 
-## Progress
+## Coverage map
 
 ![current_coverage](fig1_alt.jpg)
 
@@ -168,7 +272,7 @@ Stay tuned for further information about the release of SAGE. Sign up to receive
 | Georgia | 2012 to 2024 | All | Legislative | Polling Station | 2,000 | ✅ | | .985 |
 | Germany | 1983 to 2021 | >= 1998 | Legislative | Polling Station | 80,000 (geocode level: 11,000) | ✅ | | .989 |
 | Ghana | 2012, 2016, 2020 | All | Legislative, Presidential | Parliamentary Constituency | 275| ✅ | |1  |
-| Greece | 2012 to 2023 | All | Legislative | Polling Station | 20,000 | ✅ | | .973 | 
+| Greece | 2012 to 2023 | All | Legislative | Polling Station | 20,000 | ✅ | | .973 |
 | Greenland | 2002 to 2022 | All | Legislative | Settlements | 72 | ✅ | | 1 |
 | Guatemala | 2023 | All | Legislative | Polling Station | 24,000 (geocode level: 3,500) |  ✅ | | .928 |
 | Guyana | 2015 | All | Legislative | Polling Station | 2,000 |  ✅ | | .999 |
@@ -176,8 +280,8 @@ Stay tuned for further information about the release of SAGE. Sign up to receive
 | Hong Kong | 2016, 2021 | All | Legislative | Polling Station | (2021: 650, 2016: 100) | ✅ | | 1 |
 | Hungary | 2014, 2018, 2022 | All | Legislative | Polling Station | 10,000 | ✅ | | .999 |
 | Iceland | 1959 to 2021 | All | Legislative, Presidential | Parliamentary Constituency | (8 < 2003, 6  >= 2003) | ✅ | | 1 |
-| Indonesia | 2019 | All | Legislative, Presidential | Polling Station | 800,000 (geocode level: 80,000) | ✅ | | .997 | 
-| India | 2019 | All | Legislative | Polling Station  | 867,000 | ✅ | | .944 | 
+| Indonesia | 2019 | All | Legislative, Presidential | Polling Station | 800,000 (geocode level: 80,000) | ✅ | | .997 |
+| India | 2019 | All | Legislative | Polling Station  | 867,000 | ✅ | | .944 |
 | Iran | 2017 | All | Presidential | City | 380 | ✅ | | 1 |
 | Ireland | 2002 to 2020| 2016, 2020 | Legislative | Parliamentary Constituency | 40 | ✅ | | 1 |
 | Israel | 2006 to 2022 | 2020, 2021 | Legislative | Polling Station | 11,000 | ✅ | | 1 |
@@ -249,11 +353,11 @@ Stay tuned for further information about the release of SAGE. Sign up to receive
 
 | Country      | Years |  Polygon Years | Election Types | Smallest Physical Unit (Data) | Units per Year (approximate average) | Projected to Formal Boundary | Progress | Additional Source | Geographic Coverage (non-missing years) |
 | :---        |    :----:   |          :---: |  :---: |:---: | :---:| :---: | :---: | :---: | ---:|
-| Canada (Quebec) | 2017, 2021 | All | Local (mayoral) | Polling Station |4,000 | ✅ |  ✅ | | 1.0 | 
-| Chile | 2012 to 2024 | All | Local (mayoral, municipal council) | Polling Station | 42,600| ✅ |  ✅ | | .988 | 
-| Croatia | 2013 to 2021 | All | Local (mayoral, municipal council, county and city council | Polling Station | 28,000| ✅ |  ✅ | | .999 | 
-| Denmark | 2009 to 2021 | All | Local (municipal council) | Polling Station | 17,150| ✅ |  ✅ | | .987 | 
-| France | 2014, 2020 | All | Local (municipal council) | Polling Station | 70,000| ✅ |  ✅ | | .965 | 
+| Canada (Quebec) | 2017, 2021 | All | Local (mayoral) | Polling Station |4,000 | ✅ |  ✅ | | 1.0 |
+| Chile | 2012 to 2024 | All | Local (mayoral, municipal council) | Polling Station | 42,600| ✅ |  ✅ | | .988 |
+| Croatia | 2013 to 2021 | All | Local (mayoral, municipal council, county and city council | Polling Station | 28,000| ✅ |  ✅ | | .999 |
+| Denmark | 2009 to 2021 | All | Local (municipal council) | Polling Station | 17,150| ✅ |  ✅ | | .987 |
+| France | 2014, 2020 | All | Local (municipal council) | Polling Station | 70,000| ✅ |  ✅ | | .965 |
 | Norway | 2011 to 2023 | 2019, 2023 | Local (municipal council) | Electoral District | [4, 1,550] | ✅ |  ✅ | | .999 |
 | Poland | 2014 to 2024 | All | Local (mayoral, municipal council) | Village | [15,000, 30,000]| ✅ |  ✅ | | .999 |
 | Portugal | 2009 to 2021 | All | Local (parish council) | Parish | 3,000| ✅ |  ✅ | | 1 |

@@ -1,0 +1,25 @@
+Package: sage
+Type: Package
+Title: Small-Area Global Elections Archive: Data Retrieval Helpers
+Version: 0.1.0
+Authors@R: c(
+    person("Noah", "Dasanaike", email = "noahdasanaike@g.harvard.edu", role = c("aut", "cre")))
+Description: Provides convenience functions to download and subset slices of
+    the Small-Area Global Elections (SAGE) archive without having to read
+    monolithic country-level RDS files. Pulls partitioned Parquet from a
+    public bucket (default: SAGE_BUCKET environment variable or the
+    archive URL given in the manuscript) and exposes a single
+    sage_load(country, years, columns) function that returns a tibble.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports:
+    arrow (>= 14.0.0),
+    dplyr,
+    tibble,
+    rlang
+Suggests:
+    sf,
+    testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
+URL: https://github.com/noahdasanaike/sage
+BugReports: https://github.com/noahdasanaike/sage/issues

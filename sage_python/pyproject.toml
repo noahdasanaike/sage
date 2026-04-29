@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sage-elections"
+version = "0.1.0"
+description = "Retrieval helpers for the Small-Area Global Elections (SAGE) archive"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Noah Dasanaike", email = "noahdasanaike@g.harvard.edu"}
+]
+dependencies = [
+    "pyarrow >= 14.0",
+    "duckdb >= 0.10",
+    "pandas >= 2.0",
+]
+
+[project.optional-dependencies]
+geo = ["geopandas >= 0.14", "shapely >= 2.0"]
+dev = ["pytest >= 7", "ruff"]
+
+[project.urls]
+Homepage = "https://github.com/noahdasanaike/sage"
+Issues   = "https://github.com/noahdasanaike/sage/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
