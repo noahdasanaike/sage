@@ -170,6 +170,36 @@ sage_load <- function(country,
   tibble::as_tibble(dplyr::collect(q))
 }
 
+#' Load the per-candidate vote sidecar for countries with open lists or
+#' candidate-level reporting (Germany Erststimme; Netherlands Tweede Kamer).
+#'
+#' @param country Country name.
+#' @return A tibble.
+#' @export
+sage_preference_votes <- function(country) {
+  stopifnot(is.character(country), length(country) == 1)
+  files <- list(
+    Germany     = "germany_erststimme_candidates_by_wahlkreis.parquet",
+    Netherlands = "netherlands_preference_votes_by_stembureau_2021.parquet"
+  )
+  if (!country %in% names(files)) {
+    stop("no preference-vote sidecar for ", country,
+         "; available: ", paste(names(files), collapse = ", "))
+  }
+  src <- .sage_source()
+  base <- if (grepl("^gs://", src)) {
+    paste0("https://storage.googleapis.com/",
+           sub("^gs://", "", sub("/parquet/?$", "", src)),
+           "/preference_votes")
+  } else if (grepl("^https?://", src)) {
+    paste0(sub("/parquet/?$", "", sub("/$", "", src)), "/preference_votes")
+  } else {
+    file.path(sub("/parquet/?$", "", src), "..", "Output_c", "preference_votes")
+  }
+  url <- paste0(base, "/", files[[country]])
+  tibble::as_tibble(arrow::read_parquet(url))
+}
+
 #' Load the polygon set for one country.
 #'
 #' SAGE ships a parallel \code{polygons/} tree (one geoparquet per country)

@@ -27,6 +27,7 @@ import os
 from typing import Iterable, Optional, Sequence
 
 import pyarrow.dataset as ds
+import pyarrow.parquet as pq
 import pyarrow as pa
 import pandas as pd
 
@@ -174,6 +175,36 @@ def sage_load(
 
     table = _open_dataset().to_table(columns=cols, filter=flt)
     return table.to_pandas()
+
+
+_PREFERENCE_VOTES = {
+    "Germany": "germany_erststimme_candidates_by_wahlkreis.parquet",
+    "Netherlands": "netherlands_preference_votes_by_stembureau_2021.parquet",
+}
+
+
+def sage_preference_votes(country: str) -> pd.DataFrame:
+    """Load the per-candidate vote sidecar for countries with open lists or
+    candidate-level reporting (Germany Erststimme, Netherlands Tweede Kamer).
+
+    Returns a pandas DataFrame; raises KeyError if no sidecar exists for
+    ``country``.
+    """
+    if country not in _PREFERENCE_VOTES:
+        raise KeyError(
+            f"no preference-vote sidecar for {country!r}; "
+            f"available: {sorted(_PREFERENCE_VOTES)}"
+        )
+    fname = _PREFERENCE_VOTES[country]
+    src = get_source().rstrip("/")
+    if src.endswith("/parquet"):
+        src = src[: -len("/parquet")]
+    if src.startswith("gs://"):
+        from pyarrow import fs as pafs
+        gcs = pafs.GcsFileSystem(anonymous=True)
+        path = src[len("gs://"):] + "/preference_votes/" + fname
+        return pq.read_table(path, filesystem=gcs).to_pandas()
+    return pq.read_table(src + "/preference_votes/" + fname).to_pandas()
 
 
 def sage_polygons(country: str, years: Optional[Iterable[int]] = None):

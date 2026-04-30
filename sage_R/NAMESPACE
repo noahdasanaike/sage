@@ -1,5 +1,6 @@
 export(sage_load)
 export(sage_polygons)
+export(sage_preference_votes)
 export(sage_countries)
 export(sage_years)
 export(sage_columns)

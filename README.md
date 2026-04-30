@@ -71,6 +71,18 @@ g = sage.sage_polygons("Germany")
 us_2020 = sage.sage_polygons("United States of America", years=[2020])
 ```
 
+SAGE exposes per-row candidate names inline (via the `candidate` column) for 13 countries where the source publishes them at polling-station grain — including India, Pakistan, Afghanistan, Hungary, Italy, Germany Erststimme (post-2005), and a long tail of smaller systems. Coverage is partial in mixed/SMD systems (Germany ~5%, Italy ~11%, Hungary ~44%) because most rows are list-tier parties without a constituency candidate. Two countries are released as separate sidecars to keep the main parquet at (polling station, party) grain — Germany (Erststimme name & vote share per Wahlkreis × party) and the Netherlands (2021 Tweede Kamer per-stembureau preference votes); other open-list / preferential systems (Australian House, Irish/Maltese STV, Brazil, Finland, Japan SMD) are slated for follow-up releases.
+
+```r
+de_cands <- sage_preference_votes("Germany")      # 5,996 rows: (year, wahlkreis_nr, party, candidate, votes, share)
+nl_pref  <- sage_preference_votes("Netherlands")  # 15M rows: per-stembureau preference votes, 2021 Tweede Kamer
+```
+
+```python
+de_cands = sage.sage_preference_votes("Germany")
+nl_pref  = sage.sage_preference_votes("Netherlands")
+```
+
 For SQL users, the parquet release can be queried directly via DuckDB without installing this package:
 
 ```python
