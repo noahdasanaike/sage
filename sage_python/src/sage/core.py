@@ -131,6 +131,7 @@ def sage_load(
     columns: Optional[Sequence[str]] = None,
     election_type: Optional[str | Iterable[str]] = None,
     min_match_confidence: Optional[str] = None,
+    drop_all_na: bool = True,
 ) -> pd.DataFrame:
     """Load a (country, years, columns) slice of SAGE as a pandas DataFrame.
 
@@ -147,6 +148,12 @@ def sage_load(
         Filter on the ``election_type`` column.
     min_match_confidence : {"high", "medium", "low"}, optional
         Restrict to rows whose ``match_confidence`` is at least this strict.
+    drop_all_na : bool, default True
+        Drop columns that are entirely NA for this country slice. Without
+        this, Arrow's union schema across the hive-partitioned dataset
+        surfaces every column that any partition carries (so an Iceland
+        slice would carry ``NAME4`` from Brazil as a wholly-NA column).
+        Set to ``False`` to preserve the full union schema.
     """
     if not isinstance(country, str):
         raise TypeError("country must be a single string")
@@ -174,7 +181,10 @@ def sage_load(
         cols = list({"country", "year", *columns})
 
     table = _open_dataset().to_table(columns=cols, filter=flt)
-    return table.to_pandas()
+    df = table.to_pandas()
+    if drop_all_na and len(df):
+        df = df.dropna(axis="columns", how="all")
+    return df
 
 
 _PREFERENCE_VOTES = {

@@ -141,7 +141,8 @@ sage_load <- function(country,
                       years = NULL,
                       columns = NULL,
                       election_type = NULL,
-                      min_match_confidence = NULL) {
+                      min_match_confidence = NULL,
+                      drop_all_na = TRUE) {
   stopifnot(is.character(country), length(country) == 1)
 
   ds <- .open_dataset()
@@ -167,7 +168,18 @@ sage_load <- function(country,
     columns <- unique(c(columns, "country", "year"))  # preserve partition cols
     q <- dplyr::select(q, dplyr::all_of(columns))
   }
-  tibble::as_tibble(dplyr::collect(q))
+  out <- tibble::as_tibble(dplyr::collect(q))
+
+  # Drop columns that are entirely NA for this country slice. Without this,
+  # Arrow's union schema across the hive-partitioned dataset surfaces every
+  # column that any partition carries (e.g., NAME4 from Brazil shows up on
+  # an Iceland slice as a wholly-NA column). Set drop_all_na = FALSE to
+  # preserve the full union schema.
+  if (drop_all_na && nrow(out) > 0) {
+    keep <- vapply(out, function(x) !all(is.na(x)), logical(1))
+    out <- out[, keep, drop = FALSE]
+  }
+  out
 }
 
 #' Load the per-candidate vote sidecar for countries with open lists or
