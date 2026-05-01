@@ -81,9 +81,13 @@ def _read_index() -> "pd.DataFrame | None":
     """Read the lightweight `_index.csv` partition list shipped with the
     release. Avoids walking every partition over the network just to list
     countries/years. Returns None if the index isn't reachable."""
+    import time
     src = get_source()
     if src.startswith("gs://"):
-        url = "https://storage.googleapis.com/" + src[len("gs://"):] + "/_index.csv"
+        # ?ts=... busts the GCS edge cache so users always see the
+        # current index even when it was just regenerated upstream.
+        url = ("https://storage.googleapis.com/" + src[len("gs://"):]
+               + "/_index.csv?ts=" + str(int(time.time())))
     elif src.startswith("https://") or src.startswith("http://"):
         url = src.rstrip("/") + "/_index.csv"
     else:
@@ -249,7 +253,8 @@ def sage_polygons(country: str, years: Optional[Iterable[int]] = None):
         from pyarrow import fs as pafs
         gcs = pafs.GcsFileSystem(anonymous=True)
         bucket_path = src[len("gs://"):] + "/polygons"  # e.g. "sage-archive/polygons"
-        index_url   = f"https://storage.googleapis.com/{bucket_path}/_index.csv"
+        import time
+        index_url   = f"https://storage.googleapis.com/{bucket_path}/_index.csv?ts={int(time.time())}"
         def _full(rel: str) -> tuple:
             return (gcs, f"{bucket_path}/{rel}")
     else:

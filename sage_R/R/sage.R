@@ -77,7 +77,10 @@ sage_set_source <- function(source) {
 .read_index <- function() {
   src <- .sage_source()
   url <- if (grepl("^gs://", src)) {
-    paste0("https://storage.googleapis.com/", sub("^gs://", "", src), "/_index.csv")
+    # ?ts=... busts the GCS edge cache so users always see the current
+    # index even when it was just regenerated upstream.
+    paste0("https://storage.googleapis.com/", sub("^gs://", "", src),
+           "/_index.csv?ts=", as.integer(Sys.time()))
   } else if (grepl("^https?://", src)) {
     paste0(sub("/$", "", src), "/_index.csv")
   } else {
@@ -250,7 +253,7 @@ sage_polygons <- function(country, years = NULL) {
   # blew through Arrow's 2 GB single-array limit (Japan, USA) are sharded into
   # <Country>/year=<Y>.parquet files. Use the polygon _index.csv to figure
   # out which.
-  idx_url <- paste0(poly_root, "/_index.csv")
+  idx_url <- paste0(poly_root, "/_index.csv?ts=", as.integer(Sys.time()))
   poly_idx <- tryCatch(read.csv(idx_url, stringsAsFactors = FALSE),
                        error = function(e) NULL)
   if (!is.null(poly_idx)) {
