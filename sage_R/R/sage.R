@@ -179,7 +179,13 @@ sage_load <- function(country,
     keep <- vapply(out, function(x) !all(is.na(x)), logical(1))
     out <- out[, keep, drop = FALSE]
   }
-  out
+
+  # Reorder columns so country and year come first. Arrow's hive
+  # partitioning leaves them at the end of the read, but every user is
+  # going to want them up front next to the rest of the row identifiers.
+  front <- intersect(c("country", "year"), colnames(out))
+  rest  <- setdiff(colnames(out), front)
+  out[, c(front, rest), drop = FALSE]
 }
 
 #' Load the per-candidate vote sidecar for countries with open lists or

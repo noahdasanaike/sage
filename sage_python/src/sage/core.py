@@ -184,7 +184,11 @@ def sage_load(
     df = table.to_pandas()
     if drop_all_na and len(df):
         df = df.dropna(axis="columns", how="all")
-    return df
+    # Reorder so partition columns come first; arrow's hive layout puts
+    # them at the end on read, but row-identifier columns belong up front.
+    front = [c for c in ("country", "year") if c in df.columns]
+    rest  = [c for c in df.columns if c not in front]
+    return df[front + rest]
 
 
 _PREFERENCE_VOTES = {
