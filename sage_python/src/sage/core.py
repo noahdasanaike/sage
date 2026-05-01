@@ -189,7 +189,7 @@ def sage_load(
 
 _PREFERENCE_VOTES = {
     "Germany": "germany_erststimme_candidates_by_wahlkreis.parquet",
-    "Netherlands": "netherlands_preference_votes_by_stembureau_2021.parquet",
+    "Netherlands": "netherlands_preference_votes_by_stembureau.parquet",
 }
 
 

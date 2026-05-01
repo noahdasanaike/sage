@@ -192,7 +192,7 @@ sage_preference_votes <- function(country) {
   stopifnot(is.character(country), length(country) == 1)
   files <- list(
     Germany     = "germany_erststimme_candidates_by_wahlkreis.parquet",
-    Netherlands = "netherlands_preference_votes_by_stembureau_2021.parquet"
+    Netherlands = "netherlands_preference_votes_by_stembureau.parquet"
   )
   if (!country %in% names(files)) {
     stop("no preference-vote sidecar for ", country,
