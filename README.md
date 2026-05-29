@@ -17,7 +17,7 @@ The full archive is publicly hosted at <https://storage.googleapis.com/sage-arch
 
 ```r
 # install.packages("remotes")
-remotes::install_github("noahdasanaike/sage", subdir = "sage_R")
+[held until data release]
 ```
 
 The R package depends on `arrow`, `dplyr`, `tibble`, `rlang`, and (for `sage_polygons()`) `sf` + `sfarrow`.
@@ -25,9 +25,7 @@ The R package depends on `arrow`, `dplyr`, `tibble`, `rlang`, and (for `sage_pol
 ### Python
 
 ```bash
-pip install git+https://github.com/noahdasanaike/sage.git#subdirectory=sage_python
-# or, when published to PyPI:
-# pip install sage-elections
+[held until data release]
 ```
 
 The Python package depends on `pyarrow`, `duckdb`, and `pandas`. Install the `[geo]` extra (`geopandas`, `shapely`) if you need `sage_polygons()`.
