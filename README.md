@@ -90,7 +90,7 @@ con.sql("INSTALL httpfs; LOAD httpfs;")
 con.sql("""
   SELECT party, sum(votes) AS total
   FROM read_parquet(
-    'https://storage.googleapis.com/sage-archive/parquet/country=Germany/**/*.parquet',
+    '[held until data release],
     hive_partitioning = TRUE)
   WHERE year = 2021
   GROUP BY party
@@ -102,7 +102,7 @@ con.sql("""
 
 ## What's in the archive
 
-The release lives at `gs://sage-archive/` (anonymous-read GCS bucket; same paths reachable as `https://storage.googleapis.com/sage-archive/...`):
+The release lives at `[held until data release]` (anonymous-read GCS bucket; same paths reachable as `[held until data release]`):
 
 | Subtree | Contents | Size | Use |
 |---|---|---:|---|
@@ -120,10 +120,7 @@ See the codebook at `gs://sage-archive/codebook.pdf` for the full per-column def
 
 If you use SAGE, please cite the working paper:
 
-> Dasanaike, Noah. *Why Urban-Rural Political Cleavages Do Not Generalize* (working paper, 2025).
-
-A *Scientific Data* paper documenting the archive is currently under review.
-
+> Dasanaike, Noah. *The Small-Area Global Elections (SAGE) Archive* (working paper, 2026).
 ---
 
 ## Stay in the loop
