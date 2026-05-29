@@ -7,7 +7,7 @@
 
 Granular, geocoded, and standardized electoral returns for **110 countries**, covering more than 580 country-elections from 1948 onwards. Each row is a (country, electoral unit, year, election type, party-or-candidate) tuple.
 
-The full archive is publicly hosted at <https://storage.googleapis.com/sage-archive/> with anonymous read access. Two thin retrieval packages — one for R, one for Python — let you pull (country, years, columns) slices with a one-liner.
+The full archive is publicly hosted at [held until data release] with anonymous read access. Two thin retrieval packages — one for R, one for Python — let you pull (country, years, columns) slices with a one-liner.
 
 ---
 
