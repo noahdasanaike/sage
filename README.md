@@ -1,13 +1,13 @@
 <p align="center"><img src="https://github.com/noahdasanaike/sage/assets/23142832/7a7357f5-d14a-4808-abd8-eb3c866a5da9" width="200" height="200" /></p>
 
-# Small-Area Global Elections (SAGE) Archive
+# Small-Area Global Elections (SAGE) Dataset
 
 [![Version](https://img.shields.io/badge/version-0.900-blue.svg)](https://github.com/noahdasanaike/sage)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 Granular, geocoded, and standardized electoral returns for **110 countries**, covering more than 580 country-elections from 1948 onwards. Each row is a (country, electoral unit, year, election type, party-or-candidate) tuple.
 
-The full archive is publicly hosted at [held until data release] with anonymous read access. Two thin retrieval packages — one for R, one for Python — let you pull (country, years, columns) slices with a one-liner.
+The full dataset is openly available. The [project website](https://noahdasanaike.github.io/sage.html) offers per-country downloads and an interactive map; the complete release is hosted at <https://storage.googleapis.com/sage-archive/> with anonymous read access. Two thin retrieval packages — one for R, one for Python — let you pull (country, years, columns) slices with a one-liner.
 
 ---
 
@@ -17,7 +17,7 @@ The full archive is publicly hosted at [held until data release] with anonymous 
 
 ```r
 # install.packages("remotes")
-[held until data release]
+remotes::install_github("noahdasanaike/sage", subdir = "sage_R")
 ```
 
 The R package depends on `arrow`, `dplyr`, `tibble`, `rlang`, and (for `sage_polygons()`) `sf` + `sfarrow`.
@@ -25,7 +25,9 @@ The R package depends on `arrow`, `dplyr`, `tibble`, `rlang`, and (for `sage_pol
 ### Python
 
 ```bash
-[held until data release]
+pip install git+https://github.com/noahdasanaike/sage.git#subdirectory=sage_python
+# or, when published to PyPI:
+# pip install sage-elections
 ```
 
 The Python package depends on `pyarrow`, `duckdb`, and `pandas`. Install the `[geo]` extra (`geopandas`, `shapely`) if you need `sage_polygons()`.
@@ -90,7 +92,7 @@ con.sql("INSTALL httpfs; LOAD httpfs;")
 con.sql("""
   SELECT party, sum(votes) AS total
   FROM read_parquet(
-    '[held until data release],
+    'https://storage.googleapis.com/sage-archive/parquet/country=Germany/**/*.parquet',
     hive_partitioning = TRUE)
   WHERE year = 2021
   GROUP BY party
@@ -100,13 +102,14 @@ con.sql("""
 
 ---
 
-## What's in the archive
+## What's in the dataset
 
-The release lives at `[held until data release]` (anonymous-read GCS bucket; same paths reachable as `[held until data release]`):
+The release lives at `gs://sage-archive/` (anonymous-read GCS bucket; same paths reachable as `https://storage.googleapis.com/sage-archive/...`):
 
 | Subtree | Contents | Size | Use |
 |---|---|---:|---|
 | `parquet/` | hive-partitioned by `country` × `year`, with `_index.csv` | 1.2 GiB | most users; the R/Python `sage_load()` default |
+| `zip/` | one Parquet bundle per country (votes, coordinates, party IDs; no geometry) | 1.2 GiB | per-country point-and-click download from the website |
 | `polygons/` | one geoparquet per country (Japan + USA year-sharded due to Arrow's 2 GB single-array limit) | 15 GiB | choropleth users; the R/Python `sage_polygons()` default |
 | `rds/` | full Output_c with inline `sf` polygon geometry | 64 GiB | R users who want native sf objects |
 
@@ -118,9 +121,12 @@ See the codebook at `gs://sage-archive/codebook.pdf` for the full per-column def
 
 ## Citation
 
-If you use SAGE, please cite the working paper:
+If you use SAGE, please cite:
 
-> Dasanaike, Noah. *The Small-Area Global Elections (SAGE) Archive* (working paper, 2026).
+> Dasanaike, Noah. *The Small-Area Global Elections (SAGE) Dataset.* Scientific Data (forthcoming, 2026).
+
+A permanent Harvard Dataverse DOI will be added here on publication.
+
 ---
 
 ## Stay in the loop
