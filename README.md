@@ -123,9 +123,7 @@ See the codebook at `gs://sage-archive/codebook.pdf` for the full per-column def
 
 If you use SAGE, please cite:
 
-> Dasanaike, Noah. *The Small-Area Global Elections (SAGE) Dataset.* Scientific Data (forthcoming, 2026).
-
-A permanent Harvard Dataverse DOI will be added here on publication.
+> Dasanaike, Noah. *The Small-Area Global Elections (SAGE) Dataset.* Scientific Data (forthcoming, 2026). Harvard Dataverse, <https://doi.org/10.7910/DVN/YGJR1L>.
 
 ---
 
