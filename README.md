@@ -135,6 +135,9 @@ Sign up for release notifications [here](https://docs.google.com/forms/d/e/1FAIp
 
 ## Change Log
 
+#### v1.0 (June 30th, 2026)
+- First release of SAGE!
+
 #### v0.99 (April 29th, 2026)
 - Paper revise and resubmit at Nature Scientific Data
 - Built out full R and Python packages for querying data
