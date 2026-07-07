@@ -7,7 +7,23 @@
 
 Granular, geocoded, and standardized electoral returns for **110 countries**, covering more than 600 country-elections from 1948 to 2026. Each row is a (country, electoral unit, year, election type, party-or-candidate) tuple.
 
-The full dataset is openly available. The [project website](https://noahdasanaike.github.io/sage.html) offers per-country downloads and an interactive map; the complete release is hosted at <https://storage.googleapis.com/sage-archive/> with anonymous read access. Two thin retrieval packages — one for R, one for Python — let you pull (country, years, columns) slices with a one-liner.
+The [project website](https://noahdasanaike.github.io/sage.html) offers per-country downloads and an interactive map; the complete release is hosted at <https://storage.googleapis.com/sage-archive/> with anonymous read access. Two retrieval packages, one for R, and one for Python, let you pull (country, years, columns) data into your environment. 
+
+---
+
+## Citation
+
+If you use SAGE, please cite:
+
+> Dasanaike, Noah. “The Small-Area Global Elections (SAGE) Dataset.” Nature Scientific Data (2026).
+> 
+> Dasanaike, Noah. The Small-Area Global Elections (SAGE) Dataset. Harvard Dataverse, https://doi.org/10.7910/DVN/YGJR1L (2026).
+
+---
+
+## Stay in the loop
+
+Sign up for release notifications [here](https://docs.google.com/forms/d/e/1FAIpQLSdI-6RFTr5pq1o8HCEysohnG-58RbaP2jGUkmBFONZ-8zlkYg/viewform).
 
 ---
 
@@ -116,20 +132,6 @@ The release lives at `gs://sage-archive/` (anonymous-read GCS bucket; same paths
 Each row carries: `country`, `iso3`, hierarchical admin names (`NAME1` … `NAME$k$`), `year`, `election_type`, `special_type` / `special_type_b`, `party`, `party_b`, `party_c`/`party_d`/`candidate` where applicable, `votes`, `total_votes`, `reg`/`turnout_reg`, `evp`/`turnout_evp`, `latitude`/`longitude`, `geometry_type`/`geometry_type_b`/`geometry_level`, and the cross-source identifiers `partyfacts_id` / `partyfacts_name` / `match_confidence` (Party Facts hub) plus `geocode_duplicates` (a per-row count of distinct geometry-level units sharing this row's coordinate; 1 = clean, > 1 = collapsed centroid).
 
 See the codebook at `gs://sage-archive/codebook.pdf` for the full per-column definitions and per-country notes.
-
----
-
-## Citation
-
-If you use SAGE, please cite:
-
-> Dasanaike, Noah. *The Small-Area Global Elections (SAGE) Dataset.* Scientific Data (forthcoming, 2026). Harvard Dataverse, <https://doi.org/10.7910/DVN/YGJR1L>.
-
----
-
-## Stay in the loop
-
-Sign up for release notifications [here](https://docs.google.com/forms/d/e/1FAIpQLSdI-6RFTr5pq1o8HCEysohnG-58RbaP2jGUkmBFONZ-8zlkYg/viewform).
 
 ---
 
