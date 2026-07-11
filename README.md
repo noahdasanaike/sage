@@ -326,7 +326,7 @@ See the codebook at `gs://sage-archive/codebook.pdf` for the full per-column def
 | Lithuania | 2016 to 2024 | All | Legislative, Presidential | Precinct (apylinkės) | 2,000 | ✅ | | 1 |
 | Luxembourg | 2023 | All | Legislative | Municipality (commune) | 100| ✅ | | 1 |
 | Madagascar | 2018, 2023 | All | Presidential | Polling Station | 25,000 | ✅ | | .997 |
-| Malaysia | 2008, 2013, 2018, 2022 | All | Legislative | Parliamentary Constituency | 222 | ✅ | | 1 |
+| Malaysia | 2008, 2013, 2018, 2022 | All | Legislative | Polling District | 6,300 | ✅ | ElectionData.MY; Tindak Malaysia | .97 |
 | Malawi | 2019 | All | Legislative, Presidential | Polling Station | 11,000 | ✅ | | .997 |
 | Mauritania | 2024 | All | Presidential | Polling Station | 4,500 (geocode level: 250) | ✅ | | 1 |
 | Mexico   | 1991 to 2024 | 2006, 2009, 2015, 2018, 2024 | Legislative, Presidential | Polling Station | 150,000| ✅ | Magar, 2019 (<= 2018) | .999 |
