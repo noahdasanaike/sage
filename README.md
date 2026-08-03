@@ -23,7 +23,7 @@ If you use SAGE, please cite:
 
 ## Please also cite
 
-Nearly every SAGE country was scraped, collected, and geocoded from scratch, but several rest on data that other researchers gathered and released first. If your analysis uses one of these countries, please cite the underlying source alongside SAGE.
+Nearly every SAGE country was scraped from scratch from official government sources, then geocoded and harmonized here. Several, though, rest on data that other researchers gathered and released first. If your analysis uses one of these countries, please cite the underlying source alongside SAGE.
 
 **Brazil (polling-station coordinates).** As of release 1.2, SAGE uses [F. Daniel Hidalgo's geocoded Brazilian polling stations](https://github.com/fdhidalgo/geocode_br_polling_stations) as the coordinate source for every year (2014, 2018, 2022), replacing the official TSE coordinates.
 
@@ -41,11 +41,11 @@ Nearly every SAGE country was scraped, collected, and geocoded from scratch, but
 
 **Papua New Guinea and Solomon Islands.** Constituency results compiled by Terence Wood (2019).
 
-**Russia.** Polling-station returns rest on Sergey Shpilkin's compilations of Central Election Commission data, distributed through the [GIS-Lab CIK archive](https://gis-lab.info/qa/cik-data.html); the 2021 Duma and 2024 presidential returns come from dekoder. Station coordinates partly draw on [uikgeo.ru](http://uikgeo.ru/uik/export).
+**Russia.** Polling-station returns come from the compilations of Sergey Shpilkin and Ivan Shukshin, scraped from the Central Election Commission and distributed at [dkobak/elections](https://github.com/dkobak/elections). The Commission has never released station-level results in bulk, and has progressively closed off its results pages, so this collection is not reproducible from the official source. Station addresses used for geocoding come partly from the [GIS-Lab CIK commission directory](https://gis-lab.info/qa/cik-data.html) and the UIK GEO crowdsourcing project.
 
 **South Africa.** Voting-district records scraped by Adrian Firth; boundary files from [SA-Maps](https://github.com/j-norwood-young/SA-Maps).
 
-**Belgium, DR Congo, Indonesia, Myanmar, Uruguay.** Built on openly released compilations by [José Parreiras](https://github.com/joseparreiras/resultatselection) (Belgium), [Bernard Ng'andu](https://github.com/bernard-ng/drc-election-2023) (DR Congo 2023), [terryds](https://github.com/terryds/pemilu-2024-scraper) (Indonesia), [Thomas Cunningham](https://github.com/thomasc6/myanmar-elections-results) (Myanmar 2015), and [ale-uy](https://github.com/ale-uy/EleccionesUy-2019) (Uruguay 2019).
+**Belgium, DR Congo, Myanmar, Uruguay.** Built on openly released compilations by [José Parreiras](https://github.com/joseparreiras/resultatselection) (Belgium), [Bernard Ng'andu](https://github.com/bernard-ng/drc-election-2023) (DR Congo 2023), [Thomas Cunningham](https://github.com/thomasc6/myanmar-elections-results) (Myanmar 2015), and [ale-uy](https://github.com/ale-uy/EleccionesUy-2019) (Uruguay 2019).
 
 **Boundary files.** Electoral geographies for Brazil, Finland, Panama, Singapore, Sri Lanka and Thailand come from openly published community shapefiles; the per-country notes in the [codebook](https://storage.googleapis.com/sage-archive/codebook.pdf) name each one.
 
