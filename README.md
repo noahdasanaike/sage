@@ -372,7 +372,7 @@ See the codebook at `gs://sage-archive/codebook.pdf` for the full per-column def
 | Malaysia | 2008, 2013, 2018, 2022 | All | Legislative | Polling District | 6,300 | ✅ | ElectionData.MY; Tindak Malaysia | .97 |
 | Maldives | 2024 | All | Legislative | Ballot Box | 8,800 | ✅ | | .986 |
 | Mauritania | 2024 | All | Presidential | Polling Station | 4,500 (geocode level: 250) | ✅ | | 1 |
-| Mexico   | 1991 to 2024 | 2006, 2009, 2015, 2018, 2024 | Legislative, Presidential | Polling Station | 150,000| ✅ | Magar, 2019 (<= 2018) | .999 |
+| Mexico   | 1991 to 2024 | 2006, 2009, 2015, 2018, 2024 | Legislative, Presidential | Polling Station | 150,000| ✅ |  | .999 |
 | Moldova | 2014 to 2025 | 2020, 2021, 2024, 2025 | Legislative, Presidential | Polling Station | 2,000 | ✅ | | .999 |
 | Mongolia | 2021 | All | Presidential | Polling Station | 1,700 (geocode level: 1,631, 92.9% bag/horoo, rest soum/missing) | ✅ | | .948 |
 | Montenegro | 2020, 2023 | All | Legislative | Polling Station | 824-1,000 | ✅ | | 1 |
