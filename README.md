@@ -21,6 +21,54 @@ If you use SAGE, please cite:
 
 ---
 
+## Please also cite
+
+Nearly every SAGE country was scraped, collected, and geocoded from scratch, but several rest on data that other researchers gathered and released first. If your analysis uses one of these countries, please cite the underlying source alongside SAGE.
+
+**Brazil (polling-station coordinates).** As of release 1.2, SAGE uses [F. Daniel Hidalgo's geocoded Brazilian polling stations](https://github.com/fdhidalgo/geocode_br_polling_stations) as the coordinate source for every year (2014, 2018, 2022), replacing the official TSE coordinates.
+
+**Afghanistan.** Results compiled by Colin Cookman from the Independent Election Commission: [2018 parliamentary](https://github.com/colincookman/afghanistan_election_results_2018) and [2019 presidential](https://github.com/colincookman/afghanistan_presidential_election_2019).
+
+**Pakistan.** Polling-station data for the 2018 general election, transcribed from Election Commission of Pakistan scans by Colin Cookman and team: [pakistan_polling_stations_2018](https://github.com/colincookman/pakistan_polling_stations_2018).
+
+**Uganda.** 2006, 2011 and 2016 polling-station results from the [Uganda Elections Data Portal](https://github.com/bt-IRI/UEDP), a project of the International Republican Institute, which converted the Electoral Commission's PDFs into machine-readable form.
+
+**United States.** Precinct returns and boundaries from [VEST](https://dataverse.harvard.edu/dataverse/electionscience) (Voting and Election Science Team), Joshua Metcalf, and Jonathan Rodden, as well as original collection; see also Baltz et al. under related projects below.
+
+**Malaysia.** Polling-district results and boundaries from [ElectionData.MY](https://electiondata.my/) (Thevesh Theva) and Tindak Malaysia.
+
+**Mexico.** Elections from 1991 through 2021 draw on Eric Magar's compiled returns (Magar 2019), [elecRetrns](https://github.com/emagar/elecRetrns), with coordinates added by SAGE. The 2024 election was collected directly from INE.
+
+**Papua New Guinea and Solomon Islands.** Constituency results compiled by Terence Wood (2019).
+
+**Russia.** Polling-station returns rest on Sergey Shpilkin's compilations of Central Election Commission data, distributed through the [GIS-Lab CIK archive](https://gis-lab.info/qa/cik-data.html); the 2021 Duma and 2024 presidential returns come from dekoder. Station coordinates partly draw on [uikgeo.ru](http://uikgeo.ru/uik/export).
+
+**South Africa.** Voting-district records scraped by Adrian Firth; boundary files from [SA-Maps](https://github.com/j-norwood-young/SA-Maps).
+
+**Belgium, DR Congo, Indonesia, Myanmar, Uruguay.** Built on openly released compilations by [José Parreiras](https://github.com/joseparreiras/resultatselection) (Belgium), [Bernard Ng'andu](https://github.com/bernard-ng/drc-election-2023) (DR Congo 2023), [terryds](https://github.com/terryds/pemilu-2024-scraper) (Indonesia), [Thomas Cunningham](https://github.com/thomasc6/myanmar-elections-results) (Myanmar 2015), and [ale-uy](https://github.com/ale-uy/EleccionesUy-2019) (Uruguay 2019).
+
+**Boundary files.** Electoral geographies for Brazil, Finland, Panama, Singapore, Sri Lanka and Thailand come from openly published community shapefiles; the per-country notes in the [codebook](https://storage.googleapis.com/sage-archive/codebook.pdf) name each one.
+
+---
+
+## Related projects
+
+SAGE is one of several efforts to make election returns comparable across places. These are worth knowing about, and in some cases are a better fit than SAGE for a given question:
+
+**[Constituency-Level Elections Archive (CLEA)](https://electiondataarchive.org/).** Constituency-level lower- and upper-chamber results for 183 countries, reaching much further back in time than SAGE. SAGE uses this to validate country totals.
+
+**[GERDA: The German Election Database](https://www.german-elections.com/).** Local, state and federal German results at municipality and county level over three decades, harmonized across boundary changes and mail-in districts. Much deeper on Germany than SAGE with respect to multilevel elections, with its own R package.
+
+**[American election results at the precinct level](https://www.nature.com/articles/s41597-022-01745-0)** (Baltz et al. 2022). Nearly all available US precinct-level results for 2016, 2018 and 2020, across offices from president down to ballot initiatives. Broader in office coverage than SAGE's US returns.
+
+**[Precinct-Level Election Data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YN4TLR)** (Ansolabehere, Palmer and Lee). US precinct-level returns by state for elections from 2002 to 2012, covering years that sit before the precinct data SAGE carries.
+
+**[elecRetrns](https://github.com/emagar/elecRetrns)** (Eric Magar). Mexican federal and state electoral returns, maintained over many years, and reaching beyond the federal races SAGE carries.
+
+**[Electoral precinct-level database for Mexican municipal elections](https://www.nature.com/articles/s41597-025-04918-9)** (Calderón-Hernández, Larreguy, Marshall and Pérez-Castellanos 2025). Precinct-level returns for Mexican *municipal* elections, 1994 to 2019, with incumbent-coalition identifiers, registration and turnout. SAGE carries federal elections only, so this is the reference for local Mexican contests.
+
+---
+
 ## Stay in the loop
 
 Sign up for release notifications [here](https://docs.google.com/forms/d/e/1FAIpQLSdI-6RFTr5pq1o8HCEysohnG-58RbaP2jGUkmBFONZ-8zlkYg/viewform).

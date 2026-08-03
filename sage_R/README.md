@@ -24,7 +24,7 @@ sage_set_source("https://storage.googleapis.com/sage-archive/parquet")
 # sage_set_source("J:/Output_c_parquet")
 
 # What's available?
-sage_countries()                  # 110 country names
+sage_countries()                  # 131 country names
 sage_years("Germany")             # c(1998, 2002, 2005, 2009, 2013, 2017, 2021)
 sage_columns()                    # all release columns
 
