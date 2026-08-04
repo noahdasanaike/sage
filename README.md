@@ -35,7 +35,7 @@ Nearly every SAGE country was scraped from scratch from official government sour
 
 **United States.** The 2024 election is built on [The New York Times' 2024 presidential precinct map](https://github.com/nytimes/presidential-precinct-map-2024), which assembled precinct returns and boundaries from state and county sources nationwide. Earlier years draw on [VEST](https://dataverse.harvard.edu/dataverse/electionscience) (Voting and Election Science Team), Joshua Metcalf, and Jonathan Rodden, as well as original collection; see also Baltz et al. under related projects below.
 
-**Malaysia.** Polling-district results and boundaries from [ElectionData.MY](https://electiondata.my/) (Thevesh Theva) and Tindak Malaysia.
+**Malaysia.** As of release 1.2, SAGE uses polling-district results and boundaries from [ElectionData.MY](https://electiondata.my/) (Thevesh Theva) and Tindak Malaysia.
 
 **Mexico.** Elections from 1991 through 2021 draw on Eric Magar's compiled returns (Magar 2019), [elecRetrns](https://github.com/emagar/elecRetrns), with coordinates added by SAGE. The 2024 election was collected directly from INE.
 
@@ -43,11 +43,9 @@ Nearly every SAGE country was scraped from scratch from official government sour
 
 **Russia.** Polling-station returns come from the compilations of Sergey Shpilkin and Ivan Shukshin, scraped from the Central Election Commission and distributed at [dkobak/elections](https://github.com/dkobak/elections). The Commission has never released station-level results in bulk, and has progressively closed off its results pages, so this collection is not reproducible from the official source. Station addresses used for geocoding come partly from the [GIS-Lab CIK commission directory](https://gis-lab.info/qa/cik-data.html) and the UIK GEO crowdsourcing project.
 
-**South Africa.** Voting-district records scraped by Adrian Firth; boundary files from [SA-Maps](https://github.com/j-norwood-young/SA-Maps).
+**South Africa.** Boundary files from [SA-Maps](https://github.com/j-norwood-young/SA-Maps).
 
 **Belgium, DR Congo, Myanmar, Uruguay.** Built on openly released compilations by [José Parreiras](https://github.com/joseparreiras/resultatselection) (Belgium), [Bernard Ng'andu](https://github.com/bernard-ng/drc-election-2023) (DR Congo 2023), [Thomas Cunningham](https://github.com/thomasc6/myanmar-elections-results) (Myanmar 2015), and [ale-uy](https://github.com/ale-uy/EleccionesUy-2019) (Uruguay 2019).
-
-**Boundary files.** Electoral geographies for Brazil, Finland, Panama, Singapore, Sri Lanka and Thailand come from openly published community shapefiles; the per-country notes in the [codebook](https://storage.googleapis.com/sage-archive/codebook.pdf) name each one.
 
 ---
 
@@ -62,6 +60,8 @@ SAGE is one of several efforts to make election returns comparable across places
 **[American election results at the precinct level](https://www.nature.com/articles/s41597-022-01745-0)** (Baltz et al. 2022). Nearly all available US precinct-level results for 2016, 2018 and 2020, across offices from president down to ballot initiatives. Broader in office coverage than SAGE's US returns.
 
 **[Precinct-Level Election Data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YN4TLR)** (Ansolabehere, Palmer and Lee). US precinct-level returns by state for elections from 2002 to 2012, covering years that sit before the precinct data SAGE carries.
+
+**[Adrian Frith](https://adrian.frith.dev/), South African election and census maps.** An interactive map of South African general election results, 2004 to 2019, drillable to voting-district level, alongside census and demarcation work.
 
 **[elecRetrns](https://github.com/emagar/elecRetrns)** (Eric Magar). Mexican federal and state electoral returns, maintained over many years, and reaching beyond the federal races SAGE carries.
 
