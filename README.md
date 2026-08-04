@@ -470,7 +470,7 @@ See the codebook at `gs://sage-archive/codebook.pdf` for the full per-column def
 | Uganda | 2006 to 2021 | All | Presidential | Polling Station | 26,000 (geocode level: 7,200)  | ✅ | Uganda Elections Data Portal | 1 |
 | Ukraine | 2019 | All | Legislative, Presidential | Polling Station | 30,000 |  ✅ | | .996 |
 | United Kingdom | 2005 to 2024 | All | Legislative | Parliamentary Constituency | 650 | ✅ | | 1 |
-| United States of America  | 2008 to 2024  | All | Presidential  | Precinct | 170,000 | ✅ | VEST, Joshua Metcalf, Jonathan Rodden | .999 |
+| United States of America  | 2016, 2020, 2024  | All | Presidential  | Precinct | 170,000 | ✅ | VEST, Joshua Metcalf, Jonathan Rodden | .999 |
 | Uruguay | 2014, 2019, 2024 | All | Legislative | Polling Station | 7,200 | ✅ | | .991 |
 | Vanuatu | 2002 to 2020, 2025 | All | Legislative | Parliamentary Constituency | 17 | ✅ |  | 1 |
 | Venezuela | 2013 | All | Presidential | Polling Station | 40,000 | ✅ | | .991 |
