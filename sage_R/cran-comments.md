@@ -23,6 +23,13 @@ internet resources:
 * A source that cannot be read fails with a message naming the source and, for
   a remote source, saying it may be temporarily unreachable.
 
+`\dontrun{}` rather than `\donttest{}` is deliberate for the live-archive
+examples. Each one transfers a real election partition (tens to hundreds of
+MB), so running them on the check machines would mean a large download per
+check rather than a quick call. The same code paths are exercised by the
+runnable examples and the offline tests against the shipped excerpt. If you
+would prefer `\donttest{}` we are happy to switch.
+
 ## Reverse dependencies
 
 None; this is a new submission.
