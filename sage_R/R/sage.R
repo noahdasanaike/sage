@@ -163,12 +163,34 @@ sage_columns <- function() {
   o <- idx[order(-idx$bytes), , drop = FALSE]
   o <- o[!duplicated(o$country), , drop = FALSE]
   o <- utils::head(o, 6)
+  src <- sub("/$", "", .sage_source())
+  gcs_root <- if (grepl("^gs://", src)) {
+    sub("^gs://", "", src)
+  } else if (grepl("^https://storage.googleapis.com/", src)) {
+    sub("^https://storage.googleapis.com/", "", src)
+  } else NULL
+  # Use Arrow's random-access reader when GCS support is compiled in; otherwise
+  # retain the portable full-download path below.
+  gcs <- if (!is.null(gcs_root)) {
+    tryCatch(
+      arrow::GcsFileSystem$create(anonymous = TRUE),
+      error = function(e) NULL)
+  } else NULL
   cols <- character(0)
   for (i in seq_len(nrow(o))) {
-    tmp <- tempfile(fileext = ".parquet")
-    utils::download.file(.path_to_url(o$path[i]), tmp, mode = "wb", quiet = TRUE)
-    cols <- union(cols, names(arrow::open_dataset(tmp, format = "parquet")))
-    unlink(tmp)
+    part_cols <- if (!is.null(gcs)) {
+      tryCatch(
+        arrow::ParquetFileReader$create(
+          gcs$OpenInputFile(paste0(gcs_root, "/", o$path[i])))$GetSchema()$names,
+        error = function(e) NULL)
+    } else NULL
+    if (is.null(part_cols)) {
+      tmp <- tempfile(fileext = ".parquet")
+      utils::download.file(.path_to_url(o$path[i]), tmp, mode = "wb", quiet = TRUE)
+      part_cols <- names(arrow::open_dataset(tmp, format = "parquet"))
+      unlink(tmp)
+    }
+    cols <- union(cols, part_cols)
   }
   out <- union(c("country", "year"), cols)
   .sage_state$columns <- out
