@@ -9,6 +9,12 @@
 #' `_index.csv` manifest), so the package works with any build of \pkg{arrow} --
 #' it does not require Arrow's S3/GCS cloud filesystem to be compiled in.
 #'
+#' When the source is the public bucket and \pkg{arrow} does have GCS support
+#' compiled in, \code{sage_columns()} reads Parquet schemas through Arrow's
+#' random-access reader instead of downloading whole partitions. That is an
+#' optimisation only: it falls back to the HTTPS download path whenever the
+#' cloud filesystem or an individual read is unavailable.
+#'
 #' @section Source layout:
 #' The release is a hive-partitioned Parquet dataset:
 #' \preformatted{
@@ -51,8 +57,11 @@ sage_set_source <- function(source) {
 }
 
 .sage_source <- function() {
-  if (!is.null(.sage_state$source)) return(.sage_state$source)
-  .sage_default_source()
+  s <- if (!is.null(.sage_state$source)) .sage_state$source else .sage_default_source()
+  # Drop any trailing slash on a remote source: it would otherwise produce keys
+  # like '<prefix>//_index.csv', which object storage treats as a distinct (and
+  # absent) object. Local paths are left alone and go through file.path().
+  if (grepl("^gs://|^https?://", s)) sub("/+$", "", s) else s
 }
 
 .is_remote <- function(src = .sage_source()) grepl("^gs://|^https?://", src)
@@ -163,11 +172,11 @@ sage_columns <- function() {
   o <- idx[order(-idx$bytes), , drop = FALSE]
   o <- o[!duplicated(o$country), , drop = FALSE]
   o <- utils::head(o, 6)
-  src <- sub("/$", "", .sage_source())
+  src <- .sage_source()
   gcs_root <- if (grepl("^gs://", src)) {
     sub("^gs://", "", src)
-  } else if (grepl("^https://storage.googleapis.com/", src)) {
-    sub("^https://storage.googleapis.com/", "", src)
+  } else if (grepl("^https?://storage\\.googleapis\\.com/", src)) {
+    sub("^https?://storage\\.googleapis\\.com/", "", src)
   } else NULL
   # Use Arrow's random-access reader when GCS support is compiled in; otherwise
   # retain the portable full-download path below.
