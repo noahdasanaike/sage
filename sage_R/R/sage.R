@@ -12,7 +12,7 @@
 #' When the source is the public bucket and \pkg{arrow} does have GCS support
 #' compiled in, \code{sage_columns()} reads Parquet schemas through Arrow's
 #' random-access reader instead of downloading whole partitions. That is an
-#' optimisation only: it falls back to the HTTPS download path whenever the
+#' optimization only: it falls back to the HTTPS download path whenever the
 #' cloud filesystem or an individual read is unavailable.
 #'
 #' @section Source layout:
@@ -27,7 +27,18 @@
 #' }
 #' so a (country, year) slice is a single partition read.
 #'
+#' @section Offline excerpt:
+#' Every example in this package runs against a small excerpt of the archive
+#' (Iceland and Samoa) shipped under \code{extdata/mini_archive}, so no network
+#' access is required to try the interface:
+#' \preformatted{
+#' sage_set_source(system.file("extdata", "mini_archive", package = "sage"))
+#' }
+#' Point \code{sage_set_source()} back at \code{"gs://sage-archive/parquet"} to
+#' use the full release.
+#'
 #' @name sage
+#' @importFrom rlang .data
 NULL
 
 # Default source. Resolution order:
@@ -44,10 +55,27 @@ NULL
 .sage_state$source  <- NULL
 .sage_state$columns <- NULL  # cached union column list (remote sources)
 
-#' Set the source URL/path for the SAGE archive.
+#' Set the source URL or path for the SAGE archive
+#'
+#' Sets the archive every other function in the package reads from. The setting
+#' is global to the session and persists until it is changed again; unset, the
+#' package falls back to the \code{SAGE_SOURCE} environment variable and then to
+#' the public bucket.
 #'
 #' @param source A local path or remote URI (e.g., \code{"gs://bucket/path"},
-#'   \code{"https://example.com/sage_parquet"}, or a local directory).
+#'   \code{"https://example.com/sage_parquet"}, or a local directory). A
+#'   trailing slash on a remote URI is ignored.
+#' @return The source, invisibly.
+#' @seealso [sage_load()] to read a slice from the source that is set here.
+#' @examples
+#' # Point the package at the offline excerpt that ships with it.
+#' sage_set_source(system.file("extdata", "mini_archive", package = "sage"))
+#' sage_countries()
+#'
+#' \dontrun{
+#' # The full public release (requires network access).
+#' sage_set_source("gs://sage-archive/parquet")
+#' }
 #' @export
 sage_set_source <- function(source) {
   stopifnot(is.character(source), length(source) == 1, nzchar(source))
@@ -114,19 +142,98 @@ sage_set_source <- function(source) {
   } else {
     file.path(src, "_index.csv")
   }
-  tryCatch(read.csv(url, stringsAsFactors = FALSE), error = function(e) NULL)
+  tryCatch(suppressWarnings(utils::read.csv(url, stringsAsFactors = FALSE)),
+           error = function(e) NULL)
+}
+
+# A remote source that cannot be reached is the common failure here, so say so
+# rather than leaving the user with a bare parse error from read.csv() or a
+# filesystem error from Arrow.
+.stop_unreadable <- function() {
+  src <- .sage_source()
+  stop("could not read the SAGE archive at '", src, "'.",
+       if (.is_remote(src))
+         " The source may be temporarily unreachable; check your network connection."
+       else
+         " Check that the directory exists and contains _index.csv.",
+       " Use sage_set_source() to read from somewhere else.",
+       call. = FALSE)
 }
 
 # Local-only lazy dataset (used when the source is a local directory; needs no
 # cloud filesystem).
+#
+# Only a fallback for a local copy with no _index.csv: Arrow takes the schema
+# from the first fragment alone, and partitions here carry different column
+# sets (Samoa has `candidate`, Iceland does not), so columns absent from the
+# first fragment are lost. Arrow's unify_schemas = TRUE is not an option --
+# geometry_level is int32 in some partitions and double in others, which fails
+# to merge. Whenever the index is available, .partition_path() is used instead
+# and each partition is read on its own terms.
 .open_local <- function() {
-  arrow::open_dataset(
-    .sage_source(),
-    partitioning = arrow::hive_partition(country = arrow::utf8(), year = arrow::int32()),
-    format = "parquet")
+  ds <- tryCatch(
+    arrow::open_dataset(
+      .sage_source(),
+      partitioning = arrow::hive_partition(country = arrow::utf8(), year = arrow::int32()),
+      format = "parquet"),
+    error = function(e) NULL)
+  if (is.null(ds)) .stop_unreadable()
+  ds
 }
 
-#' List countries available in the current source.
+# Where one path from _index.csv actually lives, for either kind of source.
+# Only remote keys need the percent re-escaping; on disk the key is the
+# literal directory name.
+.partition_path <- function(relpath) {
+  if (.is_remote()) .path_to_url(relpath) else file.path(.sage_source(), relpath)
+}
+
+# Column names of a single partition, without reading its data. Remote sources
+# use Arrow's random-access reader when the build has GCS support (gcs is the
+# filesystem, gcs_root the bucket prefix); otherwise the partition is
+# downloaded whole, which is what every build could always do.
+.partition_columns <- function(relpath, gcs = NULL, gcs_root = NULL) {
+  if (!.is_remote()) {
+    return(names(arrow::open_dataset(.partition_path(relpath), format = "parquet")))
+  }
+  if (!is.null(gcs)) {
+    cols <- tryCatch(
+      arrow::ParquetFileReader$create(
+        gcs$OpenInputFile(paste0(gcs_root, "/", relpath)))$GetSchema()$names,
+      error = function(e) NULL)
+    if (!is.null(cols)) return(cols)
+  }
+  tmp <- tempfile(fileext = ".parquet")
+  on.exit(unlink(tmp), add = TRUE)
+  utils::download.file(.partition_path(relpath), tmp, mode = "wb", quiet = TRUE)
+  names(arrow::open_dataset(tmp, format = "parquet"))
+}
+
+# The GCS filesystem, or NULL when the source is not the public bucket or the
+# installed arrow has no GCS support compiled in.
+.gcs_handle <- function() {
+  src  <- .sage_source()
+  root <- if (grepl("^gs://", src)) {
+    sub("^gs://", "", src)
+  } else if (grepl("^https?://storage\\.googleapis\\.com/", src)) {
+    sub("^https?://storage\\.googleapis\\.com/", "", src)
+  } else {
+    return(NULL)
+  }
+  fs <- tryCatch(arrow::GcsFileSystem$create(anonymous = TRUE), error = function(e) NULL)
+  if (is.null(fs)) NULL else list(fs = fs, root = root)
+}
+
+#' List countries available in the current source
+#'
+#' Reads the \code{_index.csv} manifest that ships with the archive, so this
+#' costs one small request rather than a scan of the bucket.
+#'
+#' @return A character vector of country names, sorted.
+#' @seealso [sage_years()], [sage_load()]
+#' @examples
+#' sage_set_source(system.file("extdata", "mini_archive", package = "sage"))
+#' sage_countries()
 #' @export
 sage_countries <- function() {
   idx <- .read_index()
@@ -137,11 +244,19 @@ sage_countries <- function() {
     ds <- .open_local()
     return(sort(unique(as.data.frame(dplyr::collect(dplyr::distinct(ds, .data$country)))$country)))
   }
-  stop("could not read the SAGE index (_index.csv) from the source.")
+  .stop_unreadable()
 }
 
-#' List election years available for a country.
-#' @param country Country name (e.g., \code{"Germany"}).
+#' List election years available for a country
+#'
+#' @param country Country name (e.g., \code{"Germany"}), as returned by
+#'   [sage_countries()].
+#' @return An integer vector of years, sorted. A country with no partitions in
+#'   the source gives a zero-length vector.
+#' @seealso [sage_countries()], [sage_load()]
+#' @examples
+#' sage_set_source(system.file("extdata", "mini_archive", package = "sage"))
+#' sage_years("Iceland")
 #' @export
 sage_years <- function(country) {
   idx <- .read_index()
@@ -153,60 +268,51 @@ sage_years <- function(country) {
     out <- dplyr::collect(dplyr::distinct(dplyr::filter(ds, .data$country == !!country), .data$year))
     return(sort(out$year))
   }
-  stop("could not read the SAGE index (_index.csv) from the source.")
+  .stop_unreadable()
 }
 
-#' List the columns available in the dataset.
+#' List the columns available in the dataset
 #'
 #' Not every column is populated for every country; this returns the union of
-#' columns across the dataset.
+#' columns over the largest partition of each of several countries, which is
+#' what surfaces the optional deep-hierarchy columns (\code{NAME4},
+#' \code{NAME5}, ...). The answer is cached for the session, and is discarded
+#' when [sage_set_source()] changes the source.
+#'
+#' @return A character vector of column names, beginning with \code{"country"}
+#'   and \code{"year"}.
+#' @seealso [sage_load()], whose \code{columns} argument takes these names.
+#' @examples
+#' sage_set_source(system.file("extdata", "mini_archive", package = "sage"))
+#' sage_columns()
 #' @export
 sage_columns <- function() {
-  if (!.is_remote()) return(.open_local()$schema$names)
   if (!is.null(.sage_state$columns)) return(.sage_state$columns)
   idx <- .read_index()
-  if (is.null(idx) || !"path" %in% names(idx))
-    stop("could not read the SAGE index (_index.csv) from the source.")
+  if (is.null(idx) || !"path" %in% names(idx)) {
+    # A local copy with no manifest: Arrow's dataset schema is all there is.
+    if (!.is_remote()) return(.open_local()$schema$names)
+    .stop_unreadable()
+  }
   # Union the schema over the largest partition of several distinct countries;
   # deep administrative hierarchies surface the optional NAME4/NAME5/... columns.
   o <- idx[order(-idx$bytes), , drop = FALSE]
   o <- o[!duplicated(o$country), , drop = FALSE]
   o <- utils::head(o, 6)
-  src <- .sage_source()
-  gcs_root <- if (grepl("^gs://", src)) {
-    sub("^gs://", "", src)
-  } else if (grepl("^https?://storage\\.googleapis\\.com/", src)) {
-    sub("^https?://storage\\.googleapis\\.com/", "", src)
-  } else NULL
-  # Use Arrow's random-access reader when GCS support is compiled in; otherwise
-  # retain the portable full-download path below.
-  gcs <- if (!is.null(gcs_root)) {
-    tryCatch(
-      arrow::GcsFileSystem$create(anonymous = TRUE),
-      error = function(e) NULL)
-  } else NULL
+  gcs  <- .gcs_handle()
   cols <- character(0)
   for (i in seq_len(nrow(o))) {
-    part_cols <- if (!is.null(gcs)) {
-      tryCatch(
-        arrow::ParquetFileReader$create(
-          gcs$OpenInputFile(paste0(gcs_root, "/", o$path[i])))$GetSchema()$names,
-        error = function(e) NULL)
-    } else NULL
-    if (is.null(part_cols)) {
-      tmp <- tempfile(fileext = ".parquet")
-      utils::download.file(.path_to_url(o$path[i]), tmp, mode = "wb", quiet = TRUE)
-      part_cols <- names(arrow::open_dataset(tmp, format = "parquet"))
-      unlink(tmp)
-    }
-    cols <- union(cols, part_cols)
+    cols <- union(cols, .partition_columns(o$path[i], gcs$fs, gcs$root))
   }
   out <- union(c("country", "year"), cols)
   .sage_state$columns <- out
   out
 }
 
-#' Load a (country, years, columns) slice of SAGE.
+#' Load a (country, years, columns) slice of SAGE
+#'
+#' Reads only the partitions the request needs, one file per (country, year),
+#' and returns them as a single tibble.
 #'
 #' @param country Single country name; required.
 #' @param years Optional integer vector of years (default: all available).
@@ -216,12 +322,26 @@ sage_columns <- function() {
 #' @param min_match_confidence If non-NULL, restricts to rows whose
 #'   \code{match_confidence} is at least this strict (\code{"high"} keeps only
 #'   high; \code{"medium"} keeps high+medium; etc.).
-#' @param drop_all_na Drop columns that are entirely NA for the slice.
-#' @return A tibble.
+#' @param drop_all_na Drop columns that are entirely NA for the slice. The
+#'   union schema carries every column any partition has, so a country slice
+#'   would otherwise show columns that never apply to it.
+#' @return A tibble, with \code{country} and \code{year} as the first two
+#'   columns.
+#' @seealso [sage_columns()] for the available columns, [sage_polygons()] for
+#'   boundaries.
 #' @examples
+#' sage_set_source(system.file("extdata", "mini_archive", package = "sage"))
+#' is_2020 <- sage_load("Iceland", years = 2020)
+#' dim(is_2020)
+#' names(is_2020)
+#'
+#' # Restrict to a few columns; country and year are always kept.
+#' sage_load("Iceland", years = 2020, columns = c("party", "votes"))
+#'
 #' \dontrun{
-#' library(sage)
-#' de_2021 <- sage_load("Germany", years = 2021, columns = c("party","votes","NAME3"))
+#' # Against the full release (requires network access).
+#' sage_set_source("gs://sage-archive/parquet")
+#' de_2021 <- sage_load("Germany", years = 2021, columns = c("party", "votes", "NAME3"))
 #' all_de_high <- sage_load("Germany", min_match_confidence = "high")
 #' }
 #' @export
@@ -240,19 +360,20 @@ sage_load <- function(country,
     low    = c("high", "medium", "low"),
     stop("min_match_confidence must be one of 'high','medium','low'."))
 
-  if (.is_remote()) {
-    idx <- .read_index()
-    if (is.null(idx) || !all(c("country", "year", "path") %in% names(idx)))
-      stop("could not read the SAGE index (_index.csv) from the source.")
+  # The manifest drives the read for both kinds of source. Reading partition
+  # files one at a time is what lets a country keep the columns only it has:
+  # Arrow's dataset schema comes from a single fragment, so the local branch
+  # below (no manifest) can only see that fragment's columns.
+  idx <- .read_index()
+  if (!is.null(idx) && all(c("country", "year", "path") %in% names(idx))) {
     rows <- idx[idx$country == country, , drop = FALSE]
     if (!is.null(years))
       rows <- rows[as.integer(rows$year) %in% as.integer(years), , drop = FALSE]
     if (nrow(rows) == 0)
       stop("no data for country = '", country, "'",
            if (!is.null(years)) paste0(" in year(s) ", paste(years, collapse = ", ")) else "", ".")
-    base  <- .https_base()
     parts <- lapply(seq_len(nrow(rows)), function(i) {
-      d <- .read_parquet_any(.path_to_url(rows$path[i], base))
+      d <- .read_parquet_any(.partition_path(rows$path[i]))
       # Hive partition columns live in the path, not the file; restore them.
       d$country <- rows$country[i]
       d$year    <- as.integer(rows$year[i])
@@ -267,6 +388,8 @@ sage_load <- function(country,
       keep <- intersect(unique(c("country", "year", columns)), names(out))
       out  <- out[, keep, drop = FALSE]
     }
+  } else if (.is_remote()) {
+    .stop_unreadable()
   } else {
     ds <- .open_local()
     q  <- dplyr::filter(ds, .data$country == !!country)
@@ -279,8 +402,10 @@ sage_load <- function(country,
     if (!is.null(min_match_confidence))
       q <- dplyr::filter(q, .data$match_confidence %in% !!conf_levels(min_match_confidence))
     if (!is.null(columns)) {
-      columns <- unique(c(columns, "country", "year"))
-      q <- dplyr::select(q, dplyr::all_of(columns))
+      # any_of, not all_of: a name the source does not carry is dropped rather
+      # than an error, matching what the remote path does with intersect().
+      columns <- unique(c("country", "year", columns))
+      q <- dplyr::select(q, dplyr::any_of(columns))
     }
     out <- tibble::as_tibble(dplyr::collect(q))
   }
@@ -299,11 +424,23 @@ sage_load <- function(country,
   out[, c(front, rest), drop = FALSE]
 }
 
-#' Load the per-candidate vote sidecar for countries with open lists or
-#' candidate-level reporting (Germany Erststimme; Netherlands Tweede Kamer).
+#' Load the per-candidate vote sidecar
 #'
-#' @param country Country name.
-#' @return A tibble.
+#' Some countries report votes for individual candidates alongside the party
+#' totals in the main release. This reads that sidecar. It is available for
+#' Germany (Erststimme by Wahlkreis) and the Netherlands (preference votes by
+#' stembureau); any other country is an error.
+#'
+#' @param country Country name; one of \code{"Germany"} or
+#'   \code{"Netherlands"}.
+#' @return A tibble of candidate-level votes.
+#' @seealso [sage_load()] for the main party-level release.
+#' @examples
+#' \dontrun{
+#' # Requires network access; the sidecar is not part of the offline excerpt.
+#' sage_set_source("gs://sage-archive/parquet")
+#' de_cand <- sage_preference_votes("Germany")
+#' }
 #' @export
 sage_preference_votes <- function(country) {
   stopifnot(is.character(country), length(country) == 1)
@@ -320,7 +457,7 @@ sage_preference_votes <- function(country) {
   tibble::as_tibble(.read_parquet_any(paste0(base, "/", files[[country]])))
 }
 
-#' Load the polygon set for one country.
+#' Load the polygon set for one country
 #'
 #' SAGE ships a parallel \code{polygons/} tree (one geoparquet per country)
 #' alongside the main parquet release; the polygons carry only the
@@ -332,7 +469,16 @@ sage_preference_votes <- function(country) {
 #' Requires the \pkg{sf} and \pkg{sfarrow} packages.
 #' @param country Country name.
 #' @param years Optional integer vector of years.
-#' @return An \code{sf} data frame.
+#' @return An \code{sf} data frame, or \code{NULL} invisibly if the source has
+#'   no polygons for the country.
+#' @seealso [sage_load()] for the vote data these boundaries join to.
+#' @examples
+#' \dontrun{
+#' # Requires network access, plus the sf and sfarrow packages; polygons are
+#' # not part of the offline excerpt.
+#' sage_set_source("gs://sage-archive/parquet")
+#' is_poly <- sage_polygons("Iceland", years = 2021)
+#' }
 #' @export
 sage_polygons <- function(country, years = NULL) {
   if (!requireNamespace("sf",      quietly = TRUE)) stop("sage_polygons() requires the 'sf' package")
@@ -359,7 +505,8 @@ sage_polygons <- function(country, years = NULL) {
   # blew through Arrow's 2 GB single-array limit (Japan, USA) are sharded into
   # <Country>/year=<Y>.parquet. The polygon _index.csv records which.
   idx_url  <- if (.is_remote()) paste0(poly_root, "/_index.csv") else file.path(poly_root, "_index.csv")
-  poly_idx <- tryCatch(read.csv(idx_url, stringsAsFactors = FALSE), error = function(e) NULL)
+  poly_idx <- tryCatch(suppressWarnings(utils::read.csv(idx_url, stringsAsFactors = FALSE)),
+                       error = function(e) NULL)
   if (!is.null(poly_idx)) {
     rows <- poly_idx[poly_idx$country == country, , drop = FALSE]
     if (nrow(rows) == 0) return(invisible(NULL))
