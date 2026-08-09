@@ -12,7 +12,7 @@ Description: Downloads and subsets slices of the Small-Area Global Elections
     country-level files. Reads partitioned 'Parquet' from a public bucket
     (configurable through the 'SAGE_SOURCE' environment variable, the
     'sage_set_source()' function, or a local copy of the archive) and exposes
-    a 'sage_load(country, years, columns)' function returning a tibble, plus
+    a 'sage_load(country, years, columns)' function returning a 'tibble', plus
     helpers for the accompanying boundary polygons and candidate-level vote
     sidecars. See <https://github.com/noahdasanaike/sage> for the archive
     itself.
