@@ -9,3 +9,6 @@ __pycache__/
 .RData
 .Ruserdata
 *.Rcheck/
+
+# R package build artifacts
+*.tar.gz
