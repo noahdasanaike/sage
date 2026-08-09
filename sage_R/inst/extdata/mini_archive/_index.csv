@@ -1,0 +1,4 @@
+"country","year","path","bytes","geocoded"
+"Iceland",1968,"country=Iceland/year=1968/part-0.parquet",7099,0
+"Iceland",2020,"country=Iceland/year=2020/part-0.parquet",7317,0
+"Samoa",2025,"country=Samoa/year=2025/part-0.parquet",11288,0

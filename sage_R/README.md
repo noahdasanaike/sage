@@ -46,3 +46,29 @@ it_pres <- sage_load(
 `sage_load` returns a tibble. The Parquet partitioning is on
 `country` + `year`, so the most common subsetting (one country, one or a
 few years) is a single partition read and returns in seconds.
+
+## Trying it without network access
+
+The package ships a 26 KB excerpt of the archive (Iceland and Samoa) so the
+interface can be exercised offline; every example in the help pages runs
+against it.
+
+```r
+sage_set_source(system.file("extdata", "mini_archive", package = "sage"))
+sage_countries()   # "Iceland" "Samoa"
+```
+
+## Local copies of the archive
+
+A local copy should include the `_index.csv` manifest that sits at the root of
+the release. Without it the package falls back to opening the tree as a single
+Arrow dataset, whose schema comes from one fragment, so columns that only some
+countries carry (`candidate`, `NAME4`, ...) would be dropped.
+
+## Development
+
+```r
+devtools::document()   # regenerate man/ and NAMESPACE from the roxygen blocks
+devtools::test()       # offline tests always; live-archive tests when reachable
+devtools::check()
+```
