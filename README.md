@@ -7,7 +7,7 @@
 
 Granular, geocoded, and standardized electoral returns for **131 countries**, covering more than 600 country-elections from 1948 to 2026. Each row is a (country, electoral unit, year, election type, party-or-candidate) tuple.
 
-The [project website](https://noahdasanaike.github.io/sage.html) offers per-country downloads and an interactive map; the complete release is hosted at <https://storage.googleapis.com/sage-archive/> with anonymous read access. Two retrieval packages, one for R, and one for Python, let you pull (country, years, columns) data into your environment. 
+The [project website](https://noahdasanaike.github.io/sage.html) offers per-country downloads and an interactive map; the complete release is hosted at <https://storage.googleapis.com/sage-archive/> with anonymous read access. Two retrieval packages, one for R, and one for Python, let you pull (country, years, columns) data into your environment. A [build log](https://noahdasanaike.github.io/posts/building-sage.html) reconstructs, country by country, when each part of the dataset was actually assembled. 
 
 ---
 
@@ -35,7 +35,7 @@ Nearly every SAGE country was scraped from scratch from official government sour
 
 **United States.** The 2024 election is built on [The New York Times' 2024 presidential precinct map](https://github.com/nytimes/presidential-precinct-map-2024), which assembled precinct returns and boundaries from state and county sources nationwide. Earlier years draw on [VEST](https://dataverse.harvard.edu/dataverse/electionscience) (Voting and Election Science Team), Joshua Metcalf, and Jonathan Rodden, as well as original collection; see also Baltz et al. under related projects below.
 
-**Malaysia.** As of release 1.2, SAGE uses polling-district results and boundaries from [ElectionData.MY](https://electiondata.my/) (Thevesh Theva) and Tindak Malaysia.
+**Malaysia.** As of release 1.2, SAGE uses polling-district results from [ElectionData.MY](https://electiondata.my/) (Thevesh Thevananthan), which compiled them from Form 14 returns, and polling-district boundaries from Tindak Malaysia.
 
 **Mexico.** Elections from 1991 through 2021 draw on Eric Magar's compiled returns (Magar 2019), [elecRetrns](https://github.com/emagar/elecRetrns), with coordinates added by SAGE. The 2024 election was collected directly from INE.
 
@@ -44,6 +44,8 @@ Nearly every SAGE country was scraped from scratch from official government sour
 **Russia.** Polling-station returns come from the compilations of Sergey Shpilkin and Ivan Shukshin, scraped from the Central Election Commission and distributed at [dkobak/elections](https://github.com/dkobak/elections). The Commission has never released station-level results in bulk, and has progressively closed off its results pages, so this collection is not reproducible from the official source. Station addresses used for geocoding come partly from the [GIS-Lab CIK commission directory](https://gis-lab.info/qa/cik-data.html) and the UIK GEO crowdsourcing project.
 
 **South Africa.** Boundary files from [SA-Maps](https://github.com/j-norwood-young/SA-Maps).
+
+**Ghana, Zambia and Botswana.** Parliamentary constituency boundaries from [Brian Engelsma's African parliamentary constituency shapefiles](https://www.brianengelsma.com/research/african-parliamentary-constituencies-shapefiles/).
 
 **Belgium, DR Congo, Myanmar, Uruguay.** Built on openly released compilations by [José Parreiras](https://github.com/joseparreiras/resultatselection) (Belgium), [Bernard Ng'andu](https://github.com/bernard-ng/drc-election-2023) (DR Congo 2023), [Thomas Cunningham](https://github.com/thomasc6/myanmar-elections-results) (Myanmar 2015), and [ale-uy](https://github.com/ale-uy/EleccionesUy-2019) (Uruguay 2019).
 
