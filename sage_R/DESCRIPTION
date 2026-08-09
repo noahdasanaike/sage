@@ -1,25 +1,39 @@
 Package: sage
 Type: Package
-Title: Small-Area Global Elections Archive: Data Retrieval Helpers
-Version: 0.1.0
+Title: Retrieve Slices of the Small-Area Global Elections Archive
+Version: 0.2.0
 Authors@R: c(
-    person("Noah", "Dasanaike", email = "noahdasanaike@g.harvard.edu", role = c("aut", "cre")))
-Description: Provides convenience functions to download and subset slices of
-    the Small-Area Global Elections (SAGE) archive without having to read
-    monolithic country-level RDS files. Pulls partitioned Parquet from a
-    public bucket (default: SAGE_BUCKET environment variable or the
-    archive URL given in the manuscript) and exposes a single
-    sage_load(country, years, columns) function that returns a tibble.
+    person("Noah", "Dasanaike", email = "noahdasanaike@g.harvard.edu",
+           role = c("aut", "cre", "cph")),
+    person("Dmitry", "Shkolnik", role = "ctb"))
+Description: Downloads and subsets slices of the Small-Area Global Elections
+    (SAGE) archive, a harmonized collection of polling-station and
+    precinct-level election results, without having to read monolithic
+    country-level files. Reads partitioned 'Parquet' from a public bucket
+    (configurable through the 'SAGE_SOURCE' environment variable, the
+    'sage_set_source()' function, or a local copy of the archive) and exposes
+    a 'sage_load(country, years, columns)' function returning a tibble, plus
+    helpers for the accompanying boundary polygons and candidate-level vote
+    sidecars. See <https://github.com/noahdasanaike/sage> for the archive
+    itself.
 License: MIT + file LICENSE
 Encoding: UTF-8
+Language: en-US
+Depends:
+    R (>= 4.0)
 Imports:
     arrow (>= 14.0.0),
     dplyr,
+    rlang,
     tibble,
-    rlang
+    utils
 Suggests:
+    curl,
     sf,
+    sfarrow,
     testthat (>= 3.0.0)
-RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
 URL: https://github.com/noahdasanaike/sage
 BugReports: https://github.com/noahdasanaike/sage/issues
