@@ -1,13 +1,19 @@
 # cran-comments
 
+## Resubmission
+
+The first submission failed the incoming pretest on Debian R-devel: the
+examples and tests could not read the Parquet files shipped in
+`inst/extdata`, because they were zstd-compressed and the check machine's
+arrow build does not include zstd. The shipped excerpt is now written
+uncompressed, which every arrow build can read. Its contents are unchanged.
+
 ## Test environments
 
 * Windows 11, R 4.3.1 (local): 0 errors, 0 warnings, 2 notes
 
-The two local notes are both environmental rather than package problems:
-`unable to verify current time` (the check machine could not reach a time
-server) and `Files 'README.md' or 'NEWS.md' cannot be checked without 'pandoc'
-being installed`.
+The notes are the new-submission note and `unable to verify current time`
+(the check machine could not reach a time server).
 
 ## Internet resources
 
