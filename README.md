@@ -7,7 +7,7 @@
 
 Granular, geocoded, and standardized electoral returns for **134 countries**, covering more than 600 country-elections from 1948 to 2026. Each row is a (country, electoral unit, year, election type, party-or-candidate) tuple.
 
-The [project website](https://noahdasanaike.github.io/sage.html) has per-country downloads and an interactive map; the complete release is hosted at <https://storage.googleapis.com/sage-archive/> with anonymous read access. Two retrieval packages, one for R, and one for Python, let you pull (country, years, columns) data into your environment. A [build log](https://noahdasanaike.github.io/posts/building-sage.html) reconstructs, country by country, when each part of the dataset was actually assembled. 
+The [project website](https://noahdasanaike.github.io/sage.html) has per-country downloads and an interactive map; the complete release is hosted at <https://storage.googleapis.com/sage-archive/> with anonymous read access. The R and Python packages load any set of countries, years, and columns. The [build log](https://noahdasanaike.github.io/posts/building-sage.html) records, country by country, when I assembled each part of the dataset. 
 
 ---
 
@@ -25,7 +25,7 @@ If you use SAGE, please cite:
 
 I scraped nearly every SAGE country from official government sources, then geocoded and harmonized the results. For several countries, though, I started from data that other researchers gathered and released first. If you use one of these countries, please cite the original source alongside SAGE.
 
-**Brazil (polling-station coordinates).** As of release 1.2, SAGE uses [F. Daniel Hidalgo's geocoded Brazilian polling stations](https://github.com/fdhidalgo/geocode_br_polling_stations) as the coordinate source for every year (2014, 2018, 2022), replacing the official TSE coordinates.
+**Brazil (polling-station coordinates).** Since release 1.2, the polling-station coordinates for 2014, 2018, and 2022 come from [F. Daniel Hidalgo's geocoded Brazilian polling stations](https://github.com/fdhidalgo/geocode_br_polling_stations) instead of the official TSE coordinates.
 
 **Afghanistan.** Results compiled by Colin Cookman from the Independent Election Commission: [2018 parliamentary](https://github.com/colincookman/afghanistan_election_results_2018) and [2019 presidential](https://github.com/colincookman/afghanistan_presidential_election_2019).
 
@@ -33,11 +33,11 @@ I scraped nearly every SAGE country from official government sources, then geoco
 
 **Uganda.** 2006, 2011 and 2016 polling-station results from the [Uganda Elections Data Portal](https://github.com/bt-IRI/UEDP), a project of the International Republican Institute, which converted the Electoral Commission's PDFs into machine-readable form.
 
-**United States.** The 2024 election comes from [The New York Times' 2024 presidential precinct map](https://github.com/nytimes/presidential-precinct-map-2024), which assembled precinct returns and boundaries from state and county sources nationwide. Earlier years draw on [VEST](https://dataverse.harvard.edu/dataverse/electionscience) (Voting and Election Science Team), Joshua Metcalf, and Jonathan Rodden, as well as my own collection; see also Baltz et al. under related projects below.
+**United States.** The 2024 election comes from [The New York Times' 2024 presidential precinct map](https://github.com/nytimes/presidential-precinct-map-2024), for which the Times assembled precinct returns and boundaries from state and county sources nationwide. Earlier years use [VEST](https://dataverse.harvard.edu/dataverse/electionscience) (Voting and Election Science Team), Joshua Metcalf, and Jonathan Rodden, as well as my own collection; see also Baltz et al. under related projects below.
 
-**Malaysia.** As of release 1.2, SAGE uses polling-district results from [ElectionData.MY](https://electiondata.my/) (Thevesh Thevananthan), which compiled them from Form 14 returns, and polling-district boundaries from Tindak Malaysia.
+**Malaysia.** Since release 1.2, the polling-district results come from [ElectionData.MY](https://electiondata.my/) (Thevesh Thevananthan), which compiled them from Form 14 returns, and polling-district boundaries from Tindak Malaysia.
 
-**Mexico.** Elections from 1991 through 2021 draw on Eric Magar's compiled returns (Magar 2019), [elecRetrns](https://github.com/emagar/elecRetrns), with coordinates added by SAGE. I collected the 2024 election directly from INE.
+**Mexico.** For 1991 through 2021, I use Eric Magar's compiled returns (Magar 2019), [elecRetrns](https://github.com/emagar/elecRetrns), and added the coordinates myself. I collected the 2024 election directly from INE.
 
 **Papua New Guinea and Solomon Islands.** Constituency results compiled by Terence Wood (2019).
 
@@ -59,7 +59,7 @@ SAGE is one of several projects that make election returns comparable across pla
 
 **[GERDA: The German Election Database](https://www.german-elections.com/).** Local, state, and federal German results by municipality and county over three decades, harmonized across boundary changes and mail-in districts. GERDA covers far more German elections than SAGE does and has an R package.
 
-**[American election results at the precinct level](https://www.nature.com/articles/s41597-022-01745-0)** (Baltz et al. 2022). Nearly all available US precinct-level results for 2016, 2018 and 2020, across offices from president down to ballot initiatives. Broader in office coverage than SAGE's US returns.
+**[American election results at the precinct level](https://www.nature.com/articles/s41597-022-01745-0)** (Baltz et al. 2022). Nearly all available US precinct results for 2016, 2018, and 2020, for every office from president down to ballot initiatives. The collection covers many more offices than SAGE does.
 
 **[Precinct-Level Election Data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YN4TLR)** (Ansolabehere, Palmer and Lee). US precinct returns by state for 2002 to 2012, before SAGE's US precinct data begin.
 
@@ -110,7 +110,7 @@ sage_countries()                     # 134 country names
 sage_years("Germany")                # c(1998, 2002, 2005, 2009, 2013, 2017, 2021)
 sage_columns()                       # the schema
 
-# Pull a vote-row slice (no polygons; partition-pruned, returns in seconds)
+# Load vote rows (no polygons; reads only the files it needs)
 de_2021 <- sage_load("Germany", years = 2021,
                      columns = c("party", "votes", "NAME3"))
 
@@ -137,7 +137,7 @@ g = sage.sage_polygons("Germany")
 us_2020 = sage.sage_polygons("United States of America", years=[2020])
 ```
 
-SAGE exposes per-row candidate names inline (via the `candidate` column) for 13 countries where the source publishes them at polling-station grain — including India, Pakistan, Afghanistan, Hungary, Italy, Germany Erststimme (post-2005), and a long tail of smaller systems. Coverage is partial in mixed/SMD systems (Germany ~5%, Italy ~11%, Hungary ~44%) because most rows are list-tier parties without a constituency candidate. Two countries are released as separate sidecars to keep the main parquet at (polling station, party) grain — Germany (Erststimme name & vote share per Wahlkreis × party) and the Netherlands (2021 Tweede Kamer per-stembureau preference votes); other open-list / preferential systems (Australian House, Irish/Maltese STV, Brazil, Finland, Japan SMD) are slated for follow-up releases.
+For 13 countries whose sources publish candidate names by polling station, the `candidate` column holds the candidate's name. These include India, Pakistan, Afghanistan, Hungary, Italy, Germany's first vote (from 2005), and several smaller countries. In mixed systems the column is mostly empty (Germany about 5%, Italy about 11%, Hungary about 44%), because most rows are party-list votes with no constituency candidate. Two countries have candidate votes in separate files, so that the main parquet stays at one row per polling station and party: Germany (first-vote candidate name and vote share per constituency and party) and the Netherlands (2021 Tweede Kamer preference votes per polling station). I plan to add other open-list and preferential systems (the Australian House, Irish and Maltese STV, Brazil, Finland, Japan's single-member districts) in later releases.
 
 ```r
 de_cands <- sage_preference_votes("Germany")      # 5,996 rows: (year, wahlkreis_nr, party, candidate, votes, share)
@@ -170,7 +170,7 @@ con.sql("""
 
 ## What's in the dataset
 
-The release lives at `gs://sage-archive/` (anonymous-read GCS bucket; same paths reachable as `https://storage.googleapis.com/sage-archive/...`):
+The release is in the public bucket `gs://sage-archive/`, also at `https://storage.googleapis.com/sage-archive/...`:
 
 | Subtree | Contents | Size | Use |
 |---|---|---:|---|
@@ -179,7 +179,7 @@ The release lives at `gs://sage-archive/` (anonymous-read GCS bucket; same paths
 | `polygons/` | one geoparquet per country (Japan + USA year-sharded due to Arrow's 2 GB single-array limit) | 15 GiB | choropleth users; the R/Python `sage_polygons()` default |
 | `rds/` | full Output_c with inline `sf` polygon geometry | 64 GiB | R users who want native sf objects |
 
-Each row carries: `country`, `iso3`, hierarchical admin names (`NAME1` … `NAME$k$`), `year`, `election_type`, `special_type` / `special_type_b`, `party`, `party_b`, `party_c`/`party_d`/`candidate` where applicable, `votes`, `total_votes`, `reg`/`turnout_reg`, `evp`/`turnout_evp`, `latitude`/`longitude`, `geometry_type`/`geometry_type_b`/`geometry_level`, and the cross-source identifiers `partyfacts_id` / `partyfacts_name` / `match_confidence` (Party Facts hub) plus `geocode_duplicates` (a per-row count of distinct geometry-level units sharing this row's coordinate; 1 = clean, > 1 = collapsed centroid).
+Each row has `country`, `iso3`, hierarchical admin names (`NAME1` … `NAME$k$`), `year`, `election_type`, `special_type` / `special_type_b`, `party`, `party_b`, `party_c`/`party_d`/`candidate` where applicable, `votes`, `total_votes`, `reg`/`turnout_reg`, `evp`/`turnout_evp`, `latitude`/`longitude`, `geometry_type`/`geometry_type_b`/`geometry_level`, and the cross-source identifiers `partyfacts_id` / `partyfacts_name` / `match_confidence` (Party Facts hub) plus `geocode_duplicates` (the number of distinct units that share the row's coordinate; 1 means the point is unique, more than 1 means several units share one point).
 
 See the codebook at `gs://sage-archive/codebook.pdf` for the full per-column definitions and per-country notes.
 
