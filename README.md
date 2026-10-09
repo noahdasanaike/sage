@@ -232,6 +232,11 @@ See the codebook at `gs://sage-archive/codebook.pdf` for the full per-column def
 - Replaced Bosnia and Herzegovina's data, which had been the two entity parliaments, with the House of Representatives of Bosnia and Herzegovina and the three members of the Presidency, 2018 and 2022, at polling-station level; polling stations are now located by building, and stations that could not be found are Missing
 - Gave polling places in Greece, Argentina, Denmark, and Bosnia and Herzegovina the Thiessen polygons they had been missing, including all of Greece 2019, and set polling places located outside their own province in Argentina 2023 to Missing
 - Removed locations from 33,353 rows across 14 countries that had no polygon and whose location was wrong: outside the country, stacked on one town point, or in the wrong region (Peru, Senegal, Colombia, Romania, South Korea, Philippines, Russia, Mexico, Poland, Hungary, Cyprus, Guyana, Netherlands, Dominica)
+- Fixed France 2022 and Slovakia 2024 presidential results, whose two rounds had been stored together with no round label; each round now matches the official results
+- Fixed Ecuador 2006, whose second-round results had been a copy of the first round
+- Fixed Austria's 2010, 2016, and 2022 presidential results, which had counted postal ballots two or three times, and Poland's 2005-2023 results, in which polling stations geocoded twice had been counted twice
+- Fixed Peru's 2011, 2016, and 2021 presidential results, in which several candidates' votes had been credited to other candidates, and added missing candidates to Iceland's 2016, 2020, and 2024 presidential elections
+- Removed duplicated parishes from Portugal 1976-2001, and added missing round labels to Serbia 2004 and 2008 and Madagascar 2018
 - Added each Malawian parliamentary candidate's name in a `candidate` column; independent candidates in the same constituency had been indistinguishable
 - Restored Germany 2025's polygons, which had been missing from the polygon files, and filled in the place names missing from Cabo Verde 2026's polygons; both now join to their vote data again
 - Repaired garbled accented place names in Peru and Italy; the polygon files for both had not joined to the vote data
