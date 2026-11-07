@@ -188,6 +188,10 @@ See the codebook at `gs://sage-archive/codebook.pdf` for the full per-column def
 ## Change Log
 
 #### v1.4 (November 1st, 2026)
+- Replaced South Africa's 2024 election, which had been a copy of 2019 with some voting districts missing, with the Electoral Commission's results: 23,291 voting districts and 16,039,009 votes (corrected November 5th, 2026)
+- Replaced Japan's 2024 House of Representatives election, which had been a copy of 2021, with the official results: 54,261,878 single-member district votes and 54,549,720 proportional representation votes (corrected November 5th, 2026)
+- Replaced every Greenland election, each of which had held the 2022 result, with official polling station results for 13 elections from 2005 to 2026. This adds the 2025 Inatsisartut and 2026 Folketing elections and removes 2002, which was not a real result. Station locations were checked and corrected, and polygons rebuilt for each election (corrected November 5th, 2026)
+- Added the state codes missing from the United States' 2024 election in the `NAME1_b` column for Alabama, Arizona and Georgia. Votes and all other columns are unchanged (corrected November 6th, 2026)
 - Rebuilt India's 2019 Lok Sabha election from the Election Commission's polling station results (Form 20): 1,020,235 polling stations and 590.8 million votes, up from 867,645 stations and 463.6 million votes. In 3,681 of the 4,126 assembly segments, the total is within 0.5% of the official count. A station has a location where the Election Commission's station coordinates, Karnataka's polling area maps or the national school directory place it, or where two independent sources agree. All other stations are Missing. 658,615 stations now have a location, up from 456,395
 - Added Brazil's 2026 presidential runoff at polling station-level; the totals match the official results nationally and in every state and municipality
 - Restored Saône-et-Loire (251,471 votes) to France's 2002 first round, where the department had been missing
